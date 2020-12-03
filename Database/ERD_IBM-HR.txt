@@ -5,7 +5,7 @@ Over18 varchar
 Age int
 Gender varchar
 MaritialStatus varchar
-Education int
+Education int FK >- ed.Score
 EducationField varchar
 Department varchar
 JobRole varchar
@@ -17,7 +17,7 @@ YearsAtCompany int
 YearsInCurrentRole int
 YearsWithCurrManager int
 EmployeeCount int
-PerformanceRating int
+PerformanceRating int FK >- pr.Score
 YearsSinceLastPromotion int
 DailyRate  int
 HourlyRate int
@@ -30,63 +30,45 @@ OverTime varchar
 BusinessTravel varchar
 DistanceFromHome int
 TrainingTimesLastYear int
-EnvironmentSatisfaction int
-JobInvolvement int
-JobSatisfaction int
-RelationshipSatisfaction int
-WorkLifeBalance int
+EnvironmentSatisfaction int FK >- es.Score
+JobInvolvement int FK >- ji.Score
+JobSatisfaction int FK >- js.Score
+RelationshipSatisfaction int FK >- rs.Score
+WorkLifeBalance int FK >- wb.Score
 
 
 
 Education as ed
 -
-Score PK int FK >- at.Education
+Score PK int
 Education varchar
 
 WorkLifeBalance as wb
 -
-Score PK int FK >- at.WorkLifeBalance
+Score PK int 
 Rating varchar
 
 RelationshipSatisfaction as rs
 -
-Score PK int FK >- at.RelationshipSatisfaction
+Score PK int
 Rating varchar
 
 PerformanceRating as pr
 -
-Score PK int FK >- at.PerformanceRating
+Score PK int 
 Rating varchar
 
 JobSatisfaction as js
 -
-Score PK int FK >- at.JobSatisfaction
+Score PK int
 Rating varchar
 
 JobInvolvement as ji
 -
-Score PK int FK >- at.JobInvolvement
+Score PK int 
 Rating varchar
 
 EnvironmentSatisfaction as es
 -
-Score PK int FK >- at.EnvironmentSatisfaction
+Score PK int 
 Rating varchar
--
-Score PK int FK >- at.PerformanceRating
-Rating string
-
-JobSatisfaction as js
--
-Score PK int FK >- at.JobSatisfaction
-Rating string
-
-JobInvolvement as ji
--
-Score PK int FK >- at.JobInvolvement
-Rating string
-
-EnvironmentSatisfaction as es
--
-Score PK int FK >- at.EnvironmentSatisfaction
-Rating string
