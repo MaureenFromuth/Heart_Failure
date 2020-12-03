@@ -1,0 +1,92 @@
+﻿IBMEmployeeAttrition as at
+-
+EmployeeNumber PK int
+Over18 varchar
+Age int
+Gender varchar
+MaritialStatus varchar
+Education int
+EducationField varchar
+Department varchar
+JobRole varchar
+JobLevel int
+Attrition varchar
+NumCompaniesWorked int
+TotalWorkingYears int
+YearsAtCompany int
+YearsInCurrentRole int
+YearsWithCurrManager int
+EmployeeCount int
+PerformanceRating int
+YearsSinceLastPromotion int
+DailyRate  int
+HourlyRate int
+MonthlyRate int
+MonthlyIncome int
+StockOptionLevel int
+PercentSalaryHike int
+StandardHours int
+OverTime varchar
+BusinessTravel varchar
+DistanceFromHome int
+TrainingTimesLastYear int
+EnvironmentSatisfaction int
+JobInvolvement int
+JobSatisfaction int
+RelationshipSatisfaction int
+WorkLifeBalance int
+
+
+
+Education as ed
+-
+Score PK int FK >- at.Education
+Education varchar
+
+WorkLifeBalance as wb
+-
+Score PK int FK >- at.WorkLifeBalance
+Rating varchar
+
+RelationshipSatisfaction as rs
+-
+Score PK int FK >- at.RelationshipSatisfaction
+Rating varchar
+
+PerformanceRating as pr
+-
+Score PK int FK >- at.PerformanceRating
+Rating varchar
+
+JobSatisfaction as js
+-
+Score PK int FK >- at.JobSatisfaction
+Rating varchar
+
+JobInvolvement as ji
+-
+Score PK int FK >- at.JobInvolvement
+Rating varchar
+
+EnvironmentSatisfaction as es
+-
+Score PK int FK >- at.EnvironmentSatisfaction
+Rating varchar
+-
+Score PK int FK >- at.PerformanceRating
+Rating string
+
+JobSatisfaction as js
+-
+Score PK int FK >- at.JobSatisfaction
+Rating string
+
+JobInvolvement as ji
+-
+Score PK int FK >- at.JobInvolvement
+Rating string
+
+EnvironmentSatisfaction as es
+-
+Score PK int FK >- at.EnvironmentSatisfaction
+Rating string
