@@ -1,92 +1,74 @@
-﻿IBMEmployeeAttrition as at
+IBMEmployeeAttrition as at
 -
-EmployeeNumber PK int
-Over18 varchar
 Age int
-Gender varchar
-MaritialStatus varchar
-Education int
-EducationField varchar
-Department varchar
-JobRole varchar
-JobLevel int
 Attrition varchar
+BusinessTravel varchar
+DailyRate  int
+Department varchar
+DistanceFromHome int
+Education int FK >- ed.Score
+EducationField varchar
+EmployeeCount int
+EmployeeNumber PK int
+EnvironmentSatisfaction int FK >- es.Score
+Gender varchar
+HourlyRate int
+JobInvolvement int FK >- ji.Score
+JobLevel int
+JobRole varchar
+JobSatisfaction int FK >- js.Score
+MaritialStatus varchar
+MonthlyIncome int
+MonthlyRate int
 NumCompaniesWorked int
+Over18 varchar
+OverTime varchar
+PercentSalaryHike int
+PerformanceRating int FK >- pr.Score
+RelationshipSatisfaction int FK >- rs.Score
+StandardHours int
+StockOptionLevel int
 TotalWorkingYears int
+TrainingTimesLastYear int
+WorkLifeBalance int FK >- wb.Score
 YearsAtCompany int
 YearsInCurrentRole int
-YearsWithCurrManager int
-EmployeeCount int
-PerformanceRating int
 YearsSinceLastPromotion int
-DailyRate  int
-HourlyRate int
-MonthlyRate int
-MonthlyIncome int
-StockOptionLevel int
-PercentSalaryHike int
-StandardHours int
-OverTime varchar
-BusinessTravel varchar
-DistanceFromHome int
-TrainingTimesLastYear int
-EnvironmentSatisfaction int
-JobInvolvement int
-JobSatisfaction int
-RelationshipSatisfaction int
-WorkLifeBalance int
+YearsWithCurrManager int
 
 
 
 Education as ed
 -
-Score PK int FK >- at.Education
+Score PK int
 Education varchar
 
 WorkLifeBalance as wb
 -
-Score PK int FK >- at.WorkLifeBalance
+Score PK int 
 Rating varchar
 
 RelationshipSatisfaction as rs
 -
-Score PK int FK >- at.RelationshipSatisfaction
+Score PK int
 Rating varchar
 
 PerformanceRating as pr
 -
-Score PK int FK >- at.PerformanceRating
+Score PK int 
 Rating varchar
 
 JobSatisfaction as js
 -
-Score PK int FK >- at.JobSatisfaction
+Score PK int
 Rating varchar
 
 JobInvolvement as ji
 -
-Score PK int FK >- at.JobInvolvement
+Score PK int 
 Rating varchar
 
 EnvironmentSatisfaction as es
 -
-Score PK int FK >- at.EnvironmentSatisfaction
+Score PK int 
 Rating varchar
--
-Score PK int FK >- at.PerformanceRating
-Rating string
-
-JobSatisfaction as js
--
-Score PK int FK >- at.JobSatisfaction
-Rating string
-
-JobInvolvement as ji
--
-Score PK int FK >- at.JobInvolvement
-Rating string
-
-EnvironmentSatisfaction as es
--
-Score PK int FK >- at.EnvironmentSatisfaction
-Rating string
