@@ -1,40 +1,40 @@
-﻿IBMEmployeeAttrition as at
+IBMEmployeeAttrition as at
 -
-EmployeeNumber PK int
-Over18 varchar
 Age int
-Gender varchar
-MaritialStatus varchar
+Attrition varchar
+BusinessTravel varchar
+DailyRate  int
+Department varchar
+DistanceFromHome int
 Education int FK >- ed.Score
 EducationField varchar
-Department varchar
-JobRole varchar
+EmployeeCount int
+EmployeeNumber PK UNIQUE int
+EnvironmentSatisfaction int FK >- es.Score
+Gender varchar
+HourlyRate int
+JobInvolvement int FK >- ji.Score
 JobLevel int
-Attrition varchar
+JobRole varchar
+JobSatisfaction int FK >- js.Score
+MaritialStatus varchar
+MonthlyIncome int
+MonthlyRate int
 NumCompaniesWorked int
+Over18 varchar
+OverTime varchar
+PercentSalaryHike int
+PerformanceRating int FK >- pr.Score
+RelationshipSatisfaction int FK >- rs.Score
+StandardHours int
+StockOptionLevel int
 TotalWorkingYears int
+TrainingTimesLastYear int
+WorkLifeBalance int FK >- wb.Score
 YearsAtCompany int
 YearsInCurrentRole int
-YearsWithCurrManager int
-EmployeeCount int
-PerformanceRating int FK >- pr.Score
 YearsSinceLastPromotion int
-DailyRate  int
-HourlyRate int
-MonthlyRate int
-MonthlyIncome int
-StockOptionLevel int
-PercentSalaryHike int
-StandardHours int
-OverTime varchar
-BusinessTravel varchar
-DistanceFromHome int
-TrainingTimesLastYear int
-EnvironmentSatisfaction int FK >- es.Score
-JobInvolvement int FK >- ji.Score
-JobSatisfaction int FK >- js.Score
-RelationshipSatisfaction int FK >- rs.Score
-WorkLifeBalance int FK >- wb.Score
+YearsWithCurrManager int
 
 
 
