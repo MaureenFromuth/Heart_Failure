@@ -33,6 +33,12 @@ This project has four distinct parts:
 - Building and Deploying the Model
 - Data Visualization
 
+The tools and technology used for each of these phases include:
+- Data Cleaning & Analysis - We will be using a combination of Python, Pandas, Numpy, SQLAlchemy, and SciKitLearn for ETL, and Matplotlib and Seaborn for graph analysis.
+- Database Storage - We will host our database in Postgres in PgAdmin and we will integrate Flask to display the databases.
+- Machine Learning - For our predictive modeling, we are going to build a binary classification model using SciKitLearn in Python.  As a result of uneven data, we will also be using a combination of over and undersampling techniques to ensure there is more even target data.
+- Dashboard - In addition to using a Flask template, we are going to integrate Javascript and D3 for a fully functional dashboard along with Tableau visuals.  It will be hosted on an S3 static website.  
+
 
 ***Data Cleansing and Preparation***
 
@@ -134,16 +140,4 @@ Data breakdown
 
 
 
-
-Project outline/plan
-Technology selection
-	Data cleansing
-	DB
-	ML
-	Visualization
-
-
-Assignments of tasks
-Communication protocol
-- Single person; BUT if not than we would have every-other day check-ins on status of the project; identify backlog/issues and task to personnel that we believe can easily work it/has the most skill in that area.  would use a slack room #IBMAttrition
-
+***Model Development and Deployment***
