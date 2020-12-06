@@ -1,5 +1,4 @@
 # IBM_Attrition
-# IBM_Attrition
 
 ## Overview of Project
 
@@ -134,21 +133,25 @@ df_attrition_tech.head(5)
 This results in 8 total dataframes with four for visualization, which we loaded back into Postgres, and four for training of ML models for prediction and feature ranking analysis.  Below lists all of the dataframes and/or tables and highlights which were uploaded back into Postgres for the visualization.
 
 Combined:
+
 df_attrition, [attrition_combined](https://github.com/MaureenFromuth/IBM_Attrition/blob/main/New%20Tables/attrition_combined.csv) (table)
 
 df_attrition_scaled
 
 Non-Tech:
+
 df_attrition_nontech, [attrition_nontech](https://github.com/MaureenFromuth/IBM_Attrition/blob/main/New%20Tables/attrition_nontech.csv) (table)
 
 df_attrition_nontech_scaled
 
-Tech: 
+Tech:
+ 
 df_attrition_tech, [attrition_tech](https://github.com/MaureenFromuth/IBM_Attrition/blob/main/New%20Tables/attrition_tech.csv) (table)
 
 df_attrition_tech_scaled
 
 Leadership: 
+
 df_attrition_ldrshp, [attrition_ldrshp](https://github.com/MaureenFromuth/IBM_Attrition/blob/main/New%20Tables/attrition_ldrshp.csv) (table)
 
 df_attrition_ldrshp_scaled
