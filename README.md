@@ -1,4 +1,4 @@
-#IBM_Attrition
+# IBM_Attrition
 
 ## Overview of Project
 
@@ -128,4 +128,22 @@ df_attrition_tech.head(5)
 ***Preliminary Data Analysis**
 
 
+Data breakdown
+- distribution for each of the features - are any not well represented?
+- distribution for the target 	
+
+
+
+
+Project outline/plan
+Technology selection
+	Data cleansing
+	DB
+	ML
+	Visualization
+
+
+Assignments of tasks
+Communication protocol
+- Single person; BUT if not than we would have every-other day check-ins on status of the project; identify backlog/issues and task to personnel that we believe can easily work it/has the most skill in that area.  would use a slack room #IBMAttrition
 
