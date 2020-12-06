@@ -1,3 +1,5 @@
+#IBM_Attrition
+
 ## Overview of Project
 
 ### Purpose of the Project
@@ -8,18 +10,18 @@ These topics are even more critical in industries that require high demand skill
 
 Using anonymous HR data of a tech firm, this project is going to utilize multiple data science tools to answer the following primary questions:
 
-    *1. What features are most indicative of a person’s likelihood to leave IBM?*
+    1. What features are most indicative of a person’s likelihood to leave IBM?
 
-    *2. Given additional anonymous HR data of employees, and their data for the associated features, what is the prediction that they will stay or leave IBM?*
+    2. Given additional anonymous HR data of employees, and their data for the associated features, what is the prediction that they will stay or leave IBM?
 
-    *3. How do the answer to either of the previous questions change for each of the three job categories: tech, non-tech, and leadership?*
+    3. How do the answer to either of the previous questions change for each of the three job categories: tech, non-tech, and leadership?
 
 
 As part of building the analysis and models to these questions, however, there are additional insights that will be relevant to the overall story:
 
-- *What, if any, correlation is there between different features, i.e. do you truly get paid more the longer you are at a company? Are there any surprises?*
+    1. What, if any, correlation is there between different features, i.e. do you truly get paid more the longer you are at a company? Are there any surprises?
 
-- *Are there any major differences in features between the job categories, i.e. does leadership roles have higher or lower work life balance?*
+    2. Are there any major differences in features between the job categories, i.e. does leadership roles have higher or lower work life balance?
 
 Of note, this analysis, predictions, and implementation of mechanisms is best done anonymously and using data that does not target individual employees.  While most employers maintain general data on their employees, employers must remain sensitive to specific questions and should keep data generic and focused on performance and optional surveys.  
 
@@ -124,5 +126,6 @@ df_attrition_tech.head(5)
 
 
 ***Preliminary Data Analysis**
+
 
 
