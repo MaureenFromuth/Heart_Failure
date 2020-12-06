@@ -44,7 +44,7 @@ The tools and technology used for each of these phases include:
 
 As part of the Data Cleansing and Preparation section, we loaded, cleaned, and transformed the core data set for this project: [IBMEmployeeAttrition.csv](https://github.com/MaureenFromuth/IBM_Attrition/blob/Segment-1/Data/IBMEmployeeAttrition.csv).  This dataset has has multiple fields that not only provide background information about the employee, but also about their role/job, their salary, their job history, and their satisfaction rating in various categories.  Of note, for the satisfaction ratings, we provided seven related .csv files that explain the numerical ratings: [Education](https://github.com/MaureenFromuth/IBM_Attrition/blob/Segment-1/Data/Education.csv), [EnvironmentalSatisfaction](https://github.com/MaureenFromuth/IBM_Attrition/blob/Segment-1/Data/EnvironmentSatisfaction.csv), [JobInvolvement](https://github.com/MaureenFromuth/IBM_Attrition/blob/Segment-1/Data/JobInvolvement.csv), [JobSatisfaction](https://github.com/MaureenFromuth/IBM_Attrition/blob/Segment-1/Data/JobSatisfaction.csv), [PerformanceRating](https://github.com/MaureenFromuth/IBM_Attrition/blob/Segment-1/Data/PerformanceRating.csv), [RelationshipSatisfaction](https://github.com/MaureenFromuth/IBM_Attrition/blob/Segment-1/Data/RelationshipSatisfaction.csv), and [WorkLifeBalance](https://github.com/MaureenFromuth/IBM_Attrition/blob/Segment-1/Data/WorkLifeBalance.csv).  This data is hosted in Postgres in a PGAdmin instance.  See below for the ERD and data structure.
 
->[IBM_Data_Structure]()
+>[IBM_Data_Structure](https://github.com/MaureenFromuth/IBM_Attrition/blob/main/Database/ERD_IBM-HR_Picture.png)
 
 To prepare for both the model development as well as the visualization, created two key categories of dataframes: one that was encoded and scaled for the ML model training, and one that incorporated the explanation of the satisfaction and survey ratings (df_attrition_scaled vs. df_attrition).  To build these two main dataframes, we first used SQLAlchemy in Python to load the IBMEmployeeAttrition database and make the EmployeeNumber the index.  From there, we did initial cleansing of the data by looking for and dropping null data fields, as well as dropping columns that did not provide relevant data.  While there were no null values, there were three columns that had the same value for every row and that we decided to drop: EmployeeCount, StandardHours, and Over18.  
 
@@ -117,7 +117,7 @@ df_attrition["PerformanceRating"] = df_attrition["PerformanceRating"].apply(lamb
 df_attrition["WorkLifeBalance"] = df_attrition["WorkLifeBalance"].apply(lambda x: balance[x])
 ``` 
 
-*Job Category Subsets* For each of these two dataframes, we also broke them down into three sub frames: one for tech roles, one for non-tech roles, and one for leadership roles.  Below is example code for this action.  This results in 8 total dataframes with four for visualization, which we loaded back into Postgres, and four for training of ML models for prediction and feature ranking analysis.  
+*Job Category Subsets* For each of these two dataframes, we also broke them down into three sub frames: one for tech roles, one for non-tech roles, and one for leadership roles.  Below is example code for this action.    
 
 ``` 
 #Create a second dataframe that only contains only employees in the 'Tech' job category
@@ -130,6 +130,23 @@ df_attrition_tech_scaled = df_attrition_tech_scaled.drop(columns=['JobCategory']
 df_attrition_tech.head(5)
 ``` 
 
+This results in 8 total dataframes with four for visualization, which we loaded back into Postgres, and four for training of ML models for prediction and feature ranking analysis.  Below lists all of the dataframes and/or tables and highlights which were uploaded back into Postgres for the visualization.
+
+Combined:
+df_attrition, [attrition_combined](https://github.com/MaureenFromuth/IBM_Attrition/blob/main/New%20Tables/attrition_combined.csv) (table)
+df_attrition_scaled
+
+Non-Tech:
+df_attrition_nontech, [attrition_nontech](https://github.com/MaureenFromuth/IBM_Attrition/blob/main/New%20Tables/attrition_nontech.csv) (table)
+df_attrition_nontech_scaled
+
+Tech: 
+df_attrition_tech, [attrition_tech](https://github.com/MaureenFromuth/IBM_Attrition/blob/main/New%20Tables/attrition_tech.csv) (table)
+df_attrition_tech_scaled
+
+Leadership: 
+df_attrition_ldrshp, [attrition_ldrshp](https://github.com/MaureenFromuth/IBM_Attrition/blob/main/New%20Tables/attrition_ldrshp.csv) (table)
+df_attrition_ldrshp_scaled
 
 ***Preliminary Data Analysis**
 
