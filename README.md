@@ -66,7 +66,7 @@ job_category(df_attrition)
 df_attrition.head(5)
 ``` 
 
-*The Encoded & Scaled Dataframe* Using this baseline, we utilized the label encoding feature in Scikit-Learn to transform the existing objects columns into integers.   Before executing the following code, however, we created a copy of the baseline dataframe from which we worked, df_attrition_encoded.
+*The Encoded Dataframe* Using this baseline, we utilized the label encoding feature in Scikit-Learn to transform the existing objects columns into integers.   Before executing the following code, however, we created a copy of the baseline dataframe from which we worked, df_attrition_encoded.
 
 ``` 
 #Use sk learn labelencoder for encoding
@@ -90,13 +90,6 @@ df_attrition_encoded['EducationField'] = le.fit_transform(df_attrition_encoded['
 #Job Role - Sales Exec = 7, Research Scientist - 6, Research Director = 5, Manufacturing Director - 4, 
 #Lab Tech - 2, HR = 1, Healthcare Rep = 0
 df_attrition_encoded['JobRole'] = le.fit_transform(df_attrition_encoded['JobRole'])
-``` 
-Finally, we utilized the Standard Scaler feature also in Scikit-Learn to normalize and scale the resulting dataframes.  
-
-``` 
-data_scaler = StandardScaler()
-df_attrition_scaled = pd.DataFrame(data_scaler.fit_transform(df_attrition_encoded), 
-                                    columns = df_attrition_encoded.columns)
 ``` 
 
 *The Visualization Dataframe* Using the same baseline dataframe as the first spin-off, we added the survey definitions for each associated field using a combination of a dictionary and a lambda function.  The resulting dataframe will be a core element for the project visualization dashboard.  
@@ -124,8 +117,8 @@ df_attrition["WorkLifeBalance"] = df_attrition["WorkLifeBalance"].apply(lambda x
 df_attrition_tech = df_attrition[df_attrition["JobCategory"] == "Tech"]
 df_attrition_tech = df_attrition_tech.drop(columns=['JobCategory'])
 
-df_attrition_tech_scaled = df_attrition_scaled[df_attrition_scaled["JobCategory"] == 2]
-df_attrition_tech_scaled = df_attrition_tech_scaled.drop(columns=['JobCategory'])
+df_attrition_tech_encoded = df_attrition_encoded[df_attrition_encoded[“JobCategory"] == 2]
+df_attrition_tech_encoded = df_attrition_tech_encoded.drop(columns=['JobCategory'])
 
 df_attrition_tech.head(5)
 ``` 
@@ -136,36 +129,56 @@ Combined:
 
 df_attrition, [attrition_combined](https://github.com/MaureenFromuth/IBM_Attrition/blob/main/New%20Tables/attrition_combined.csv) (table)
 
-df_attrition_scaled
+df_attrition_encoded
 
 Non-Tech:
 
 df_attrition_nontech, [attrition_nontech](https://github.com/MaureenFromuth/IBM_Attrition/blob/main/New%20Tables/attrition_nontech.csv) (table)
 
-df_attrition_nontech_scaled
+df_attrition_nontech_encoded
 
 Tech:
  
 df_attrition_tech, [attrition_tech](https://github.com/MaureenFromuth/IBM_Attrition/blob/main/New%20Tables/attrition_tech.csv) (table)
 
-df_attrition_tech_scaled
+df_attrition_tech_encoded
 
 Leadership: 
 
 df_attrition_ldrshp, [attrition_ldrshp](https://github.com/MaureenFromuth/IBM_Attrition/blob/main/New%20Tables/attrition_ldrshp.csv) (table)
 
-df_attrition_ldrshp_scaled
+df_attrition_ldrshp_encoded
 
-***Preliminary Data Analysis**
+***Preliminary Data Analysis***
 
-
-Data breakdown
 - distribution for each of the features - are any not well represented?
 - distribution for the target 	
+
+>![Imbalance Check](https://github.com/MaureenFromuth/IBM_Attrition/blob/main/Prelim%20Data%20Analysis/Class%20Imbalance%20Check.png)
+
+>![Correlation Heatmap](https://github.com/MaureenFromuth/IBM_Attrition/blob/main/Prelim%20Data%20Analysis/Corr-Heat_Combined.png)
+
 
 
 
 ***Model Development and Deployment***
+
+Attrition is what we are trying to predict, and as a result our target will be the ‘Attrition’ field with the other fields acting as features for our model.  Because we are trying to predict one of two outcomes, we chose to use a binary classification model to both build our predictions as well as assess the importance of features for attrition.  There are multiple types of binary classification algorithms that can be used for a use case such as this.  They include logistic regression, SVM, decision trees, and ensemble methods such as random forest and boot strapping.  Because there are number of features, to include the target feature, with inconsistent representation and also because we want to identify importance of features to the prediction, we decided to use an ensemble technique, specifically Random Forest.  Random Forest also does not require scaling of data, which is useful for this use case in order to preserve the analysis of feature importance.
+
+Our preliminary data analysis revealed class imbalance in the combined dataframe, as well as the leadership, technical, and non-technical job category sub-dataframes.  As such, we decided to use the Balanced Random Forest algorithm in Imblearn as a baseline to test out different models.  This algorithm conducts and undersampling technique, down selecting the larger class to the smaller class.  Since the class imbalance is fairly significant for all of the dataframes, we will test out a combination and upsampling technique on at least one of the sub-populations to ensure the best model performance.  
+
+accuracy vs. precision vs. recall
+
+>![Compiled Confusion Matrix Results](https://github.com/MaureenFromuth/IBM_Attrition/blob/main/ML%20Model%20Testing/ConfusionMatrix.png)
+
+>![Accuracy Reporting: Combination](https://github.com/MaureenFromuth/IBM_Attrition/blob/main/ML%20Model%20Testing/Results_Combo.png)
+
+>![Accuracy Reporting: Tech](https://github.com/MaureenFromuth/IBM_Attrition/blob/main/ML%20Model%20Testing/Results_Tech.png)
+
+>![Accuracy Reporting: NonTech](https://github.com/MaureenFromuth/IBM_Attrition/blob/main/ML%20Model%20Testing/Results_NonTech.png)
+
+>![Accuracy Reporting: Leadership](https://github.com/MaureenFromuth/IBM_Attrition/blob/main/ML%20Model%20Testing/Results_Leadership.png)
+
 
 
 
