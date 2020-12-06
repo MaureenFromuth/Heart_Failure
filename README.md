@@ -212,10 +212,13 @@ In addition to evaluating model performance, we also looked at feature importanc
 
 |   | Combined | Tech | NonTech | Leadership |
 |---|---|---|---|---|
-|   |   |   |   |   |
-|   |   |   |   |   |
-|   |   |   |   |   |
+|1. | MonthlyIncome | MonthlyIncome | DailyRate | MontlyIncome |
+| 2. | Age | Age | MonthlyIncome | DailyRate |
+| 3. | Overtime | DailyRate | YearsAtCompany | PercentSalaryHike |
+| 4. | DailyRate | YearsAtCompany | MonthlyRate | DistanceFromHome |
+| 5. | YearsAtCompany | YearsInCurrentRole | Age | MontlyRate |
 
+These top five highlight the importance of salary in retention, but there are some interesting additions here highlighting the importance of years at the company, and perhaps indicate loyalty, within the tech and non-tech roles that we would not have seen in the overall combined group.  Additional analysis will be done to identify whether these features have a positive or negative impact on attrition.  The output of that analysis will better help to build out an understanding of what types of mechanisms or incentives the company can do to retain talent.  
 
 ***Data Visualization***
 To be completed.
