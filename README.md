@@ -149,16 +149,35 @@ df_attrition_ldrshp, [attrition_ldrshp](https://github.com/MaureenFromuth/IBM_At
 
 df_attrition_ldrshp_encoded
 
+
+
 ***Preliminary Data Analysis***
 
-- distribution for each of the features - are any not well represented?
-- distribution for the target 	
+Upon initial review of the data for this project, it is clear that there are a number of different imbalances within the target class (i.e. ‘Attrition’) as well as the features.  The class imbalance is consistently high, in favor of maintain employees, across the combined as well as the the sub-dataframes as depicted below.  Additional work will be completed in the next week to identify the distribution of the features across each of the four dataframes as well.
 
 >![Imbalance Check](https://github.com/MaureenFromuth/IBM_Attrition/blob/main/Prelim%20Data%20Analysis/Class%20Imbalance%20Check.png)
 
+In addition to distribution, we also looked into the correlation of different features to one another.  The purpose of this analysis is to identify if there are any features that can and should be combined in order to better understand the feature impact on the outcome of our model.  For example, if there are three features representing income, that will look like a disproportionate weight of influence into the model.  The heat map below highlights these correlations.
+
 >![Correlation Heatmap](https://github.com/MaureenFromuth/IBM_Attrition/blob/main/Prelim%20Data%20Analysis/Corr-Heat_Combined.png)
 
+Based on the heat map, there are a few areas that highlight strong correlation between one another and should be evaluated for combination into one feature: 
+- department & job role
+- job level & monthly income
+- age & total years working
+- job level & total years working
+- monthly income & total years working
+- job role & age
+- years at company & job level
+- years at company & monthly income
+- years at company & total working years
+- years at company & years at current role
+- years at company & years with current manager
+- performance rating & salary hike
 
+Based off of this list, there are two pairs that could be combined: department & current job, as well as age & total years working.  For the purposes of this initial evaluation and model testing, we are going to keep them separate but we will conduct additional evaluation and analysis to see if combining them lead more accurate models.
+
+Additionally, there are three features that were not identified on the correlation heat map but should be combined: hourly rate, daily rate, monthly rate, and monthly income.  Additional analysis will be done in the second period of this project to identify how to combine these features into one.
 
 
 ***Model Development and Deployment***
@@ -167,9 +186,10 @@ Attrition is what we are trying to predict, and as a result our target will be t
 
 Our preliminary data analysis revealed class imbalance in the combined dataframe, as well as the leadership, technical, and non-technical job category sub-dataframes.  As such, we decided to use the Balanced Random Forest algorithm in Imblearn as a baseline to test out different models.  This algorithm conducts and undersampling technique, down selecting the larger class to the smaller class.  Since the class imbalance is fairly significant for all of the dataframes, we will test out a combination and upsampling technique on at least one of the sub-populations to ensure the best model performance.  
 
-accuracy vs. precision vs. recall
+For our model testing, we conducted model fitting for all four datatypes, and evaluated their performance at being able to predict attrition.  This project is aiming at a balance of performance in precision as well as recall, but would value precision if one needed to be prioritized.  For example, if the model has high accuracy but low recall, they could be under performing in their recruiting efforts and risk gapping positions.  If, however, they have high accuracy and low precision, they run the risk of ramping up recruiting and then having to turn away perfectly good applicants who may reapply later.  
 
->![Compiled Confusion Matrix Results](https://github.com/MaureenFromuth/IBM_Attrition/blob/main/ML%20Model%20Testing/ConfusionMatrix.png)
+Below highlights our evaluation of the accuracy and performance scores of each of the models and also helps to assess the best sampling techniques.  
+
 
 >![Accuracy Reporting: Combination](https://github.com/MaureenFromuth/IBM_Attrition/blob/main/ML%20Model%20Testing/Results_Combo.png)
 
@@ -179,6 +199,26 @@ accuracy vs. precision vs. recall
 
 >![Accuracy Reporting: Leadership](https://github.com/MaureenFromuth/IBM_Attrition/blob/main/ML%20Model%20Testing/Results_Leadership.png)
 
+
+Looking at the performance metrics for our models, the accuracy hovers around .7 and the majority of the BRFC models have fairly decent recall (.68-.75) but their precision is not ideal (.39-.40).  The leadership model, however, performed substantially lower in accuracy and precision, but the recall was slightly higher than the other BRFC models.  
+
+Since the dataset for leadership was already significantly small, we tested an oversampling and combination sampling technique and paired that with a random forest classification algorithm.  We also tested the non-tech dates well with the combination sampling technique to ensure there was no improvement of the previous models performance.  As you can see from the data above, while accuracy of the over- and combination-sampling techniques increased the accuracy of the models, they did not improve their overall performance.  This was true as well for the non-tech model using a combination sampling technique.  If you look at the confusion matrix results for the different sampling methods for the leadership job category, you can see that the combination sampling did not pick up any of the employees who attritted, but did have three false positives.  The oversampling technique, however, also failed to pick up the four attrited personnel in the test set, but it did accuracy identify all retained employees. 
+
+>![Compiled Confusion Matrix Results](https://github.com/MaureenFromuth/IBM_Attrition/blob/main/ML%20Model%20Testing/ConfusionMatrix.png)
+
+As a result, we have concluded that the best algorithm for the models is the BRFC.
+
+In addition to evaluating model performance, we also looked at feature importance.  There is additional analysis to be done on this topic, but below highlights the high level results of our initial model testing.
+
+|   | Combined | Tech | NonTech | Leadership |
+|---|---|---|---|---|
+|   |   |   |   |   |
+|   |   |   |   |   |
+|   |   |   |   |   |
+
+
+***Data Visualization***
+To be completed.
 
 
 
