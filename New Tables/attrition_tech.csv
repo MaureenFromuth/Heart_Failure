@@ -1,0 +1,683 @@
+EmployeeNumber,Age,Attrition,BusinessTravel,DailyRate,Department,DistanceFromHome,Education,EducationField,EnvironmentSatisfaction,Gender,HourlyRate,JobInvolvement,JobLevel,JobRole,JobSatisfaction,MaritialStatus,MonthlyIncome,MonthlyRate,NumCompaniesWorked,OverTime,PercentSalaryHike,PerformanceRating,RelationshipSatisfaction,StockOptionLevel,TotalWorkingYears,TrainingTimesLastYear,WorkLifeBalance,YearsAtCompany,YearsInCurrentRole,YearsSinceLastPromotion,YearsWithCurrManager
+2,49,No,Travel_Frequently,279,Research & Development,8,Below College,Life Sciences,High,Male,61,Medium,2,Research Scientist,Medium,Married,5130,24907,1,No,23,Outstanding,4,1,10,3,Better,10,7,1,7
+4,37,Yes,Travel_Rarely,1373,Research & Development,2,College,Other,Very High,Male,92,Medium,1,Laboratory Technician,High,Single,2090,2396,6,Yes,15,Excellent,2,0,7,3,Better,0,0,0,0
+5,33,No,Travel_Frequently,1392,Research & Development,3,Master,Life Sciences,Very High,Female,56,High,1,Research Scientist,High,Married,2909,23159,1,Yes,11,Excellent,3,0,8,3,Better,8,7,3,0
+7,27,No,Travel_Rarely,591,Research & Development,2,Below College,Medical,Low,Male,40,High,1,Laboratory Technician,Medium,Married,3468,16632,9,No,12,Excellent,4,1,6,3,Better,2,2,2,2
+8,32,No,Travel_Frequently,1005,Research & Development,2,College,Life Sciences,Very High,Male,79,High,1,Laboratory Technician,Very High,Single,3068,11864,0,No,13,Excellent,3,0,8,2,Good,7,7,3,6
+10,59,No,Travel_Rarely,1324,Research & Development,3,Bachelor,Medical,High,Female,81,Very High,1,Laboratory Technician,Low,Married,2670,9964,4,Yes,20,Outstanding,1,3,12,3,Good,1,0,0,0
+11,30,No,Travel_Rarely,1358,Research & Development,24,Below College,Life Sciences,Very High,Male,67,High,1,Laboratory Technician,High,Divorced,2693,13335,1,No,22,Outstanding,2,1,1,2,Better,1,0,0,0
+13,36,No,Travel_Rarely,1299,Research & Development,27,Bachelor,Medical,High,Male,94,High,2,Healthcare Representative,High,Married,5237,16577,6,No,13,Excellent,2,2,17,3,Good,7,7,7,7
+14,35,No,Travel_Rarely,809,Research & Development,16,Bachelor,Medical,Low,Male,84,Very High,1,Laboratory Technician,Medium,Married,2426,16479,0,No,13,Excellent,3,1,6,5,Better,5,4,0,3
+15,29,No,Travel_Rarely,153,Research & Development,15,College,Life Sciences,Very High,Female,49,Medium,2,Laboratory Technician,High,Single,4193,12682,0,Yes,12,Excellent,4,0,10,3,Better,9,5,0,8
+16,31,No,Travel_Rarely,670,Research & Development,26,Below College,Life Sciences,Low,Male,31,High,1,Research Scientist,High,Divorced,2911,15170,1,No,17,Excellent,4,1,5,1,Good,5,2,4,3
+18,34,No,Travel_Rarely,1346,Research & Development,19,College,Medical,Medium,Male,93,High,1,Laboratory Technician,Very High,Divorced,2661,8758,0,No,11,Excellent,3,1,3,2,Better,2,2,1,2
+19,28,Yes,Travel_Rarely,103,Research & Development,24,Bachelor,Life Sciences,High,Male,50,Medium,1,Laboratory Technician,High,Single,2028,12947,5,Yes,14,Excellent,2,0,6,4,Better,4,2,0,3
+21,32,No,Travel_Rarely,334,Research & Development,5,College,Life Sciences,Low,Male,80,Very High,1,Research Scientist,Medium,Divorced,3298,15053,0,Yes,12,Excellent,4,2,7,5,Good,6,2,0,5
+22,22,No,Non-Travel,1123,Research & Development,16,College,Medical,Very High,Male,96,Very High,1,Laboratory Technician,Very High,Divorced,2935,7324,1,Yes,13,Excellent,2,2,1,2,Good,1,0,0,0
+24,38,No,Travel_Rarely,371,Research & Development,2,Bachelor,Life Sciences,Very High,Male,45,High,1,Research Scientist,Very High,Single,3944,4306,5,Yes,11,Excellent,3,0,6,3,Better,3,2,1,2
+30,21,No,Travel_Rarely,391,Research & Development,15,College,Life Sciences,High,Male,96,High,1,Research Scientist,Very High,Single,1232,19281,1,No,14,Excellent,4,0,0,6,Better,0,0,0,0
+31,34,Yes,Travel_Rarely,699,Research & Development,6,Below College,Medical,Medium,Male,83,High,1,Research Scientist,Low,Single,2960,17102,2,No,11,Excellent,3,0,8,2,Better,4,2,1,3
+33,32,Yes,Travel_Frequently,1125,Research & Development,16,Below College,Life Sciences,Medium,Female,72,Low,1,Research Scientist,Low,Single,3919,4681,1,Yes,22,Outstanding,2,0,10,5,Better,10,2,6,7
+36,44,No,Travel_Rarely,477,Research & Development,7,Master,Medical,Low,Female,42,Medium,3,Healthcare Representative,Very High,Married,10248,2094,3,No,14,Excellent,4,1,24,4,Better,22,6,5,17
+39,33,No,Travel_Rarely,924,Research & Development,2,Bachelor,Medical,High,Male,78,High,1,Laboratory Technician,Very High,Single,2496,6670,4,No,11,Excellent,4,0,7,3,Better,1,1,0,0
+40,44,No,Travel_Rarely,1459,Research & Development,10,Master,Other,Very High,Male,41,High,2,Healthcare Representative,Very High,Married,6465,19121,2,Yes,13,Excellent,4,0,9,5,Best,4,2,1,3
+41,30,No,Travel_Rarely,125,Research & Development,9,College,Medical,Very High,Male,83,Medium,1,Laboratory Technician,High,Single,2206,16117,1,No,13,Excellent,1,0,10,5,Better,10,0,1,8
+45,24,Yes,Travel_Rarely,813,Research & Development,1,Bachelor,Medical,Medium,Male,61,High,1,Research Scientist,Very High,Married,2293,3020,2,Yes,16,Excellent,1,1,6,2,Good,2,0,2,0
+46,43,No,Travel_Rarely,1273,Research & Development,2,College,Medical,Very High,Female,72,Very High,1,Research Scientist,High,Divorced,2645,21923,1,No,12,Excellent,4,2,6,3,Good,5,3,1,4
+51,36,No,Travel_Rarely,852,Research & Development,5,Master,Life Sciences,Medium,Female,82,Medium,1,Research Scientist,Low,Married,3419,13072,9,Yes,14,Excellent,4,1,6,3,Best,1,1,0,0
+53,35,No,Travel_Rarely,464,Research & Development,4,College,Other,High,Male,75,High,1,Laboratory Technician,Very High,Divorced,1951,10910,1,No,12,Excellent,3,1,1,3,Better,1,0,0,0
+54,27,No,Travel_Rarely,1240,Research & Development,2,Master,Life Sciences,Very High,Female,33,High,1,Laboratory Technician,Low,Divorced,2341,19715,1,No,13,Excellent,4,1,1,6,Better,1,0,0,0
+55,26,Yes,Travel_Rarely,1357,Research & Development,25,Bachelor,Life Sciences,Low,Male,48,Low,1,Laboratory Technician,High,Single,2293,10558,1,No,12,Excellent,3,0,1,2,Good,1,0,0,1
+57,30,No,Travel_Frequently,721,Research & Development,1,College,Medical,High,Female,58,High,2,Laboratory Technician,Very High,Single,4011,10781,1,No,23,Outstanding,4,0,12,2,Better,12,8,3,7
+61,37,No,Travel_Rarely,408,Research & Development,19,College,Life Sciences,Medium,Male,73,High,1,Research Scientist,Medium,Married,3022,10227,4,No,21,Outstanding,1,0,8,1,Better,1,0,0,0
+63,35,No,Travel_Rarely,1229,Research & Development,8,Below College,Life Sciences,Very High,Male,36,Very High,1,Laboratory Technician,Very High,Married,2269,4892,1,No,19,Excellent,4,0,1,2,Better,1,0,0,1
+64,48,Yes,Travel_Rarely,626,Research & Development,1,College,Life Sciences,Low,Male,98,Medium,3,Laboratory Technician,High,Single,5381,19294,9,Yes,13,Excellent,4,0,23,2,Better,1,0,0,0
+65,28,Yes,Travel_Rarely,1434,Research & Development,5,Master,Technical Degree,High,Male,50,High,1,Laboratory Technician,High,Single,3441,11179,1,Yes,13,Excellent,3,0,2,3,Good,2,2,2,2
+70,35,No,Non-Travel,1097,Research & Development,11,College,Medical,High,Male,79,Medium,3,Healthcare Representative,Low,Married,9884,8302,2,Yes,13,Excellent,3,1,10,3,Better,4,0,2,3
+75,35,No,Travel_Rarely,1142,Research & Development,23,Master,Medical,High,Female,30,High,1,Laboratory Technician,Low,Married,4014,16002,3,Yes,15,Excellent,3,1,4,3,Better,2,2,2,2
+76,31,No,Travel_Rarely,655,Research & Development,7,Master,Life Sciences,Very High,Male,48,High,2,Laboratory Technician,Very High,Divorced,5915,9528,3,No,22,Outstanding,4,1,10,3,Good,7,7,1,7
+79,38,No,Travel_Frequently,653,Research & Development,29,Doctor,Life Sciences,Very High,Female,50,High,2,Laboratory Technician,Very High,Single,2406,5456,1,No,11,Excellent,4,0,10,2,Better,10,3,9,9
+83,36,No,Travel_Rarely,1223,Research & Development,8,Bachelor,Technical Degree,High,Female,59,High,3,Healthcare Representative,High,Divorced,10096,8202,1,No,13,Excellent,2,3,17,2,Better,17,14,12,8
+86,45,No,Travel_Rarely,1339,Research & Development,7,Bachelor,Life Sciences,Medium,Male,59,High,3,Research Scientist,Low,Divorced,9724,18787,2,No,17,Excellent,3,1,25,2,Better,1,0,0,0
+138,34,No,Travel_Rarely,665,Research & Development,6,Master,Other,Low,Female,41,High,2,Research Scientist,High,Single,4809,12482,1,No,14,Excellent,3,0,16,3,Better,16,13,2,10
+88,35,No,Travel_Frequently,664,Research & Development,1,Bachelor,Medical,Medium,Male,79,High,1,Research Scientist,Low,Married,2194,5868,4,No,13,Excellent,4,1,5,2,Good,3,2,1,2
+90,36,Yes,Travel_Rarely,318,Research & Development,9,Bachelor,Medical,Very High,Male,79,Medium,1,Research Scientist,High,Married,3388,21777,0,Yes,17,Excellent,1,1,2,0,Good,1,0,0,0
+94,29,No,Travel_Rarely,1328,Research & Development,2,Bachelor,Life Sciences,High,Male,76,High,1,Research Scientist,Medium,Married,2703,4956,0,No,23,Outstanding,4,1,6,3,Better,5,4,0,4
+95,31,No,Travel_Rarely,1082,Research & Development,1,Master,Medical,High,Male,87,High,1,Research Scientist,Medium,Single,2501,18775,1,No,17,Excellent,2,0,1,4,Better,1,1,1,0
+96,32,No,Travel_Rarely,548,Research & Development,1,Bachelor,Life Sciences,Medium,Male,66,High,2,Research Scientist,Medium,Married,6220,7346,1,No,17,Excellent,2,2,10,3,Better,10,4,0,9
+97,36,No,Travel_Rarely,132,Research & Development,6,Bachelor,Life Sciences,Medium,Female,55,Very High,1,Laboratory Technician,Very High,Married,3038,22002,3,No,12,Excellent,2,0,5,3,Better,1,0,0,0
+104,30,No,Travel_Rarely,852,Research & Development,1,Below College,Life Sciences,Very High,Male,55,Medium,2,Laboratory Technician,Very High,Married,5126,15998,1,Yes,12,Excellent,3,2,10,1,Good,10,8,3,0
+105,35,No,Travel_Rarely,1214,Research & Development,1,Bachelor,Medical,Medium,Male,30,Medium,1,Research Scientist,High,Single,2859,26278,1,No,18,Excellent,1,0,6,3,Better,6,4,0,4
+107,38,No,Non-Travel,573,Research & Development,6,Bachelor,Medical,Medium,Female,79,Low,2,Research Scientist,Very High,Divorced,5329,15717,7,Yes,12,Excellent,4,3,17,3,Better,13,11,1,9
+116,51,No,Travel_Rarely,432,Research & Development,9,Master,Life Sciences,Very High,Male,96,High,1,Laboratory Technician,Very High,Married,2075,18725,3,No,23,Outstanding,2,2,10,4,Better,4,2,0,3
+117,30,No,Travel_Rarely,288,Research & Development,2,Bachelor,Life Sciences,High,Male,99,Medium,2,Healthcare Representative,Very High,Married,4152,15830,1,No,19,Excellent,1,3,11,3,Better,11,10,10,8
+119,40,No,Travel_Frequently,530,Research & Development,1,Master,Life Sciences,High,Male,78,Medium,4,Healthcare Representative,Medium,Married,13503,14115,1,No,22,Outstanding,4,1,22,3,Good,22,3,11,11
+124,46,No,Travel_Frequently,638,Research & Development,1,Bachelor,Medical,High,Male,40,Medium,3,Healthcare Representative,Low,Married,10673,3142,2,Yes,13,Excellent,3,1,21,5,Good,10,9,9,5
+132,44,No,Non-Travel,489,Research & Development,23,Bachelor,Medical,Medium,Male,67,High,2,Laboratory Technician,Medium,Married,2042,25043,4,No,12,Excellent,3,1,17,3,Best,3,2,1,2
+134,32,No,Travel_Rarely,827,Research & Development,1,Below College,Life Sciences,Very High,Male,71,High,1,Research Scientist,Low,Single,2956,15178,1,No,13,Excellent,4,0,1,2,Better,1,0,0,0
+137,20,Yes,Travel_Frequently,871,Research & Development,6,Bachelor,Life Sciences,Very High,Female,66,Medium,1,Laboratory Technician,Very High,Single,2926,19783,1,Yes,18,Excellent,2,0,1,5,Better,1,0,1,0
+139,37,No,Non-Travel,1040,Research & Development,2,College,Life Sciences,High,Male,100,Medium,2,Healthcare Representative,Very High,Divorced,5163,15850,5,No,14,Excellent,4,1,17,2,Best,1,0,0,0
+143,25,No,Travel_Rarely,1280,Research & Development,7,Below College,Medical,Very High,Male,64,Medium,1,Research Scientist,Very High,Married,2889,26897,1,No,11,Excellent,3,2,2,2,Better,2,2,2,1
+144,22,No,Travel_Rarely,534,Research & Development,15,Bachelor,Medical,Medium,Female,59,High,1,Laboratory Technician,Very High,Single,2871,23785,1,No,15,Excellent,3,0,1,5,Better,0,0,0,0
+145,51,No,Travel_Frequently,1456,Research & Development,1,Master,Medical,Low,Female,30,Medium,3,Healthcare Representative,Low,Single,7484,25796,3,No,20,Outstanding,3,0,23,1,Good,13,12,12,8
+147,34,Yes,Travel_Frequently,658,Research & Development,7,Bachelor,Life Sciences,Low,Male,66,Low,2,Laboratory Technician,High,Single,6074,22887,1,Yes,24,Outstanding,4,0,9,3,Better,9,7,0,6
+150,24,No,Travel_Rarely,1127,Research & Development,18,Below College,Life Sciences,Medium,Male,52,High,1,Laboratory Technician,High,Married,2774,13257,0,No,12,Excellent,3,1,6,2,Better,5,3,1,2
+151,34,No,Travel_Rarely,1031,Research & Development,6,Master,Life Sciences,High,Female,45,Medium,2,Research Scientist,Medium,Divorced,4505,15000,6,No,15,Excellent,3,1,12,3,Better,1,0,0,0
+155,36,No,Travel_Rarely,922,Research & Development,3,College,Life Sciences,Low,Female,39,High,1,Laboratory Technician,Very High,Divorced,2835,2561,5,No,22,Outstanding,1,1,7,2,Better,1,0,0,0
+159,30,No,Travel_Frequently,1312,Research & Development,23,Bachelor,Life Sciences,Low,Male,96,Low,1,Research Scientist,High,Divorced,2613,22310,1,No,25,Outstanding,3,3,10,2,Good,10,7,0,9
+161,56,Yes,Travel_Rarely,441,Research & Development,14,Master,Life Sciences,Medium,Female,72,High,1,Research Scientist,Medium,Married,4963,4510,9,Yes,18,Excellent,1,3,7,2,Better,5,4,4,3
+164,26,No,Travel_Rarely,841,Research & Development,6,Bachelor,Other,High,Female,46,Medium,1,Research Scientist,Medium,Married,2368,23300,1,No,19,Excellent,3,0,5,3,Good,5,4,4,3
+165,58,Yes,Travel_Rarely,147,Research & Development,23,Master,Medical,Very High,Female,94,High,3,Healthcare Representative,Very High,Married,10312,3465,1,No,12,Excellent,4,1,40,3,Good,40,10,15,6
+169,22,No,Travel_Rarely,594,Research & Development,2,Below College,Technical Degree,High,Male,100,High,1,Laboratory Technician,Very High,Married,2523,19299,0,No,14,Excellent,3,1,3,2,Better,2,1,2,1
+171,43,No,Travel_Frequently,957,Research & Development,28,Bachelor,Medical,Medium,Female,72,Very High,1,Research Scientist,High,Single,4739,16090,4,No,12,Excellent,4,0,18,2,Better,3,2,1,2
+190,32,Yes,Travel_Rarely,1033,Research & Development,9,Bachelor,Medical,Low,Female,41,High,1,Laboratory Technician,Low,Single,4200,10224,7,No,22,Outstanding,1,0,10,2,Best,5,4,0,4
+192,45,No,Travel_Rarely,1316,Research & Development,29,Bachelor,Medical,High,Male,83,High,1,Research Scientist,Very High,Single,3452,9752,5,No,13,Excellent,2,0,9,2,Good,6,5,0,3
+193,38,No,Travel_Rarely,364,Research & Development,3,Doctor,Technical Degree,Very High,Female,32,High,2,Research Scientist,High,Single,4317,2302,3,Yes,20,Outstanding,2,0,19,2,Better,3,2,2,2
+194,30,No,Travel_Rarely,438,Research & Development,18,Bachelor,Life Sciences,Low,Female,75,High,1,Research Scientist,High,Single,2632,23910,1,No,14,Excellent,3,0,5,4,Good,5,4,0,4
+197,30,No,Travel_Rarely,201,Research & Development,5,Bachelor,Technical Degree,Very High,Female,84,High,1,Research Scientist,Low,Divorced,3204,10415,5,No,14,Excellent,4,1,8,3,Better,3,2,2,2
+198,30,No,Travel_Rarely,1427,Research & Development,2,Below College,Medical,Medium,Male,35,Medium,1,Laboratory Technician,Very High,Single,2720,11162,0,No,13,Excellent,4,0,6,3,Better,5,3,1,2
+200,41,No,Travel_Rarely,933,Research & Development,9,Master,Life Sciences,High,Male,94,High,1,Laboratory Technician,Low,Married,2238,6961,2,No,21,Outstanding,4,1,7,2,Better,5,0,1,4
+201,19,No,Travel_Rarely,1181,Research & Development,3,Below College,Medical,Medium,Female,79,High,1,Laboratory Technician,Medium,Single,1483,16102,1,No,14,Excellent,4,0,1,3,Better,1,0,0,0
+202,40,No,Travel_Frequently,1395,Research & Development,26,Bachelor,Medical,Medium,Female,54,High,2,Research Scientist,Medium,Divorced,5605,8504,1,No,11,Excellent,1,1,20,2,Better,20,7,2,13
+206,45,No,Travel_Rarely,194,Research & Development,9,Bachelor,Life Sciences,Medium,Male,60,High,2,Laboratory Technician,Medium,Divorced,2348,10901,8,No,18,Excellent,3,1,20,2,Bad,17,9,0,15
+214,58,No,Travel_Rarely,1145,Research & Development,9,Bachelor,Medical,Medium,Female,75,Medium,1,Research Scientist,Medium,Married,3346,11873,4,Yes,20,Outstanding,2,1,9,3,Good,1,0,0,0
+217,22,No,Travel_Rarely,1256,Research & Development,19,Below College,Medical,High,Male,80,High,1,Research Scientist,Very High,Married,2323,11992,1,No,24,Outstanding,1,2,2,6,Better,2,2,2,2
+218,27,No,Non-Travel,691,Research & Development,9,Bachelor,Medical,Very High,Male,57,High,1,Research Scientist,Medium,Divorced,2024,5970,6,No,18,Excellent,4,1,6,1,Bad,2,2,2,2
+221,28,No,Travel_Rarely,440,Research & Development,21,Bachelor,Medical,High,Male,42,High,1,Research Scientist,Very High,Married,2713,6672,1,No,11,Excellent,3,1,5,2,Bad,5,2,0,2
+223,57,No,Travel_Rarely,334,Research & Development,24,College,Life Sciences,High,Male,83,Very High,3,Healthcare Representative,Very High,Divorced,9439,23402,3,Yes,16,Excellent,2,1,12,2,Bad,5,3,1,4
+224,27,No,Non-Travel,1450,Research & Development,3,Bachelor,Medical,High,Male,79,Medium,1,Research Scientist,High,Divorced,2566,25326,1,Yes,15,Excellent,4,1,1,2,Good,1,1,0,1
+227,41,No,Travel_Rarely,465,Research & Development,14,Bachelor,Life Sciences,Low,Male,56,High,1,Research Scientist,High,Divorced,2451,4609,4,No,12,Excellent,1,1,13,2,Better,9,8,1,8
+231,32,No,Travel_Rarely,120,Research & Development,6,Doctor,Life Sciences,High,Male,43,High,1,Research Scientist,High,Single,3038,12430,3,No,20,Outstanding,1,0,8,2,Better,5,4,1,4
+233,27,No,Travel_Rarely,1157,Research & Development,17,Bachelor,Technical Degree,High,Male,51,High,1,Research Scientist,Medium,Married,3058,13364,0,Yes,16,Excellent,4,1,6,3,Good,5,2,1,1
+238,36,No,Travel_Frequently,1480,Research & Development,3,College,Medical,Very High,Male,30,High,1,Laboratory Technician,Medium,Single,2088,15062,4,No,12,Excellent,3,0,13,3,Good,8,7,7,2
+239,30,No,Non-Travel,111,Research & Development,9,Bachelor,Medical,High,Male,66,High,2,Laboratory Technician,Low,Divorced,3072,11012,1,No,11,Excellent,3,2,12,4,Better,12,9,6,10
+241,56,No,Travel_Rarely,713,Research & Development,8,Bachelor,Life Sciences,High,Female,67,High,1,Research Scientist,Low,Divorced,4257,13939,4,Yes,18,Excellent,3,1,19,3,Better,2,2,2,2
+242,33,No,Travel_Rarely,134,Research & Development,2,Bachelor,Life Sciences,High,Male,90,High,1,Research Scientist,Very High,Single,2500,10515,0,No,14,Excellent,1,0,4,2,Best,3,1,0,2
+243,19,Yes,Travel_Rarely,303,Research & Development,2,Bachelor,Life Sciences,Medium,Male,47,Medium,1,Laboratory Technician,Very High,Single,1102,9241,1,No,22,Outstanding,3,0,1,3,Good,1,0,1,0
+245,38,No,Travel_Rarely,1380,Research & Development,9,College,Life Sciences,High,Female,75,High,1,Laboratory Technician,Very High,Single,2288,6319,1,No,12,Excellent,3,0,2,3,Better,2,2,2,1
+246,31,No,Travel_Rarely,140,Research & Development,12,Below College,Medical,High,Female,95,High,1,Research Scientist,Very High,Married,3929,6984,8,Yes,23,Outstanding,3,1,7,0,Better,4,2,0,2
+247,34,No,Travel_Rarely,629,Research & Development,27,College,Medical,Very High,Female,95,High,1,Research Scientist,Medium,Single,2311,5711,2,No,15,Excellent,4,0,9,3,Better,3,2,1,2
+249,50,No,Travel_Rarely,328,Research & Development,1,Bachelor,Medical,High,Male,86,Medium,1,Laboratory Technician,High,Married,3690,3425,2,No,15,Excellent,4,1,5,2,Good,3,2,0,2
+252,33,No,Travel_Rarely,931,Research & Development,14,Bachelor,Medical,Very High,Female,72,High,1,Research Scientist,Medium,Married,2756,4673,1,No,13,Excellent,4,1,8,5,Better,8,7,1,6
+258,51,No,Travel_Rarely,313,Research & Development,3,Bachelor,Medical,Very High,Female,98,High,4,Healthcare Representative,Medium,Single,13734,7192,3,No,18,Excellent,3,0,21,6,Better,7,7,1,0
+260,27,No,Travel_Rarely,894,Research & Development,9,Bachelor,Medical,Very High,Female,99,High,1,Research Scientist,Medium,Single,2279,11781,1,No,16,Excellent,4,0,7,2,Good,7,7,0,3
+262,43,No,Non-Travel,1344,Research & Development,7,Bachelor,Medical,Very High,Male,37,Very High,1,Research Scientist,Very High,Divorced,2089,5228,4,No,14,Excellent,4,3,7,3,Best,5,4,2,2
+267,37,No,Travel_Rarely,290,Research & Development,21,Bachelor,Life Sciences,Medium,Male,65,Very High,1,Research Scientist,Low,Married,3564,22977,1,Yes,12,Excellent,1,1,8,3,Good,8,7,1,7
+269,35,No,Travel_Frequently,138,Research & Development,2,Bachelor,Medical,Medium,Female,37,High,2,Laboratory Technician,Medium,Single,4425,15986,5,No,11,Excellent,4,0,10,5,Better,6,2,1,2
+277,34,No,Travel_Frequently,878,Research & Development,10,Master,Medical,Very High,Male,43,High,1,Research Scientist,High,Divorced,3815,5972,1,Yes,17,Excellent,4,1,5,4,Best,5,3,2,0
+281,40,No,Travel_Rarely,905,Research & Development,19,College,Medical,High,Male,99,High,2,Laboratory Technician,Very High,Married,2741,16523,8,Yes,15,Excellent,3,1,15,2,Best,7,2,3,7
+282,38,Yes,Travel_Rarely,1180,Research & Development,29,Below College,Medical,Medium,Male,70,High,2,Healthcare Representative,Low,Married,6673,11354,7,Yes,19,Excellent,2,0,17,2,Better,1,0,0,0
+284,22,No,Travel_Rarely,1136,Research & Development,5,Bachelor,Life Sciences,Very High,Male,60,Very High,1,Research Scientist,Medium,Divorced,2328,12392,1,Yes,16,Excellent,1,1,4,2,Good,4,2,2,2
+286,36,No,Travel_Frequently,635,Research & Development,18,Below College,Medical,Medium,Female,73,High,1,Laboratory Technician,Very High,Single,2153,7703,1,No,13,Excellent,1,0,8,2,Better,8,1,1,7
+287,40,No,Non-Travel,1151,Research & Development,9,Doctor,Life Sciences,Very High,Male,63,Medium,2,Healthcare Representative,Very High,Married,4876,14242,9,No,14,Excellent,4,1,5,5,Bad,3,2,0,2
+288,46,No,Travel_Rarely,644,Research & Development,1,Master,Medical,Very High,Male,97,High,3,Healthcare Representative,Low,Divorced,9396,12368,7,No,16,Excellent,3,1,17,3,Better,4,2,0,3
+297,30,Yes,Travel_Rarely,1005,Research & Development,3,Bachelor,Technical Degree,Very High,Female,88,High,1,Research Scientist,Low,Single,2657,8556,5,Yes,11,Excellent,3,0,8,5,Better,5,2,0,4
+300,29,Yes,Travel_Rarely,992,Research & Development,1,Bachelor,Technical Degree,High,Male,85,High,1,Research Scientist,High,Single,2058,19757,0,No,14,Excellent,4,0,7,1,Good,6,2,1,5
+304,36,No,Travel_Rarely,1396,Research & Development,5,College,Life Sciences,Very High,Male,62,High,2,Laboratory Technician,Medium,Single,5914,9945,8,No,16,Excellent,4,0,16,3,Best,13,11,3,7
+305,33,No,Travel_Rarely,147,Research & Development,4,Master,Medical,High,Female,47,Medium,1,Research Scientist,Medium,Married,2622,13248,6,No,21,Outstanding,4,0,7,3,Better,3,2,1,1
+309,59,No,Travel_Rarely,142,Research & Development,3,Bachelor,Life Sciences,High,Male,70,Medium,1,Research Scientist,Very High,Married,2177,8456,3,No,17,Excellent,1,1,7,6,Better,1,0,0,0
+315,29,Yes,Travel_Rarely,896,Research & Development,18,Below College,Medical,High,Male,86,Medium,1,Research Scientist,Very High,Single,2389,14961,1,Yes,13,Excellent,3,0,4,3,Good,4,3,0,1
+316,52,No,Travel_Rarely,1323,Research & Development,2,Bachelor,Life Sciences,High,Female,89,Medium,1,Laboratory Technician,Very High,Single,3212,3300,7,No,15,Excellent,2,0,6,3,Good,2,2,2,2
+325,33,Yes,Travel_Rarely,813,Research & Development,14,Bachelor,Medical,High,Male,58,High,1,Laboratory Technician,Very High,Married,2436,22149,5,Yes,13,Excellent,3,1,8,2,Bad,5,4,0,4
+328,33,Yes,Travel_Rarely,465,Research & Development,2,College,Life Sciences,Low,Female,39,High,1,Laboratory Technician,Low,Married,2707,21509,7,No,20,Outstanding,1,0,13,3,Best,9,7,1,7
+331,32,Yes,Travel_Rarely,515,Research & Development,1,Bachelor,Life Sciences,Very High,Male,62,Medium,1,Laboratory Technician,High,Single,3730,9571,0,Yes,14,Excellent,4,0,4,2,Bad,3,2,1,2
+332,39,No,Travel_Rarely,1431,Research & Development,1,Master,Medical,High,Female,96,High,1,Laboratory Technician,High,Divorced,2232,15417,7,No,14,Excellent,3,3,7,1,Better,3,2,1,2
+334,41,No,Travel_Rarely,1411,Research & Development,19,College,Life Sciences,High,Male,36,High,2,Research Scientist,Low,Divorced,3072,19877,2,No,16,Excellent,1,2,17,2,Good,1,0,0,0
+335,40,No,Travel_Rarely,1300,Research & Development,24,College,Technical Degree,Low,Male,62,High,2,Research Scientist,Very High,Divorced,3319,24447,1,No,17,Excellent,1,2,9,3,Better,9,8,4,7
+338,33,No,Travel_Rarely,832,Research & Development,5,Master,Life Sciences,High,Female,63,Medium,1,Research Scientist,Very High,Married,2911,14776,1,No,13,Excellent,3,1,2,2,Good,2,2,0,2
+340,37,No,Travel_Rarely,1017,Research & Development,1,College,Medical,High,Female,83,Medium,1,Research Scientist,Low,Married,3920,18697,2,No,14,Excellent,1,1,17,2,Good,3,1,0,2
+343,39,No,Travel_Frequently,505,Research & Development,2,Master,Technical Degree,High,Female,64,High,3,Healthcare Representative,High,Single,10938,6420,0,No,25,Outstanding,4,0,20,1,Better,19,6,11,8
+346,29,No,Travel_Rarely,665,Research & Development,15,Bachelor,Life Sciences,High,Male,60,High,1,Research Scientist,Very High,Single,2340,22673,1,No,19,Excellent,1,0,6,1,Better,6,5,1,5
+347,42,No,Travel_Rarely,916,Research & Development,17,College,Life Sciences,Very High,Female,82,Very High,2,Research Scientist,Low,Single,6545,23016,3,Yes,13,Excellent,3,0,10,1,Better,3,2,0,2
+351,42,No,Travel_Rarely,269,Research & Development,2,Bachelor,Medical,Very High,Female,56,Medium,1,Laboratory Technician,Low,Divorced,2593,8007,0,Yes,11,Excellent,3,1,10,4,Better,9,6,7,8
+353,51,No,Travel_Rarely,833,Research & Development,1,Bachelor,Life Sciences,High,Male,96,High,1,Research Scientist,Very High,Married,2723,23231,1,No,11,Excellent,2,0,1,0,Good,1,0,0,0
+355,31,Yes,Travel_Frequently,307,Research & Development,29,College,Medical,High,Male,71,Medium,1,Laboratory Technician,Medium,Single,3479,11652,0,No,11,Excellent,2,0,6,2,Best,5,4,1,4
+359,32,No,Travel_Frequently,1311,Research & Development,7,Bachelor,Life Sciences,Medium,Male,100,Very High,1,Laboratory Technician,Medium,Married,2794,26062,1,No,20,Outstanding,3,0,5,3,Bad,5,1,0,3
+362,32,No,Travel_Rarely,128,Research & Development,2,Below College,Technical Degree,Very High,Male,84,Medium,2,Laboratory Technician,Low,Single,2176,19737,4,No,13,Excellent,4,0,9,5,Better,6,2,0,4
+364,28,Yes,Travel_Rarely,529,Research & Development,2,Master,Life Sciences,Low,Male,79,High,1,Laboratory Technician,High,Single,3485,14935,2,No,11,Excellent,3,0,5,5,Bad,0,0,0,0
+367,31,No,Travel_Rarely,1463,Research & Development,23,Bachelor,Medical,Medium,Male,64,Medium,2,Healthcare Representative,Very High,Married,5582,14408,0,No,21,Outstanding,2,1,10,2,Better,9,0,7,8
+369,25,No,Non-Travel,675,Research & Development,5,College,Life Sciences,Medium,Male,85,Very High,2,Healthcare Representative,Low,Divorced,4000,18384,1,No,12,Excellent,4,2,6,2,Better,6,3,1,5
+372,45,No,Travel_Rarely,1385,Research & Development,20,College,Medical,High,Male,79,High,4,Healthcare Representative,Very High,Married,13496,7501,0,Yes,14,Excellent,2,0,21,2,Better,20,7,4,10
+373,36,No,Travel_Rarely,1403,Research & Development,6,Bachelor,Life Sciences,Very High,Male,47,High,1,Laboratory Technician,Very High,Married,3210,20251,0,No,11,Excellent,3,1,16,4,Better,15,13,10,11
+377,28,No,Travel_Rarely,1158,Research & Development,9,Bachelor,Medical,Very High,Male,94,High,1,Research Scientist,Very High,Married,2070,2613,1,No,23,Outstanding,4,1,5,3,Good,5,2,0,4
+379,21,No,Travel_Rarely,996,Research & Development,3,College,Medical,Very High,Male,100,Medium,1,Research Scientist,High,Single,3230,10531,1,No,17,Excellent,1,0,3,4,Best,3,2,1,0
+389,55,No,Travel_Rarely,147,Research & Development,20,College,Technical Degree,Medium,Male,37,High,2,Laboratory Technician,Very High,Married,5415,15972,3,Yes,19,Excellent,4,1,12,4,Better,10,7,0,8
+390,26,No,Travel_Frequently,496,Research & Development,11,College,Medical,Low,Male,60,High,2,Healthcare Representative,Low,Married,4741,22722,1,Yes,13,Excellent,3,1,5,3,Better,5,3,3,3
+391,37,No,Travel_Rarely,1372,Research & Development,1,Bachelor,Life Sciences,Very High,Female,42,High,1,Research Scientist,Very High,Single,2115,15881,1,No,12,Excellent,2,0,17,3,Better,17,12,5,7
+392,44,Yes,Travel_Frequently,920,Research & Development,24,Bachelor,Life Sciences,Very High,Male,43,High,1,Laboratory Technician,High,Divorced,3161,19920,3,Yes,22,Outstanding,4,1,19,0,Bad,1,0,0,0
+393,38,No,Travel_Rarely,688,Research & Development,23,Master,Life Sciences,Very High,Male,82,High,2,Healthcare Representative,Very High,Divorced,5745,18899,9,No,14,Excellent,2,1,10,2,Better,2,2,1,2
+394,26,Yes,Travel_Rarely,1449,Research & Development,16,Master,Medical,Low,Male,45,High,1,Laboratory Technician,Medium,Divorced,2373,14180,2,Yes,13,Excellent,4,1,5,2,Better,3,2,0,2
+395,28,No,Travel_Rarely,1117,Research & Development,8,College,Life Sciences,Very High,Female,66,High,1,Research Scientist,Very High,Single,3310,4488,1,No,21,Outstanding,4,0,5,3,Better,5,3,0,2
+397,36,No,Travel_Rarely,506,Research & Development,3,Bachelor,Technical Degree,High,Male,30,High,2,Research Scientist,Medium,Single,4485,26285,4,No,12,Excellent,4,0,10,2,Better,8,0,7,7
+403,37,No,Travel_Frequently,889,Research & Development,9,Bachelor,Medical,Medium,Male,53,High,1,Research Scientist,Very High,Married,2326,11411,1,Yes,12,Excellent,3,3,4,3,Good,4,2,1,2
+405,18,Yes,Travel_Rarely,230,Research & Development,3,Bachelor,Life Sciences,High,Male,54,High,1,Laboratory Technician,High,Single,1420,25233,1,No,13,Excellent,3,0,0,2,Better,0,0,0,0
+407,36,No,Travel_Frequently,566,Research & Development,18,Master,Life Sciences,High,Male,81,Very High,1,Laboratory Technician,Very High,Married,3688,7122,4,No,18,Excellent,4,2,4,2,Better,1,0,0,0
+412,28,No,Travel_Rarely,1476,Research & Development,16,College,Medical,Medium,Male,68,Very High,2,Healthcare Representative,Low,Single,5661,4824,0,No,19,Excellent,3,0,9,2,Better,8,3,0,7
+417,39,No,Travel_Rarely,1132,Research & Development,1,Bachelor,Medical,High,Male,48,Very High,3,Healthcare Representative,Very High,Divorced,9613,10942,0,No,17,Excellent,1,3,19,5,Good,18,10,3,7
+419,36,No,Non-Travel,1105,Research & Development,24,Master,Life Sciences,Medium,Female,47,High,2,Laboratory Technician,Medium,Married,5674,6927,7,No,15,Excellent,3,1,11,3,Better,9,8,0,8
+422,58,No,Non-Travel,390,Research & Development,1,Master,Life Sciences,Very High,Male,32,Low,2,Healthcare Representative,High,Divorced,5660,17056,2,Yes,13,Excellent,4,1,12,2,Better,5,3,1,2
+423,31,No,Travel_Rarely,691,Research & Development,5,Master,Technical Degree,High,Male,86,High,1,Research Scientist,Very High,Married,4821,10077,0,Yes,12,Excellent,3,1,6,4,Better,5,2,0,3
+425,45,No,Travel_Frequently,1249,Research & Development,7,Bachelor,Life Sciences,Low,Male,97,High,3,Laboratory Technician,Low,Divorced,5210,20308,1,No,18,Excellent,1,1,24,2,Better,24,9,9,11
+426,31,No,Travel_Rarely,192,Research & Development,2,Master,Life Sciences,High,Male,32,High,1,Research Scientist,Very High,Divorced,2695,7747,0,Yes,18,Excellent,2,1,3,2,Bad,2,2,2,2
+430,43,No,Travel_Frequently,185,Research & Development,10,Master,Life Sciences,High,Female,33,High,1,Laboratory Technician,Very High,Single,2455,10675,0,No,19,Excellent,1,0,9,5,Better,8,7,1,7
+431,49,No,Travel_Rarely,1091,Research & Development,1,College,Technical Degree,High,Female,90,Medium,4,Healthcare Representative,High,Single,13964,17810,7,Yes,12,Excellent,4,0,25,2,Better,7,1,0,7
+433,52,Yes,Travel_Rarely,723,Research & Development,8,Master,Medical,High,Male,85,Medium,2,Research Scientist,Medium,Married,4941,17747,2,No,15,Excellent,1,0,11,3,Good,8,2,7,7
+434,27,No,Travel_Rarely,1220,Research & Development,5,Bachelor,Life Sciences,High,Female,85,High,1,Research Scientist,Medium,Single,2478,20938,1,Yes,12,Excellent,2,0,4,2,Good,4,3,1,2
+439,32,No,Travel_Rarely,1018,Research & Development,2,Master,Medical,Low,Female,74,Very High,2,Research Scientist,Very High,Single,5055,10557,7,No,16,Excellent,3,0,10,0,Good,7,7,0,7
+440,28,Yes,Travel_Rarely,1157,Research & Development,2,Master,Medical,Low,Male,84,Low,1,Research Scientist,Very High,Married,3464,24737,5,Yes,13,Excellent,4,0,5,4,Good,3,2,2,2
+441,30,No,Travel_Rarely,1275,Research & Development,28,College,Medical,Very High,Female,64,High,2,Research Scientist,Very High,Married,5775,11934,1,No,13,Excellent,4,2,11,2,Better,10,8,1,9
+448,43,No,Travel_Frequently,559,Research & Development,10,Master,Life Sciences,High,Female,82,Medium,2,Laboratory Technician,High,Divorced,5257,6227,1,No,11,Excellent,2,1,9,3,Best,9,7,0,0
+450,54,No,Travel_Frequently,928,Research & Development,20,Master,Life Sciences,Very High,Female,31,High,2,Research Scientist,High,Single,4869,16885,3,No,12,Excellent,4,0,20,4,Good,4,3,0,3
+451,43,No,Travel_Rarely,1001,Research & Development,7,Bachelor,Life Sciences,High,Female,43,High,3,Healthcare Representative,Low,Married,9985,9262,8,No,16,Excellent,1,1,10,1,Good,1,0,0,0
+452,45,No,Travel_Rarely,549,Research & Development,8,Master,Other,Very High,Male,75,High,2,Research Scientist,Very High,Married,3697,9278,9,No,14,Excellent,1,2,12,3,Better,10,9,9,8
+454,29,Yes,Travel_Rarely,318,Research & Development,8,Master,Other,Medium,Male,77,Low,1,Laboratory Technician,Low,Married,2119,4759,1,Yes,11,Excellent,4,0,7,4,Good,7,7,0,7
+455,29,No,Travel_Rarely,738,Research & Development,9,Doctor,Other,Medium,Male,30,Medium,1,Laboratory Technician,Very High,Single,3983,7621,0,No,17,Excellent,3,0,4,2,Better,3,2,2,2
+465,23,No,Travel_Rarely,1309,Research & Development,26,Below College,Life Sciences,High,Male,83,High,1,Research Scientist,Very High,Divorced,2904,16092,1,No,12,Excellent,3,2,4,2,Good,4,2,0,2
+471,32,No,Travel_Rarely,1062,Research & Development,2,Bachelor,Medical,High,Female,75,High,1,Laboratory Technician,Medium,Married,2370,3956,1,No,13,Excellent,3,1,8,4,Better,8,0,0,7
+474,37,No,Travel_Rarely,1319,Research & Development,6,Bachelor,Medical,High,Male,51,Very High,2,Research Scientist,Low,Divorced,5974,17001,4,Yes,13,Excellent,1,2,13,2,Better,7,7,6,7
+477,42,No,Travel_Rarely,1332,Research & Development,2,Master,Other,Low,Male,98,Medium,2,Healthcare Representative,Very High,Single,6781,17078,3,No,23,Outstanding,2,0,14,6,Better,1,0,0,0
+482,57,No,Travel_Rarely,593,Research & Development,1,Master,Medical,Very High,Male,88,High,2,Healthcare Representative,High,Married,6755,2967,2,No,11,Excellent,3,0,15,2,Better,3,2,1,2
+483,40,No,Travel_Rarely,1171,Research & Development,10,Master,Life Sciences,Very High,Female,46,Very High,1,Laboratory Technician,High,Married,2213,22495,3,Yes,13,Excellent,3,1,10,3,Better,7,7,1,7
+486,37,No,Travel_Rarely,921,Research & Development,10,Bachelor,Medical,High,Female,98,High,1,Laboratory Technician,Low,Married,3452,17663,6,No,20,Outstanding,2,1,17,3,Better,5,4,0,3
+491,50,No,Travel_Rarely,1046,Research & Development,10,Bachelor,Technical Degree,Very High,Male,100,Medium,3,Healthcare Representative,Very High,Single,10496,2755,6,No,15,Excellent,4,0,20,2,Better,4,3,1,3
+493,31,No,Travel_Rarely,408,Research & Development,9,Master,Life Sciences,High,Male,42,Medium,1,Research Scientist,Medium,Single,2657,7551,0,Yes,16,Excellent,4,0,3,5,Better,2,2,2,2
+495,29,No,Travel_Rarely,1283,Research & Development,23,Bachelor,Life Sciences,Very High,Male,54,High,1,Research Scientist,Very High,Single,2201,18168,9,No,16,Excellent,4,0,6,4,Better,3,2,1,2
+496,35,No,Travel_Rarely,755,Research & Development,9,Master,Life Sciences,High,Male,97,Medium,2,Healthcare Representative,Medium,Single,6540,19394,9,No,19,Excellent,3,0,10,5,Better,1,1,0,0
+497,27,No,Travel_Rarely,1469,Research & Development,1,College,Medical,Very High,Male,82,High,1,Laboratory Technician,Medium,Divorced,3816,17881,1,No,11,Excellent,2,1,5,2,Better,5,2,0,4
+499,49,No,Travel_Rarely,1261,Research & Development,7,Bachelor,Other,Medium,Male,31,Medium,3,Healthcare Representative,High,Single,10965,12066,8,No,24,Outstanding,3,0,26,2,Better,5,2,0,0
+501,36,No,Travel_Rarely,329,Research & Development,2,Bachelor,Life Sciences,Very High,Female,96,High,1,Research Scientist,High,Married,2543,11868,4,No,13,Excellent,2,1,6,3,Better,2,2,2,2
+510,26,Yes,Travel_Frequently,575,Research & Development,3,Below College,Technical Degree,High,Male,73,High,1,Research Scientist,Low,Single,3102,6582,0,No,22,Outstanding,3,0,7,2,Better,6,4,0,4
+511,22,No,Travel_Rarely,253,Research & Development,11,Bachelor,Medical,Low,Female,43,High,1,Research Scientist,Medium,Married,2244,24440,1,No,13,Excellent,4,1,2,1,Better,2,1,1,2
+514,30,Yes,Travel_Frequently,464,Research & Development,4,Bachelor,Technical Degree,High,Male,40,High,1,Research Scientist,Very High,Single,2285,3427,9,Yes,23,Outstanding,3,0,3,4,Better,1,0,0,0
+515,37,No,Travel_Rarely,1107,Research & Development,14,Bachelor,Life Sciences,Very High,Female,95,High,1,Laboratory Technician,Low,Divorced,3034,26914,1,No,12,Excellent,3,1,18,2,Good,18,7,12,17
+517,42,No,Travel_Rarely,201,Research & Development,1,Master,Life Sciences,Medium,Female,95,High,1,Laboratory Technician,Low,Divorced,2576,20490,3,No,16,Excellent,2,1,8,5,Better,5,2,1,2
+521,40,No,Travel_Rarely,555,Research & Development,2,Bachelor,Medical,Medium,Female,78,Medium,2,Laboratory Technician,High,Married,3448,13436,6,No,22,Outstanding,2,1,20,3,Better,1,0,0,0
+525,43,No,Travel_Frequently,313,Research & Development,21,Bachelor,Medical,Very High,Male,61,High,1,Laboratory Technician,Very High,Married,2258,15238,7,No,20,Outstanding,1,1,8,1,Better,3,2,1,2
+526,43,No,Travel_Rarely,1473,Research & Development,8,Master,Other,High,Female,74,High,2,Healthcare Representative,High,Divorced,4522,2227,4,Yes,14,Excellent,4,0,8,3,Better,5,2,0,2
+529,37,No,Non-Travel,1063,Research & Development,25,Doctor,Medical,Medium,Female,72,High,2,Research Scientist,High,Married,4449,23866,3,Yes,15,Excellent,1,2,15,2,Better,13,11,10,7
+530,31,No,Travel_Rarely,329,Research & Development,1,College,Life Sciences,Very High,Male,98,Medium,1,Laboratory Technician,Low,Married,2218,16193,1,No,12,Excellent,3,1,4,3,Better,4,2,3,2
+536,28,No,Travel_Rarely,1300,Research & Development,17,College,Medical,High,Male,79,High,2,Laboratory Technician,Low,Divorced,4558,13535,1,No,12,Excellent,4,1,10,2,Better,10,0,1,8
+538,25,Yes,Travel_Rarely,688,Research & Development,3,Bachelor,Medical,Low,Male,91,High,1,Laboratory Technician,Low,Married,4031,9396,5,No,13,Excellent,3,1,6,5,Better,2,2,0,2
+544,45,No,Travel_Rarely,192,Research & Development,10,College,Life Sciences,Low,Male,69,High,1,Research Scientist,Very High,Married,2654,9655,3,No,21,Outstanding,4,2,8,3,Good,2,2,0,2
+547,42,No,Travel_Frequently,532,Research & Development,29,College,Life Sciences,Low,Female,92,High,2,Research Scientist,High,Divorced,4556,12932,2,No,11,Excellent,2,1,19,3,Better,5,4,0,2
+551,42,No,Travel_Frequently,1368,Research & Development,28,Master,Technical Degree,Very High,Female,88,Medium,2,Healthcare Representative,Very High,Married,4523,4386,0,No,11,Excellent,4,3,7,4,Best,6,5,0,4
+556,38,No,Travel_Frequently,1490,Research & Development,2,College,Life Sciences,Very High,Male,42,High,1,Laboratory Technician,Very High,Married,1702,12106,1,Yes,23,Outstanding,3,1,1,3,Better,1,0,0,0
+560,26,No,Travel_Rarely,1349,Research & Development,23,Bachelor,Life Sciences,Low,Female,90,High,1,Research Scientist,Very High,Divorced,2886,3032,1,No,22,Outstanding,2,2,3,3,Bad,3,2,0,2
+562,30,No,Non-Travel,1400,Research & Development,3,Bachelor,Life Sciences,High,Male,53,High,1,Laboratory Technician,Very High,Married,2097,16734,4,No,15,Excellent,3,1,9,3,Bad,5,3,1,4
+565,29,Yes,Travel_Rarely,408,Research & Development,25,Doctor,Technical Degree,High,Female,71,Medium,1,Research Scientist,Medium,Married,2546,18300,5,No,16,Excellent,2,0,6,2,Best,2,2,1,1
+571,30,No,Non-Travel,1116,Research & Development,2,Bachelor,Medical,High,Female,49,High,1,Laboratory Technician,Very High,Single,2564,7181,0,No,14,Excellent,3,0,12,2,Good,11,7,6,7
+577,35,No,Travel_Rarely,144,Research & Development,22,Bachelor,Life Sciences,Very High,Male,46,Low,1,Laboratory Technician,High,Single,4230,19225,0,No,15,Excellent,3,0,6,2,Better,5,4,4,3
+578,54,No,Travel_Rarely,548,Research & Development,8,Master,Life Sciences,High,Female,42,High,2,Laboratory Technician,High,Single,3780,23428,7,No,11,Excellent,3,0,19,3,Better,1,0,0,0
+579,34,No,Travel_Rarely,1303,Research & Development,2,Master,Life Sciences,Very High,Male,62,Medium,1,Research Scientist,High,Divorced,2768,8416,3,No,12,Excellent,3,1,14,3,Better,7,3,5,7
+584,33,Yes,Travel_Rarely,587,Research & Development,10,Below College,Medical,Low,Male,38,Low,1,Laboratory Technician,Very High,Divorced,3408,6705,7,No,13,Excellent,1,3,8,2,Better,4,3,1,3
+586,35,No,Travel_Rarely,1276,Research & Development,16,Bachelor,Life Sciences,Very High,Male,72,High,3,Healthcare Representative,High,Married,7632,14295,4,Yes,12,Excellent,3,0,10,2,Better,8,7,0,0
+587,31,Yes,Travel_Frequently,534,Research & Development,20,Bachelor,Life Sciences,Low,Male,66,High,3,Healthcare Representative,High,Married,9824,22908,3,No,12,Excellent,1,0,12,2,Better,1,0,0,0
+591,42,No,Travel_Frequently,1474,Research & Development,5,College,Other,Medium,Male,97,High,1,Laboratory Technician,High,Married,2093,9260,4,No,17,Excellent,4,1,8,4,Better,2,2,2,0
+593,22,Yes,Travel_Frequently,1368,Research & Development,4,Below College,Technical Degree,High,Male,99,Medium,1,Laboratory Technician,High,Single,3894,9129,5,No,16,Excellent,3,0,4,3,Better,2,2,1,2
+602,39,No,Travel_Frequently,443,Research & Development,8,Below College,Life Sciences,High,Female,48,High,1,Laboratory Technician,High,Married,3755,17872,1,No,11,Excellent,1,1,8,3,Better,8,3,0,7
+616,41,No,Non-Travel,509,Research & Development,2,Master,Other,Low,Female,62,Medium,2,Healthcare Representative,High,Single,6811,2112,2,Yes,17,Excellent,1,0,10,3,Better,8,7,0,7
+622,26,Yes,Travel_Rarely,471,Research & Development,24,Bachelor,Technical Degree,High,Male,66,Low,1,Laboratory Technician,Very High,Single,2340,23213,1,Yes,18,Excellent,2,0,1,3,Bad,1,0,0,0
+624,46,No,Travel_Frequently,1034,Research & Development,18,Below College,Medical,Low,Female,86,High,3,Healthcare Representative,High,Married,10527,8984,5,No,11,Excellent,4,0,28,3,Good,2,2,1,2
+630,52,No,Travel_Rarely,956,Research & Development,6,College,Technical Degree,Very High,Male,78,High,2,Research Scientist,Low,Divorced,5577,22087,3,Yes,12,Excellent,2,2,18,3,Better,10,9,6,9
+634,38,No,Travel_Rarely,1495,Research & Development,10,Bachelor,Medical,High,Female,76,High,2,Healthcare Representative,High,Married,9824,22174,3,No,19,Excellent,3,1,18,4,Better,1,0,0,0
+639,24,No,Travel_Rarely,691,Research & Development,23,Bachelor,Medical,Medium,Male,89,Very High,1,Research Scientist,Very High,Married,2725,21630,1,Yes,11,Excellent,2,2,6,3,Better,6,5,1,4
+643,24,No,Travel_Rarely,823,Research & Development,17,College,Other,Very High,Male,94,Medium,1,Laboratory Technician,Medium,Married,2127,9100,1,No,21,Outstanding,4,1,1,2,Better,1,0,0,0
+647,24,Yes,Travel_Frequently,1287,Research & Development,7,Bachelor,Life Sciences,Low,Female,55,High,1,Laboratory Technician,High,Married,2886,14168,1,Yes,16,Excellent,4,1,6,4,Better,6,3,1,2
+649,34,No,Travel_Rarely,254,Research & Development,1,College,Life Sciences,Medium,Male,83,Medium,1,Research Scientist,Very High,Married,3622,22794,1,Yes,13,Excellent,4,1,6,3,Better,6,5,1,3
+652,35,No,Travel_Rarely,538,Research & Development,25,College,Other,Low,Male,54,Medium,2,Laboratory Technician,Very High,Single,3681,14004,4,No,14,Excellent,4,0,9,3,Better,3,2,0,2
+655,27,No,Travel_Rarely,798,Research & Development,6,Master,Medical,Low,Female,66,Medium,1,Research Scientist,High,Divorced,2187,5013,0,No,12,Excellent,3,2,6,5,Good,5,3,0,3
+657,20,No,Travel_Rarely,959,Research & Development,1,Bachelor,Life Sciences,Very High,Female,83,Medium,1,Research Scientist,Medium,Single,2836,11757,1,No,13,Excellent,4,0,1,0,Best,1,0,0,0
+659,42,No,Travel_Rarely,622,Research & Development,2,Master,Life Sciences,High,Female,81,High,2,Healthcare Representative,Very High,Married,4089,5718,1,No,13,Excellent,2,2,10,4,Better,10,2,2,2
+662,38,No,Travel_Rarely,362,Research & Development,1,Below College,Life Sciences,High,Female,43,High,1,Research Scientist,Low,Single,2619,14561,3,No,17,Excellent,4,0,8,3,Good,0,0,0,0
+663,43,No,Travel_Frequently,1001,Research & Development,9,Doctor,Medical,Very High,Male,72,High,2,Laboratory Technician,High,Divorced,5679,19627,3,Yes,13,Excellent,2,1,10,3,Better,8,7,4,7
+675,22,No,Travel_Rarely,604,Research & Development,6,Below College,Medical,Low,Male,69,High,1,Research Scientist,High,Married,2773,12145,0,No,20,Outstanding,4,0,3,3,Better,2,2,2,2
+679,32,No,Travel_Rarely,646,Research & Development,9,Master,Life Sciences,Low,Female,92,High,2,Research Scientist,Very High,Married,6322,18089,1,Yes,12,Excellent,4,1,6,2,Good,6,4,0,5
+680,30,No,Travel_Frequently,160,Research & Development,3,Bachelor,Medical,High,Female,71,High,1,Research Scientist,High,Divorced,2083,22653,1,No,20,Outstanding,3,1,1,2,Better,1,0,0,0
+683,34,No,Travel_Rarely,1397,Research & Development,1,Doctor,Life Sciences,Medium,Male,42,High,1,Research Scientist,Very High,Married,2691,7660,1,No,12,Excellent,4,1,10,4,Good,10,9,8,8
+686,26,No,Travel_Rarely,991,Research & Development,6,Bachelor,Life Sciences,High,Female,71,High,1,Laboratory Technician,Very High,Married,2659,17759,1,Yes,13,Excellent,3,1,3,2,Better,3,2,0,2
+691,35,No,Travel_Rarely,1017,Research & Development,6,Master,Life Sciences,Medium,Male,82,Low,2,Research Scientist,Very High,Single,6646,19368,1,No,13,Excellent,2,0,17,3,Better,17,11,11,8
+692,33,No,Travel_Frequently,1296,Research & Development,6,Bachelor,Life Sciences,High,Male,30,High,2,Healthcare Representative,Very High,Divorced,7725,5335,3,No,23,Outstanding,3,1,15,2,Bad,13,11,4,7
+700,27,No,Travel_Rarely,1115,Research & Development,3,Master,Medical,Low,Male,54,Medium,1,Research Scientist,Very High,Single,2045,15174,0,No,13,Excellent,4,0,5,0,Better,4,2,1,1
+701,20,Yes,Travel_Rarely,1362,Research & Development,10,Below College,Medical,Very High,Male,32,High,1,Research Scientist,High,Single,1009,26999,1,Yes,11,Excellent,4,0,1,5,Better,1,0,1,1
+702,33,Yes,Travel_Frequently,1076,Research & Development,3,Bachelor,Life Sciences,Low,Male,70,High,1,Research Scientist,Low,Single,3348,3164,1,Yes,11,Excellent,1,0,10,3,Better,10,8,9,7
+704,35,No,Non-Travel,727,Research & Development,3,Bachelor,Life Sciences,High,Male,41,Medium,1,Laboratory Technician,High,Married,1281,16900,1,No,18,Excellent,3,2,1,3,Better,1,0,0,0
+705,23,No,Travel_Rarely,885,Research & Development,4,Bachelor,Medical,Low,Male,58,Very High,1,Research Scientist,Low,Married,2819,8544,2,No,16,Excellent,1,1,5,3,Best,3,2,0,2
+710,29,No,Travel_Frequently,806,Research & Development,1,Master,Life Sciences,Medium,Male,76,Low,1,Research Scientist,Very High,Divorced,2720,18959,1,No,18,Excellent,4,1,10,5,Better,10,7,2,8
+715,37,No,Travel_Rarely,1225,Research & Development,10,College,Life Sciences,Very High,Male,80,Very High,1,Research Scientist,Very High,Single,4680,15232,3,No,17,Excellent,1,0,4,2,Better,1,0,0,0
+716,50,No,Travel_Rarely,1207,Research & Development,28,Below College,Medical,Very High,Male,74,Very High,1,Laboratory Technician,High,Married,3221,3297,1,Yes,11,Excellent,3,3,20,3,Better,20,8,3,8
+717,34,No,Travel_Rarely,1442,Research & Development,9,Bachelor,Medical,Very High,Female,46,Medium,3,Healthcare Representative,Medium,Single,8621,17654,1,No,14,Excellent,2,0,9,3,Best,8,7,7,7
+721,39,No,Travel_Rarely,408,Research & Development,2,Master,Technical Degree,Very High,Female,80,Medium,2,Healthcare Representative,High,Single,4553,20978,1,No,11,Excellent,1,0,20,4,Better,20,7,11,10
+724,38,No,Travel_Rarely,827,Research & Development,1,Master,Life Sciences,Medium,Female,33,Very High,2,Healthcare Representative,Very High,Single,7625,19383,0,No,13,Excellent,3,0,10,4,Good,9,7,1,8
+741,28,Yes,Travel_Rarely,654,Research & Development,1,College,Life Sciences,Low,Female,67,Low,1,Research Scientist,Medium,Single,2216,3872,7,Yes,13,Excellent,4,0,10,4,Better,7,7,3,7
+744,44,No,Non-Travel,381,Research & Development,24,Bachelor,Medical,Low,Male,49,Low,1,Laboratory Technician,High,Single,3708,2104,2,No,14,Excellent,3,0,9,5,Better,5,2,1,4
+752,42,Yes,Travel_Frequently,933,Research & Development,19,Bachelor,Medical,High,Male,57,Very High,1,Research Scientist,High,Divorced,2759,20366,6,Yes,12,Excellent,4,0,7,2,Better,2,2,2,2
+757,34,No,Travel_Rarely,970,Research & Development,8,College,Medical,Medium,Female,96,High,2,Healthcare Representative,High,Single,6142,7360,3,No,11,Excellent,4,0,10,2,Better,5,1,4,3
+758,23,No,Travel_Rarely,650,Research & Development,9,Below College,Medical,Medium,Male,37,High,1,Laboratory Technician,Low,Married,2500,4344,1,No,14,Excellent,4,1,5,2,Best,4,3,0,2
+762,56,No,Travel_Rarely,832,Research & Development,9,Bachelor,Medical,High,Male,81,High,4,Healthcare Representative,Very High,Married,11103,20420,7,No,11,Excellent,3,0,30,1,Good,10,7,1,1
+763,40,No,Travel_Rarely,804,Research & Development,2,Below College,Medical,Very High,Female,86,Medium,1,Research Scientist,Very High,Single,2342,22929,0,Yes,20,Outstanding,4,0,5,2,Good,4,2,2,3
+764,27,No,Travel_Rarely,975,Research & Development,7,Bachelor,Medical,Very High,Female,55,Medium,2,Healthcare Representative,Low,Single,6811,23398,8,No,19,Excellent,1,0,9,2,Bad,7,6,0,7
+769,53,No,Travel_Rarely,346,Research & Development,6,Bachelor,Life Sciences,Very High,Male,86,High,2,Laboratory Technician,Very High,Single,2450,10919,2,No,17,Excellent,4,0,19,4,Better,2,2,2,2
+771,35,No,Non-Travel,1225,Research & Development,2,Master,Life Sciences,Very High,Female,61,High,2,Healthcare Representative,Low,Divorced,5093,4761,2,No,11,Excellent,1,1,16,2,Best,1,0,0,0
+772,32,No,Travel_Frequently,430,Research & Development,24,Master,Life Sciences,Low,Male,80,High,2,Laboratory Technician,Very High,Married,5309,21146,1,No,15,Excellent,4,2,10,2,Better,10,8,4,7
+773,38,No,Travel_Rarely,268,Research & Development,2,Doctor,Medical,Very High,Male,92,High,1,Research Scientist,High,Married,3057,20471,6,Yes,13,Excellent,2,1,6,0,Bad,1,0,0,1
+780,33,Yes,Travel_Rarely,527,Research & Development,1,Master,Other,Very High,Male,63,High,1,Research Scientist,Very High,Single,2686,5207,1,Yes,13,Excellent,3,0,10,2,Good,10,9,7,8
+784,23,No,Travel_Rarely,310,Research & Development,10,Below College,Medical,Low,Male,79,Very High,1,Research Scientist,High,Single,3505,19630,1,No,18,Excellent,4,0,2,3,Better,2,2,0,2
+791,52,No,Non-Travel,715,Research & Development,19,Master,Medical,Very High,Male,41,High,1,Research Scientist,Very High,Married,4258,26589,0,No,18,Excellent,1,1,5,3,Better,4,3,1,2
+792,26,No,Travel_Frequently,575,Research & Development,1,College,Life Sciences,Low,Female,71,Low,1,Laboratory Technician,Very High,Divorced,4364,5288,3,No,14,Excellent,1,1,5,2,Better,2,2,2,0
+793,29,No,Travel_Rarely,657,Research & Development,27,Bachelor,Medical,Medium,Female,66,High,2,Healthcare Representative,High,Married,4335,25549,4,No,12,Excellent,1,1,11,3,Good,8,7,1,1
+797,34,No,Travel_Rarely,182,Research & Development,1,Master,Life Sciences,Medium,Female,72,Very High,1,Research Scientist,Very High,Single,3280,13551,2,No,16,Excellent,3,0,10,2,Better,4,2,1,3
+802,37,No,Travel_Rarely,571,Research & Development,10,Below College,Life Sciences,Very High,Female,82,High,1,Research Scientist,Low,Divorced,2782,19905,0,Yes,13,Excellent,2,2,6,3,Good,5,3,4,3
+804,34,No,Travel_Rarely,121,Research & Development,2,Master,Medical,High,Female,86,Medium,1,Research Scientist,Low,Single,4381,7530,1,No,11,Excellent,3,0,6,3,Better,6,5,1,3
+806,30,No,Travel_Rarely,921,Research & Development,1,Bachelor,Life Sciences,Very High,Male,38,Low,1,Laboratory Technician,High,Married,3833,24375,3,No,21,Outstanding,3,2,7,2,Better,2,2,0,2
+807,40,No,Travel_Frequently,791,Research & Development,2,College,Medical,High,Female,38,Very High,2,Healthcare Representative,Medium,Married,4244,9931,1,No,24,Outstanding,4,1,8,2,Better,8,7,3,7
+811,23,Yes,Travel_Rarely,1243,Research & Development,6,Bachelor,Life Sciences,High,Male,63,Very High,1,Laboratory Technician,Low,Married,1601,3445,1,Yes,21,Outstanding,3,2,1,2,Better,0,0,0,0
+812,24,No,Non-Travel,1092,Research & Development,9,Bachelor,Life Sciences,High,Male,60,Medium,1,Laboratory Technician,Medium,Divorced,2694,26551,1,No,11,Excellent,3,3,1,4,Better,1,0,0,0
+813,52,No,Travel_Rarely,1325,Research & Development,11,Master,Life Sciences,Very High,Female,82,High,2,Laboratory Technician,High,Married,3149,21821,8,No,20,Outstanding,2,1,9,3,Better,5,2,1,4
+816,29,Yes,Travel_Rarely,805,Research & Development,1,College,Life Sciences,Medium,Female,36,Medium,1,Laboratory Technician,Low,Married,2319,6689,1,Yes,11,Excellent,4,1,1,1,Better,1,0,0,0
+824,29,No,Travel_Rarely,1252,Research & Development,23,College,Life Sciences,High,Male,81,Very High,1,Research Scientist,High,Married,2700,23779,1,No,24,Outstanding,3,1,10,3,Better,10,7,0,7
+826,35,No,Travel_Rarely,1258,Research & Development,1,Master,Life Sciences,Very High,Female,40,Very High,1,Research Scientist,High,Single,2506,13301,3,No,13,Excellent,3,0,7,0,Better,2,2,2,2
+828,28,Yes,Travel_Rarely,890,Research & Development,2,Master,Medical,High,Male,46,High,1,Research Scientist,High,Single,4382,16374,6,No,17,Excellent,4,0,5,3,Good,2,2,2,1
+832,40,No,Travel_Frequently,720,Research & Development,16,Master,Medical,Low,Male,51,Medium,2,Laboratory Technician,High,Single,5094,11983,6,No,14,Excellent,4,0,10,6,Better,1,0,0,0
+834,45,No,Travel_Rarely,252,Research & Development,2,Bachelor,Life Sciences,Medium,Female,95,Medium,1,Research Scientist,High,Single,2274,6153,1,No,14,Excellent,4,0,1,3,Better,1,0,0,0
+837,38,No,Travel_Frequently,471,Research & Development,12,Bachelor,Life Sciences,Low,Male,45,Medium,2,Healthcare Representative,Low,Divorced,6288,4284,2,No,15,Excellent,3,1,13,3,Good,4,3,1,2
+838,34,No,Travel_Frequently,702,Research & Development,16,Master,Life Sciences,High,Female,100,Medium,1,Research Scientist,Very High,Single,2553,8306,1,No,16,Excellent,3,0,6,3,Better,5,2,1,3
+848,26,Yes,Travel_Frequently,887,Research & Development,5,College,Medical,High,Female,88,Medium,1,Research Scientist,High,Married,2366,20898,1,Yes,14,Excellent,1,1,8,2,Better,8,7,1,7
+850,27,No,Non-Travel,443,Research & Development,3,Bachelor,Medical,Very High,Male,50,High,1,Research Scientist,Very High,Married,1706,16571,1,No,11,Excellent,3,3,0,6,Good,0,0,0,0
+852,44,No,Travel_Rarely,625,Research & Development,4,Bachelor,Medical,Very High,Male,50,High,2,Healthcare Representative,Medium,Single,5933,5197,9,No,12,Excellent,4,0,10,2,Good,5,2,2,3
+854,25,No,Travel_Rarely,180,Research & Development,2,Below College,Medical,Low,Male,65,Very High,1,Research Scientist,Low,Single,3424,21632,7,No,13,Excellent,3,0,6,3,Good,4,3,0,1
+856,35,No,Travel_Rarely,1343,Research & Development,27,Below College,Medical,High,Female,53,Medium,1,Research Scientist,Low,Single,2559,17852,1,No,11,Excellent,4,0,6,3,Good,6,5,1,1
+861,30,No,Travel_Frequently,1012,Research & Development,5,Master,Life Sciences,Medium,Male,75,Medium,1,Research Scientist,Very High,Divorced,3761,2373,9,No,12,Excellent,2,1,10,3,Good,5,4,0,3
+865,32,No,Travel_Rarely,638,Research & Development,8,College,Medical,High,Female,91,Very High,2,Research Scientist,High,Married,5175,22162,5,No,12,Excellent,3,1,9,3,Good,5,3,1,3
+874,44,No,Travel_Rarely,986,Research & Development,8,Master,Life Sciences,Low,Male,62,Very High,1,Laboratory Technician,Very High,Married,2818,5044,2,Yes,24,Outstanding,3,1,10,2,Good,3,2,0,2
+875,42,No,Travel_Frequently,1271,Research & Development,2,Below College,Medical,Medium,Male,35,High,1,Research Scientist,Very High,Single,2515,9068,5,Yes,14,Excellent,4,0,8,2,Better,2,1,2,2
+881,35,Yes,Travel_Frequently,130,Research & Development,25,Master,Life Sciences,Very High,Female,96,High,1,Research Scientist,Medium,Divorced,2022,16612,1,Yes,19,Excellent,1,1,10,3,Good,10,2,7,8
+882,32,No,Non-Travel,300,Research & Development,1,Bachelor,Life Sciences,Very High,Male,61,High,1,Laboratory Technician,Very High,Divorced,2314,9148,0,No,12,Excellent,2,1,4,2,Better,3,0,0,2
+887,49,No,Travel_Rarely,1418,Research & Development,1,Bachelor,Technical Degree,High,Female,36,High,1,Research Scientist,Low,Married,3580,10554,2,No,16,Excellent,2,1,7,2,Better,4,2,0,2
+888,24,No,Non-Travel,1269,Research & Development,4,Below College,Life Sciences,Low,Male,46,Medium,1,Laboratory Technician,Very High,Married,3162,10778,0,No,17,Excellent,4,0,6,2,Good,5,2,3,4
+894,42,No,Travel_Rarely,1265,Research & Development,3,Bachelor,Life Sciences,High,Female,95,Very High,2,Laboratory Technician,Very High,Married,5231,23726,2,Yes,13,Excellent,2,1,17,1,Good,5,3,1,3
+895,31,No,Travel_Rarely,1222,Research & Development,11,Master,Life Sciences,Very High,Male,48,High,1,Research Scientist,Very High,Married,2356,14871,3,Yes,19,Excellent,2,1,8,2,Better,6,4,0,2
+902,43,No,Travel_Frequently,422,Research & Development,1,Bachelor,Life Sciences,Very High,Female,33,High,2,Healthcare Representative,Very High,Married,5562,21782,4,No,13,Excellent,2,1,12,2,Good,5,2,2,2
+911,32,Yes,Travel_Rarely,374,Research & Development,25,Master,Life Sciences,Low,Male,87,High,1,Laboratory Technician,Very High,Single,2795,18016,1,Yes,24,Outstanding,3,0,1,2,Bad,1,0,0,1
+912,29,No,Travel_Rarely,1086,Research & Development,7,Below College,Medical,Low,Female,62,Medium,1,Laboratory Technician,Very High,Divorced,2532,6054,6,No,14,Excellent,3,3,8,5,Better,4,3,0,3
+913,44,No,Travel_Rarely,661,Research & Development,9,College,Life Sciences,Medium,Male,61,High,1,Research Scientist,Low,Married,2559,7508,1,Yes,13,Excellent,4,0,8,0,Better,8,7,7,1
+918,58,Yes,Travel_Frequently,781,Research & Development,2,Below College,Life Sciences,Very High,Male,57,Medium,1,Laboratory Technician,Very High,Divorced,2380,13384,9,Yes,14,Excellent,4,1,3,3,Good,1,0,0,0
+923,21,Yes,Travel_Rarely,1427,Research & Development,18,Below College,Other,Very High,Female,65,High,1,Research Scientist,Very High,Single,2693,8870,1,No,19,Excellent,1,0,1,3,Good,1,0,0,0
+924,36,No,Travel_Rarely,1425,Research & Development,14,Below College,Life Sciences,High,Male,68,High,2,Healthcare Representative,Very High,Married,6586,4821,0,Yes,17,Excellent,1,1,17,2,Good,16,8,4,11
+927,41,Yes,Travel_Rarely,1085,Research & Development,2,Master,Life Sciences,Medium,Female,57,Low,1,Laboratory Technician,Very High,Divorced,2778,17725,4,Yes,13,Excellent,3,1,10,1,Good,7,7,1,0
+930,28,No,Travel_Rarely,995,Research & Development,9,Bachelor,Medical,High,Female,77,High,1,Research Scientist,High,Divorced,2377,9834,5,No,18,Excellent,2,1,6,2,Better,2,2,2,2
+932,39,Yes,Travel_Rarely,1122,Research & Development,6,Bachelor,Medical,Very High,Male,70,High,1,Laboratory Technician,Low,Married,2404,4303,7,Yes,21,Outstanding,4,0,8,2,Bad,2,2,2,2
+933,27,No,Travel_Rarely,618,Research & Development,4,Bachelor,Life Sciences,Medium,Female,76,High,1,Research Scientist,High,Single,2318,17808,1,No,19,Excellent,3,0,1,2,Better,1,1,0,0
+934,34,No,Travel_Rarely,546,Research & Development,10,Bachelor,Life Sciences,Medium,Male,83,High,1,Laboratory Technician,Medium,Divorced,2008,6896,1,No,14,Excellent,2,2,1,3,Better,1,0,1,0
+939,33,No,Travel_Rarely,1198,Research & Development,1,Master,Other,High,Male,100,Medium,1,Research Scientist,Low,Single,2799,3339,3,Yes,11,Excellent,2,0,6,1,Better,3,2,0,2
+940,58,No,Travel_Rarely,1272,Research & Development,5,Bachelor,Technical Degree,High,Female,37,Medium,3,Healthcare Representative,Medium,Divorced,10552,9255,2,Yes,13,Excellent,4,1,24,3,Better,6,0,0,4
+942,35,No,Travel_Rarely,1137,Research & Development,21,Below College,Life Sciences,Very High,Female,51,High,2,Healthcare Representative,Very High,Married,4014,19170,1,Yes,25,Outstanding,4,1,10,2,Bad,10,6,0,7
+944,49,No,Travel_Rarely,527,Research & Development,8,College,Other,Low,Female,51,High,3,Laboratory Technician,Medium,Married,7403,22477,4,No,11,Excellent,3,1,29,3,Good,26,9,1,7
+945,48,No,Travel_Rarely,1469,Research & Development,20,Master,Medical,Very High,Male,51,High,1,Research Scientist,High,Married,2259,5543,4,No,17,Excellent,1,2,13,2,Good,0,0,0,0
+949,36,No,Travel_Rarely,188,Research & Development,7,Master,Other,Medium,Male,65,High,1,Research Scientist,Very High,Single,4678,23293,2,No,18,Excellent,3,0,8,6,Better,6,2,0,1
+951,32,No,Non-Travel,1184,Research & Development,1,Bachelor,Life Sciences,High,Female,70,Medium,1,Laboratory Technician,Medium,Married,2332,3974,6,No,20,Outstanding,3,0,5,3,Better,3,0,0,2
+957,41,No,Travel_Rarely,263,Research & Development,6,Bachelor,Medical,Very High,Male,59,High,1,Laboratory Technician,Low,Single,4721,3119,2,Yes,13,Excellent,3,0,20,3,Better,18,13,2,17
+958,36,No,Travel_Rarely,938,Research & Development,2,Master,Medical,High,Male,79,High,1,Laboratory Technician,High,Single,2519,12287,4,No,21,Outstanding,3,0,16,6,Better,11,8,3,9
+960,20,Yes,Travel_Rarely,129,Research & Development,4,Bachelor,Technical Degree,Low,Male,84,High,1,Laboratory Technician,Low,Single,2973,13008,1,No,19,Excellent,2,0,1,2,Better,1,0,0,0
+961,31,No,Travel_Rarely,616,Research & Development,12,Bachelor,Medical,Very High,Female,41,High,2,Healthcare Representative,Very High,Married,5855,17369,0,Yes,11,Excellent,3,2,10,2,Bad,9,7,8,5
+964,40,No,Travel_Frequently,1469,Research & Development,9,Master,Medical,Very High,Male,35,High,1,Research Scientist,Medium,Divorced,3617,25063,8,Yes,14,Excellent,4,1,3,2,Better,1,1,0,0
+969,33,No,Travel_Rarely,1069,Research & Development,1,Bachelor,Life Sciences,Medium,Female,42,Medium,2,Healthcare Representative,Very High,Single,6949,12291,0,No,14,Excellent,1,0,6,3,Better,5,0,1,4
+972,45,No,Non-Travel,805,Research & Development,4,College,Life Sciences,High,Male,57,High,2,Laboratory Technician,Medium,Married,4447,23163,1,No,12,Excellent,2,0,9,5,Good,9,7,0,8
+977,58,Yes,Travel_Rarely,289,Research & Development,2,Bachelor,Technical Degree,Very High,Male,51,High,1,Research Scientist,High,Single,2479,26227,4,No,24,Outstanding,1,0,7,4,Better,1,0,0,0
+991,31,Yes,Non-Travel,335,Research & Development,9,College,Medical,High,Male,46,Medium,1,Research Scientist,Low,Single,2321,10322,0,Yes,22,Outstanding,1,0,4,0,Better,3,2,1,2
+994,29,Yes,Travel_Rarely,906,Research & Development,10,Bachelor,Life Sciences,Very High,Female,92,Medium,1,Research Scientist,Low,Single,2404,11479,6,Yes,20,Outstanding,3,0,3,5,Better,0,0,0,0
+995,33,No,Travel_Rarely,461,Research & Development,13,Below College,Life Sciences,Medium,Female,53,High,1,Research Scientist,Very High,Single,3452,17241,3,No,18,Excellent,1,0,5,4,Better,3,2,0,2
+996,45,No,Travel_Rarely,974,Research & Development,1,Master,Medical,Very High,Female,91,High,1,Laboratory Technician,Very High,Divorced,2270,11005,3,No,14,Excellent,4,2,8,2,Better,5,3,0,2
+998,33,No,Travel_Frequently,827,Research & Development,1,Master,Other,High,Female,84,Very High,2,Healthcare Representative,Medium,Married,5488,20161,1,Yes,13,Excellent,1,1,6,2,Better,6,5,1,2
+1001,27,No,Travel_Rarely,1134,Research & Development,16,Master,Technical Degree,High,Female,37,High,1,Laboratory Technician,Medium,Married,2811,12086,9,No,14,Excellent,2,1,4,2,Better,2,2,2,2
+1002,45,No,Non-Travel,248,Research & Development,23,College,Life Sciences,Very High,Male,42,High,2,Laboratory Technician,Low,Married,3633,14039,1,Yes,15,Excellent,3,1,9,2,Better,9,8,0,8
+1004,30,Yes,Travel_Rarely,138,Research & Development,22,Bachelor,Life Sciences,Low,Female,48,High,1,Research Scientist,High,Married,2132,11539,4,Yes,11,Excellent,2,0,7,2,Better,5,2,0,1
+1006,38,No,Travel_Frequently,1391,Research & Development,10,Below College,Medical,High,Male,66,High,1,Research Scientist,High,Married,2684,12127,0,No,17,Excellent,2,1,3,0,Good,2,1,0,2
+1010,35,Yes,Travel_Rarely,622,Research & Development,14,Master,Other,High,Male,39,Medium,1,Laboratory Technician,Medium,Divorced,3743,10074,1,Yes,24,Outstanding,4,1,5,2,Bad,4,2,0,2
+1012,18,No,Non-Travel,287,Research & Development,5,College,Life Sciences,Medium,Male,73,High,1,Research Scientist,Very High,Single,1051,13493,1,No,15,Excellent,4,0,0,2,Better,0,0,0,0
+1014,35,No,Travel_Rarely,583,Research & Development,25,Master,Medical,High,Female,57,High,3,Healthcare Representative,High,Divorced,10388,6975,1,Yes,11,Excellent,3,1,16,3,Good,16,10,10,1
+1016,20,Yes,Travel_Rarely,1097,Research & Development,11,Bachelor,Medical,Very High,Female,98,Medium,1,Research Scientist,Low,Single,2600,18275,1,Yes,15,Excellent,1,0,1,2,Better,1,0,0,0
+1017,30,Yes,Travel_Frequently,109,Research & Development,5,Bachelor,Medical,Medium,Female,60,High,1,Laboratory Technician,Medium,Single,2422,25725,0,No,17,Excellent,1,0,4,3,Better,3,2,1,2
+1019,22,No,Travel_Rarely,217,Research & Development,8,Below College,Life Sciences,Medium,Male,94,Low,1,Laboratory Technician,Low,Married,2451,6881,1,No,15,Excellent,1,1,4,3,Good,4,3,1,1
+1022,48,No,Travel_Rarely,277,Research & Development,6,Bachelor,Life Sciences,Low,Male,97,Medium,2,Healthcare Representative,High,Single,4240,13119,2,No,13,Excellent,4,0,19,0,Better,2,2,2,2
+1024,48,No,Travel_Rarely,1355,Research & Development,4,Master,Life Sciences,High,Male,78,Medium,3,Healthcare Representative,High,Single,10999,22245,7,No,14,Excellent,2,0,27,3,Better,15,11,4,8
+1028,35,No,Travel_Rarely,802,Research & Development,10,Bachelor,Other,Medium,Male,45,High,1,Laboratory Technician,Very High,Divorced,3917,9541,1,No,20,Outstanding,1,1,3,4,Good,3,2,1,2
+1030,50,No,Travel_Rarely,804,Research & Development,9,Bachelor,Life Sciences,Low,Male,64,High,1,Laboratory Technician,Very High,Married,2380,20165,4,No,18,Excellent,2,0,8,5,Better,1,0,0,0
+1033,37,Yes,Travel_Rarely,1141,Research & Development,11,College,Medical,Low,Female,61,Low,2,Healthcare Representative,Medium,Married,4777,14382,5,No,15,Excellent,1,0,15,2,Bad,1,0,0,0
+1034,55,No,Travel_Frequently,135,Research & Development,18,Master,Medical,High,Male,62,High,2,Healthcare Representative,Medium,Married,6385,12992,3,Yes,14,Excellent,4,2,17,3,Better,8,7,6,7
+1042,36,Yes,Travel_Rarely,885,Research & Development,16,Master,Life Sciences,High,Female,43,Very High,1,Laboratory Technician,Low,Single,2743,8269,1,No,16,Excellent,3,0,18,1,Better,17,13,15,14
+1046,32,No,Non-Travel,1109,Research & Development,29,Master,Medical,Very High,Female,69,High,1,Laboratory Technician,High,Single,4025,11135,9,No,12,Excellent,2,0,10,2,Better,8,7,7,7
+1052,36,Yes,Travel_Rarely,660,Research & Development,15,Bachelor,Other,Low,Male,81,High,2,Laboratory Technician,High,Divorced,4834,7858,7,No,14,Excellent,2,1,9,3,Good,1,0,0,0
+1053,26,Yes,Travel_Frequently,342,Research & Development,2,Bachelor,Life Sciences,Low,Male,57,High,1,Research Scientist,Low,Married,2042,15346,6,Yes,14,Excellent,2,1,6,2,Better,3,2,1,2
+1060,38,No,Travel_Frequently,1186,Research & Development,3,Master,Other,High,Male,44,High,1,Research Scientist,High,Married,2821,2997,3,No,16,Excellent,1,1,8,2,Better,2,2,2,2
+1062,37,No,Travel_Rarely,124,Research & Development,3,Bachelor,Other,Very High,Female,35,High,2,Healthcare Representative,Medium,Single,4107,13848,3,No,15,Excellent,1,0,8,3,Good,4,3,0,1
+1068,26,No,Travel_Frequently,921,Research & Development,1,Below College,Medical,Low,Female,66,Medium,1,Research Scientist,High,Divorced,2007,25265,1,No,13,Excellent,3,2,5,5,Better,5,3,1,3
+1071,56,No,Travel_Frequently,1240,Research & Development,9,Bachelor,Medical,Low,Female,63,High,1,Research Scientist,High,Married,2942,12154,2,No,19,Excellent,2,1,18,4,Better,5,4,0,3
+1079,21,Yes,Travel_Rarely,1334,Research & Development,10,Bachelor,Life Sciences,High,Female,36,Medium,1,Laboratory Technician,Low,Single,1416,17258,1,No,13,Excellent,1,0,1,6,Good,1,0,1,0
+1080,46,No,Travel_Rarely,1003,Research & Development,8,Master,Life Sciences,Very High,Female,74,Medium,2,Research Scientist,Low,Divorced,4615,21029,8,Yes,23,Outstanding,1,3,19,2,Better,16,13,1,7
+1081,51,Yes,Travel_Rarely,1323,Research & Development,4,Master,Life Sciences,Low,Male,34,High,1,Research Scientist,High,Married,2461,10332,9,Yes,12,Excellent,3,3,18,2,Best,10,0,2,7
+1082,28,Yes,Non-Travel,1366,Research & Development,24,College,Technical Degree,Medium,Male,72,Medium,3,Healthcare Representative,Low,Single,8722,12355,1,No,12,Excellent,1,0,10,2,Good,10,7,1,9
+1083,26,No,Travel_Rarely,192,Research & Development,1,College,Medical,Low,Male,59,Medium,1,Laboratory Technician,Low,Married,3955,11141,1,No,16,Excellent,1,2,6,2,Better,5,3,1,3
+1085,41,No,Travel_Rarely,509,Research & Development,7,College,Technical Degree,Medium,Female,43,Very High,1,Research Scientist,High,Married,3376,18863,1,No,13,Excellent,3,0,10,3,Better,10,6,0,8
+1088,38,No,Travel_Rarely,330,Research & Development,17,Below College,Life Sciences,High,Female,65,Medium,3,Healthcare Representative,High,Married,8823,24608,0,No,18,Excellent,1,1,20,4,Good,19,9,1,9
+1092,40,No,Travel_Rarely,1492,Research & Development,20,Master,Technical Degree,Low,Male,61,High,3,Healthcare Representative,Very High,Married,10322,26542,4,No,20,Outstanding,4,1,14,6,Better,11,10,11,1
+1094,27,No,Non-Travel,1277,Research & Development,8,Doctor,Life Sciences,Low,Male,87,Low,1,Laboratory Technician,High,Married,4621,5869,1,No,19,Excellent,4,3,3,4,Better,3,2,1,2
+1097,28,No,Travel_Rarely,857,Research & Development,10,Bachelor,Other,High,Female,59,High,2,Research Scientist,High,Single,3660,7909,3,No,13,Excellent,4,0,10,4,Best,8,7,1,7
+1099,33,No,Travel_Rarely,654,Research & Development,5,Bachelor,Life Sciences,Very High,Male,34,Medium,3,Healthcare Representative,Very High,Divorced,7119,21214,4,No,15,Excellent,3,1,9,2,Better,3,2,1,2
+1101,33,Yes,Travel_Frequently,827,Research & Development,29,Master,Medical,Low,Female,54,Medium,2,Research Scientist,High,Single,4508,3129,1,No,22,Outstanding,2,0,14,4,Better,13,7,3,8
+1102,28,No,Travel_Rarely,895,Research & Development,15,College,Life Sciences,Low,Male,50,High,1,Laboratory Technician,High,Divorced,2207,22482,1,No,16,Excellent,4,1,4,5,Good,4,2,2,2
+1103,34,No,Travel_Frequently,618,Research & Development,3,Below College,Life Sciences,Low,Male,45,High,2,Healthcare Representative,Very High,Single,7756,22266,0,No,17,Excellent,3,0,7,1,Good,6,2,0,4
+1106,25,Yes,Travel_Rarely,1219,Research & Development,4,Below College,Technical Degree,Very High,Male,32,High,1,Laboratory Technician,Very High,Married,3691,4605,1,Yes,15,Excellent,2,1,7,3,Best,7,7,5,6
+1107,26,Yes,Travel_Rarely,1330,Research & Development,21,Bachelor,Medical,Low,Male,37,High,1,Laboratory Technician,High,Divorced,2377,19373,1,No,20,Outstanding,3,1,1,0,Good,1,1,0,0
+1108,33,Yes,Travel_Rarely,1017,Research & Development,25,Bachelor,Medical,Low,Male,55,Medium,1,Research Scientist,Medium,Single,2313,2993,4,Yes,20,Outstanding,2,0,5,0,Better,2,2,2,2
+1111,28,Yes,Travel_Frequently,1009,Research & Development,1,Bachelor,Medical,Low,Male,45,Medium,1,Laboratory Technician,Medium,Divorced,2596,7160,1,No,15,Excellent,1,2,1,2,Better,1,0,0,0
+1115,34,No,Non-Travel,697,Research & Development,3,Master,Life Sciences,High,Male,40,Medium,1,Research Scientist,Very High,Married,2979,22478,3,No,17,Excellent,4,3,6,2,Better,0,0,0,0
+1118,52,No,Travel_Rarely,994,Research & Development,7,Master,Life Sciences,Medium,Male,87,High,3,Healthcare Representative,Medium,Single,10445,15322,7,No,19,Excellent,4,0,18,4,Better,8,6,4,0
+1120,29,No,Travel_Rarely,1107,Research & Development,28,Master,Life Sciences,High,Female,93,High,1,Research Scientist,Very High,Divorced,2514,26968,4,No,22,Outstanding,1,1,11,1,Better,7,5,1,7
+1127,39,Yes,Travel_Frequently,203,Research & Development,2,Bachelor,Life Sciences,Low,Male,84,High,4,Healthcare Representative,Very High,Divorced,12169,13547,7,No,11,Excellent,4,3,21,4,Better,18,7,11,5
+1131,21,No,Travel_Rarely,984,Research & Development,1,Below College,Technical Degree,Very High,Female,70,Medium,1,Research Scientist,Medium,Single,2070,25326,1,Yes,11,Excellent,3,0,2,6,Best,2,2,2,2
+1132,39,No,Non-Travel,439,Research & Development,9,Bachelor,Life Sciences,High,Male,70,High,2,Laboratory Technician,Medium,Single,6782,8770,9,No,15,Excellent,3,0,9,2,Good,5,4,0,3
+1136,28,No,Travel_Rarely,1451,Research & Development,2,Below College,Life Sciences,Low,Male,67,Medium,1,Research Scientist,Medium,Married,3201,19911,0,No,17,Excellent,1,0,6,2,Bad,5,3,0,4
+1143,29,No,Travel_Frequently,490,Research & Development,10,Bachelor,Life Sciences,Very High,Female,61,High,1,Research Scientist,Medium,Divorced,3291,17940,0,No,14,Excellent,4,2,8,2,Good,7,5,1,1
+1148,42,No,Travel_Rarely,188,Research & Development,29,Bachelor,Medical,Medium,Male,56,Low,2,Laboratory Technician,Very High,Single,4272,9558,4,No,19,Excellent,1,0,16,3,Better,1,0,0,0
+1154,28,No,Travel_Frequently,773,Research & Development,6,Bachelor,Life Sciences,High,Male,39,Medium,1,Research Scientist,High,Divorced,2703,22088,1,Yes,14,Excellent,4,1,3,2,Better,3,1,0,2
+1156,18,Yes,Non-Travel,247,Research & Development,8,Below College,Medical,High,Male,80,High,1,Laboratory Technician,High,Single,1904,13556,1,No,12,Excellent,4,0,0,0,Better,0,0,0,0
+1158,41,No,Travel_Rarely,167,Research & Development,12,Master,Life Sciences,Medium,Male,46,High,1,Laboratory Technician,Very High,Married,4766,9051,3,Yes,11,Excellent,1,1,6,4,Better,1,0,0,0
+1160,31,Yes,Travel_Frequently,874,Research & Development,15,Bachelor,Medical,High,Male,72,High,1,Laboratory Technician,High,Married,2610,6233,1,No,12,Excellent,3,1,2,5,Good,2,2,2,2
+1161,37,No,Travel_Rarely,367,Research & Development,25,College,Medical,High,Female,52,Medium,2,Healthcare Representative,Very High,Divorced,5731,17171,7,No,13,Excellent,3,2,9,2,Better,6,2,1,3
+1162,27,No,Travel_Rarely,199,Research & Development,6,Bachelor,Life Sciences,Very High,Male,55,Medium,1,Research Scientist,High,Married,2539,7950,1,No,13,Excellent,3,1,4,0,Better,4,2,2,2
+1172,35,No,Travel_Rarely,982,Research & Development,1,Master,Medical,Very High,Male,58,Medium,1,Laboratory Technician,High,Married,2258,16340,6,No,12,Excellent,2,1,10,2,Better,8,0,1,7
+1173,24,No,Travel_Rarely,477,Research & Development,24,Bachelor,Medical,Very High,Male,49,High,1,Laboratory Technician,Medium,Single,3597,6409,8,No,22,Outstanding,4,0,6,2,Better,4,3,1,2
+1175,28,Yes,Travel_Rarely,1485,Research & Development,12,Below College,Life Sciences,High,Female,79,High,1,Laboratory Technician,Very High,Married,2515,22955,1,Yes,11,Excellent,4,0,1,4,Good,1,1,0,0
+1177,26,No,Travel_Rarely,1384,Research & Development,3,Master,Medical,Low,Male,82,Very High,1,Laboratory Technician,Very High,Married,4420,13421,1,No,22,Outstanding,2,1,8,2,Better,8,7,0,7
+1180,40,No,Travel_Frequently,902,Research & Development,26,College,Medical,High,Female,92,Medium,2,Research Scientist,Very High,Married,4422,21203,3,Yes,13,Excellent,4,1,16,3,Bad,1,1,0,0
+1184,34,No,Travel_Frequently,669,Research & Development,1,Bachelor,Medical,Very High,Male,97,Medium,2,Healthcare Representative,Low,Single,5343,25755,0,No,20,Outstanding,3,0,14,3,Better,13,9,4,9
+1185,35,No,Travel_Frequently,636,Research & Development,4,Master,Other,Very High,Male,47,Medium,1,Laboratory Technician,Very High,Married,2376,26537,1,No,13,Excellent,2,1,2,2,Best,2,2,2,2
+1192,29,No,Travel_Rarely,1401,Research & Development,6,Below College,Medical,Medium,Female,54,High,1,Laboratory Technician,Very High,Married,3131,26342,1,No,13,Excellent,1,1,10,5,Better,10,8,0,8
+1193,19,No,Travel_Rarely,645,Research & Development,9,College,Life Sciences,High,Male,54,High,1,Research Scientist,Low,Single,2552,7172,1,No,25,Outstanding,3,0,1,4,Better,1,1,0,0
+1195,45,No,Travel_Rarely,1457,Research & Development,7,Bachelor,Medical,Low,Female,83,High,1,Research Scientist,High,Married,4477,20100,4,Yes,19,Excellent,3,1,7,2,Good,3,2,0,2
+1198,20,No,Travel_Rarely,805,Research & Development,3,Bachelor,Life Sciences,Low,Male,87,Medium,1,Laboratory Technician,High,Single,3033,12828,1,No,12,Excellent,1,0,2,2,Good,2,2,1,2
+1200,44,Yes,Travel_Rarely,1097,Research & Development,10,Master,Life Sciences,High,Male,96,High,1,Research Scientist,High,Single,2936,10826,1,Yes,11,Excellent,3,0,6,4,Better,6,4,0,2
+1202,29,No,Travel_Rarely,942,Research & Development,15,Below College,Life Sciences,Medium,Female,69,Low,1,Research Scientist,Very High,Married,2168,26933,0,Yes,18,Excellent,1,1,6,2,Good,5,4,1,3
+1203,22,Yes,Travel_Frequently,1256,Research & Development,3,Master,Life Sciences,High,Male,48,Medium,1,Research Scientist,Very High,Married,2853,4223,0,Yes,11,Excellent,2,1,1,5,Better,0,0,0,0
+1206,44,No,Non-Travel,111,Research & Development,17,Bachelor,Life Sciences,Very High,Male,74,Low,1,Research Scientist,High,Single,2290,4279,2,No,13,Excellent,4,0,6,3,Better,0,0,0,0
+1210,41,Yes,Non-Travel,906,Research & Development,5,College,Life Sciences,Low,Male,95,Medium,1,Research Scientist,Low,Divorced,2107,20293,6,No,17,Excellent,1,1,5,2,Bad,1,0,0,0
+1216,28,No,Travel_Rarely,1179,Research & Development,19,Master,Medical,Very High,Male,78,Medium,1,Laboratory Technician,Low,Married,3196,12449,1,No,12,Excellent,3,3,6,2,Better,6,5,3,3
+1219,24,Yes,Travel_Rarely,984,Research & Development,17,College,Life Sciences,Very High,Female,97,High,1,Laboratory Technician,Medium,Married,2210,3372,1,No,13,Excellent,1,1,1,3,Bad,1,0,0,0
+1221,36,No,Travel_Rarely,917,Research & Development,6,Master,Life Sciences,High,Male,60,Low,1,Laboratory Technician,High,Divorced,2741,6865,1,No,14,Excellent,3,1,7,4,Better,7,7,1,7
+1224,30,No,Travel_Rarely,853,Research & Development,7,Master,Life Sciences,High,Male,49,High,2,Laboratory Technician,High,Divorced,3491,11309,1,No,13,Excellent,1,3,10,4,Good,10,7,8,9
+1225,44,No,Travel_Rarely,200,Research & Development,29,Master,Other,Very High,Male,32,High,2,Research Scientist,Very High,Single,4541,7744,1,No,25,Outstanding,2,0,20,3,Better,20,11,13,17
+1234,32,No,Travel_Frequently,116,Research & Development,13,Bachelor,Other,High,Female,77,Medium,1,Laboratory Technician,Medium,Married,2743,7331,1,No,20,Outstanding,3,1,2,2,Better,2,2,2,2
+1235,32,No,Travel_Frequently,1316,Research & Development,2,College,Life Sciences,Very High,Female,38,High,2,Research Scientist,High,Single,4998,2338,4,Yes,14,Excellent,4,0,10,2,Better,8,7,0,7
+1238,33,No,Travel_Rarely,117,Research & Development,9,Bachelor,Medical,Low,Male,60,High,1,Research Scientist,Very High,Married,2781,6311,0,No,13,Excellent,2,1,15,5,Better,14,10,4,10
+1241,30,No,Travel_Rarely,1465,Research & Development,1,Bachelor,Medical,Very High,Male,63,High,1,Research Scientist,Medium,Married,3579,9369,0,Yes,21,Outstanding,1,1,12,2,Better,11,9,5,7
+1244,27,No,Travel_Rarely,1103,Research & Development,14,Bachelor,Life Sciences,Low,Male,42,High,1,Research Scientist,Low,Married,2235,14377,1,Yes,14,Excellent,4,2,9,3,Good,9,7,6,8
+1246,44,No,Travel_Rarely,1117,Research & Development,2,Below College,Life Sciences,Low,Female,72,Very High,1,Research Scientist,Very High,Married,2011,19982,1,No,13,Excellent,4,1,10,5,Better,10,5,7,7
+1248,19,Yes,Non-Travel,504,Research & Development,10,Bachelor,Medical,Low,Female,96,Medium,1,Research Scientist,Medium,Single,1859,6148,1,Yes,25,Outstanding,2,0,1,2,Best,1,1,0,0
+1249,29,No,Travel_Rarely,1010,Research & Development,1,Bachelor,Life Sciences,Low,Female,97,High,1,Research Scientist,Very High,Divorced,3760,5598,1,No,15,Excellent,1,3,3,5,Better,3,2,1,2
+1251,31,No,Travel_Rarely,1332,Research & Development,11,College,Medical,High,Male,80,High,2,Healthcare Representative,Low,Married,6833,17089,1,Yes,12,Excellent,4,0,6,2,Good,6,5,0,1
+1252,31,No,Travel_Rarely,1062,Research & Development,24,Bachelor,Medical,High,Female,96,Medium,2,Healthcare Representative,Low,Single,6812,17198,1,No,19,Excellent,2,0,10,2,Better,10,9,1,8
+1257,36,No,Travel_Frequently,469,Research & Development,3,Bachelor,Technical Degree,High,Male,46,High,1,Research Scientist,Medium,Married,3692,9256,1,No,12,Excellent,3,0,12,2,Good,11,10,0,7
+1258,48,No,Travel_Rarely,969,Research & Development,2,College,Technical Degree,Very High,Male,76,Very High,1,Laboratory Technician,Medium,Single,2559,16620,5,No,11,Excellent,3,0,7,4,Good,1,0,0,0
+1259,27,No,Travel_Rarely,1167,Research & Development,4,College,Life Sciences,Low,Male,76,High,1,Research Scientist,High,Divorced,2517,3208,1,No,11,Excellent,2,3,5,2,Better,5,3,0,3
+1260,29,No,Travel_Rarely,1329,Research & Development,7,Bachelor,Life Sciences,High,Male,82,High,2,Healthcare Representative,Very High,Divorced,6623,4204,1,Yes,11,Excellent,2,2,6,2,Better,6,0,1,0
+1265,34,No,Travel_Rarely,1320,Research & Development,20,Bachelor,Technical Degree,High,Female,89,Very High,1,Research Scientist,High,Married,2585,21643,0,No,17,Excellent,4,0,2,5,Good,1,0,0,0
+1269,19,No,Travel_Rarely,265,Research & Development,25,Bachelor,Life Sciences,Medium,Female,57,Very High,1,Research Scientist,Very High,Single,2994,21221,1,Yes,12,Excellent,4,0,1,2,Better,1,0,0,1
+1270,23,No,Travel_Rarely,373,Research & Development,1,College,Life Sciences,Very High,Male,47,High,1,Research Scientist,High,Married,1223,16901,1,No,22,Outstanding,4,1,1,2,Better,1,0,0,1
+1275,26,No,Travel_Rarely,583,Research & Development,4,College,Life Sciences,High,Male,53,High,1,Research Scientist,Very High,Single,2875,9973,1,Yes,20,Outstanding,2,0,8,2,Good,8,5,2,2
+1278,55,No,Non-Travel,177,Research & Development,8,Below College,Medical,Very High,Male,37,Medium,4,Healthcare Representative,Medium,Divorced,13577,25592,1,Yes,15,Excellent,4,1,34,3,Better,33,9,15,0
+1279,21,Yes,Travel_Frequently,251,Research & Development,10,College,Life Sciences,Low,Female,45,Medium,1,Laboratory Technician,High,Single,2625,25308,1,No,20,Outstanding,3,0,2,2,Bad,2,2,2,2
+1285,34,No,Travel_Frequently,135,Research & Development,19,Bachelor,Medical,High,Female,46,High,2,Laboratory Technician,Medium,Divorced,4444,22534,4,No,13,Excellent,3,2,15,2,Best,11,8,5,10
+1286,28,No,Travel_Frequently,791,Research & Development,1,Master,Medical,Very High,Male,44,High,1,Laboratory Technician,High,Single,2154,6842,0,Yes,11,Excellent,3,0,5,2,Good,4,2,0,2
+1291,35,No,Travel_Rarely,735,Research & Development,6,Below College,Life Sciences,High,Male,66,High,1,Research Scientist,High,Married,3506,6020,0,Yes,14,Excellent,4,0,4,3,Better,3,2,2,2
+1292,42,No,Travel_Rarely,603,Research & Development,7,Master,Medical,Medium,Female,78,Very High,2,Research Scientist,Medium,Married,2372,5628,6,Yes,16,Excellent,4,0,18,2,Better,1,0,0,0
+1295,44,Yes,Travel_Rarely,621,Research & Development,15,Bachelor,Medical,Low,Female,73,High,3,Healthcare Representative,Very High,Married,7978,14075,1,No,11,Excellent,4,1,10,2,Better,10,7,0,5
+1296,28,No,Travel_Frequently,193,Research & Development,2,Bachelor,Life Sciences,Very High,Male,52,Medium,1,Laboratory Technician,Very High,Married,3867,14222,1,Yes,12,Excellent,2,1,2,2,Better,2,2,2,2
+1297,51,No,Travel_Frequently,968,Research & Development,6,College,Medical,Medium,Female,40,Medium,1,Laboratory Technician,High,Single,2838,4257,0,No,14,Excellent,2,0,8,6,Good,7,0,7,7
+1299,29,Yes,Travel_Rarely,806,Research & Development,7,Bachelor,Technical Degree,Medium,Female,39,High,1,Laboratory Technician,High,Divorced,3339,17285,3,Yes,13,Excellent,1,2,10,2,Better,7,7,7,7
+1301,28,No,Travel_Rarely,640,Research & Development,1,Bachelor,Technical Degree,Very High,Male,84,High,1,Research Scientist,Low,Single,2080,4732,2,No,11,Excellent,2,0,5,2,Good,3,2,1,2
+1303,25,No,Travel_Rarely,266,Research & Development,1,Bachelor,Medical,Very High,Female,40,High,1,Research Scientist,Medium,Single,2096,18830,1,No,18,Excellent,4,0,2,3,Good,2,2,2,1
+1308,58,No,Travel_Rarely,848,Research & Development,23,Master,Life Sciences,Low,Male,88,High,1,Research Scientist,High,Divorced,2372,26076,1,No,12,Excellent,4,2,2,3,Better,2,2,2,2
+1309,32,Yes,Travel_Rarely,1089,Research & Development,7,College,Life Sciences,Very High,Male,79,High,2,Laboratory Technician,High,Married,4883,22845,1,No,18,Excellent,1,1,10,3,Better,10,4,1,1
+1310,39,Yes,Travel_Rarely,360,Research & Development,23,Bachelor,Medical,High,Male,93,High,1,Research Scientist,Low,Single,3904,22154,0,No,13,Excellent,1,0,6,2,Better,5,2,0,3
+1311,30,No,Travel_Rarely,1138,Research & Development,6,Bachelor,Technical Degree,Low,Female,48,Medium,2,Laboratory Technician,Very High,Married,4627,23631,0,No,12,Excellent,1,1,10,6,Better,9,2,6,7
+1312,36,No,Travel_Rarely,325,Research & Development,10,Master,Technical Degree,Very High,Female,63,High,3,Healthcare Representative,High,Married,7094,5747,3,No,12,Excellent,1,0,10,0,Better,7,7,1,7
+1315,28,No,Non-Travel,1476,Research & Development,1,Bachelor,Life Sciences,High,Female,55,Low,2,Laboratory Technician,Very High,Married,6674,16392,0,No,11,Excellent,1,3,10,6,Better,9,8,7,5
+1333,44,Yes,Travel_Rarely,935,Research & Development,3,Bachelor,Life Sciences,Low,Male,89,High,1,Laboratory Technician,Low,Married,2362,14669,4,No,12,Excellent,3,0,10,4,Best,3,2,1,2
+1340,40,No,Non-Travel,458,Research & Development,16,College,Life Sciences,High,Male,74,High,1,Research Scientist,High,Divorced,3544,8532,9,No,16,Excellent,2,1,6,0,Better,4,2,0,0
+1344,34,No,Travel_Rarely,943,Research & Development,9,Bachelor,Life Sciences,Very High,Male,86,High,3,Healthcare Representative,Very High,Divorced,8500,5494,0,No,11,Excellent,4,1,10,0,Good,9,7,1,6
+1346,40,No,Travel_Rarely,523,Research & Development,2,Bachelor,Life Sciences,High,Male,98,High,2,Research Scientist,Very High,Single,4661,22455,1,No,13,Excellent,3,0,9,4,Better,9,8,8,8
+1350,35,No,Travel_Frequently,482,Research & Development,4,Master,Life Sciences,High,Male,87,High,2,Research Scientist,High,Single,4249,2690,1,Yes,11,Excellent,2,0,9,3,Better,9,6,1,1
+1358,25,No,Travel_Rarely,882,Research & Development,19,Below College,Medical,Very High,Male,67,High,1,Laboratory Technician,Very High,Married,3669,9075,3,No,11,Excellent,3,3,7,6,Good,3,2,1,2
+1361,40,No,Travel_Rarely,329,Research & Development,1,Master,Life Sciences,Medium,Male,88,High,1,Laboratory Technician,Medium,Married,2387,6762,3,No,22,Outstanding,3,1,7,3,Better,4,2,0,3
+1368,18,No,Non-Travel,1124,Research & Development,1,Bachelor,Life Sciences,Very High,Female,97,High,1,Laboratory Technician,Very High,Single,1611,19305,1,No,15,Excellent,3,0,0,5,Best,0,0,0,0
+1369,35,No,Travel_Rarely,817,Research & Development,1,Bachelor,Medical,Very High,Female,60,Medium,2,Laboratory Technician,Very High,Married,5363,10846,0,No,12,Excellent,2,1,10,0,Better,9,7,0,0
+1374,34,No,Non-Travel,999,Research & Development,26,Below College,Technical Degree,Low,Female,92,Medium,1,Research Scientist,High,Divorced,2029,15891,1,No,20,Outstanding,3,3,5,2,Better,5,4,0,0
+1375,40,No,Travel_Rarely,1202,Research & Development,2,Below College,Medical,Medium,Female,89,Very High,2,Healthcare Representative,High,Divorced,6377,13888,5,No,20,Outstanding,2,3,15,0,Better,12,11,11,8
+1377,34,No,Travel_Rarely,285,Research & Development,29,Bachelor,Medical,Medium,Male,86,High,2,Laboratory Technician,High,Married,5429,17491,4,No,13,Excellent,1,2,10,1,Better,8,7,7,7
+1382,38,No,Travel_Frequently,693,Research & Development,7,Bachelor,Life Sciences,Very High,Male,57,Very High,1,Research Scientist,High,Divorced,2610,15748,1,No,11,Excellent,4,3,4,2,Better,4,2,0,3
+1383,34,No,Travel_Rarely,404,Research & Development,2,Master,Technical Degree,High,Female,98,High,2,Healthcare Representative,Very High,Single,6687,6163,1,No,11,Excellent,4,0,14,2,Best,14,11,4,11
+1392,41,No,Travel_Frequently,1200,Research & Development,22,Bachelor,Life Sciences,Very High,Female,75,High,2,Research Scientist,Very High,Divorced,5467,13953,3,Yes,14,Excellent,1,2,12,4,Good,6,2,3,3
+1394,37,No,Travel_Rarely,1439,Research & Development,4,Below College,Life Sciences,High,Male,54,High,1,Research Scientist,High,Married,2996,5182,7,Yes,15,Excellent,4,0,8,2,Better,6,4,1,3
+1397,39,No,Non-Travel,1485,Research & Development,25,College,Life Sciences,High,Male,71,High,3,Healthcare Representative,High,Married,10920,3449,3,No,21,Outstanding,2,1,13,2,Better,6,4,0,5
+1402,43,No,Travel_Rarely,930,Research & Development,6,Bachelor,Medical,Low,Female,73,Medium,2,Research Scientist,High,Single,4081,20003,1,Yes,14,Excellent,1,0,20,3,Bad,20,7,1,8
+1405,27,Yes,Travel_Rarely,135,Research & Development,17,Master,Life Sciences,Very High,Female,51,High,1,Research Scientist,High,Single,2394,25681,1,Yes,13,Excellent,4,0,8,2,Better,8,2,7,7
+1407,26,No,Travel_Rarely,683,Research & Development,2,Below College,Medical,Low,Male,36,Medium,1,Research Scientist,Very High,Single,3904,4050,0,No,12,Excellent,4,0,5,2,Better,4,3,1,1
+1409,52,No,Travel_Rarely,258,Research & Development,8,Master,Other,High,Female,54,High,1,Laboratory Technician,Low,Married,2950,17363,9,No,13,Excellent,3,0,12,2,Bad,5,4,0,4
+1411,37,No,Travel_Rarely,1462,Research & Development,11,Bachelor,Medical,Low,Female,94,High,1,Laboratory Technician,High,Single,3629,19106,4,No,18,Excellent,1,0,8,6,Better,3,2,0,2
+1415,25,No,Travel_Rarely,949,Research & Development,1,Bachelor,Technical Degree,Low,Male,81,High,1,Laboratory Technician,Very High,Married,3229,4910,4,No,11,Excellent,2,1,7,2,Good,3,2,0,2
+1417,26,No,Travel_Rarely,652,Research & Development,7,Bachelor,Other,High,Male,100,Very High,1,Laboratory Technician,Low,Single,3578,23577,0,No,12,Excellent,4,0,8,2,Better,7,7,0,7
+1420,49,Yes,Travel_Frequently,1475,Research & Development,28,College,Life Sciences,Low,Male,97,Medium,2,Laboratory Technician,Low,Single,4284,22710,3,No,20,Outstanding,1,0,20,2,Better,4,3,1,3
+1421,29,Yes,Travel_Frequently,337,Research & Development,14,Below College,Other,High,Female,84,High,3,Healthcare Representative,Very High,Single,7553,22930,0,Yes,12,Excellent,1,0,9,1,Better,8,7,7,7
+1431,34,No,Travel_Frequently,560,Research & Development,1,Master,Other,Very High,Male,91,High,1,Research Scientist,Low,Divorced,2996,20284,5,No,14,Excellent,3,2,10,2,Better,4,3,1,3
+1433,31,Yes,Travel_Rarely,202,Research & Development,8,Bachelor,Life Sciences,Low,Female,34,Medium,1,Research Scientist,Medium,Single,1261,22262,1,No,12,Excellent,3,0,1,3,Best,1,0,0,0
+1434,27,No,Travel_Rarely,1377,Research & Development,11,Below College,Life Sciences,Medium,Male,91,High,1,Laboratory Technician,Low,Married,2099,7679,0,No,14,Excellent,2,0,6,3,Best,5,0,1,4
+1435,36,No,Travel_Rarely,172,Research & Development,4,Master,Life Sciences,Low,Male,37,Medium,2,Laboratory Technician,Very High,Single,5810,22604,1,No,16,Excellent,3,0,10,2,Good,10,4,1,8
+1438,47,No,Travel_Rarely,465,Research & Development,1,Bachelor,Technical Degree,Low,Male,74,High,1,Research Scientist,Very High,Married,3420,10205,7,No,12,Excellent,3,1,17,2,Good,6,5,1,2
+1440,37,No,Non-Travel,1413,Research & Development,5,College,Technical Degree,High,Male,84,Very High,1,Laboratory Technician,High,Single,3500,25470,0,No,14,Excellent,1,0,7,2,Bad,6,5,1,3
+1441,56,No,Travel_Rarely,1255,Research & Development,1,College,Life Sciences,Low,Female,90,High,1,Research Scientist,Low,Married,2066,10494,2,No,22,Outstanding,4,1,5,3,Best,3,2,1,0
+1447,34,No,Travel_Rarely,401,Research & Development,1,Bachelor,Life Sciences,Very High,Female,86,Medium,1,Laboratory Technician,Medium,Married,3294,3708,5,No,17,Excellent,1,1,7,2,Good,5,4,0,2
+1448,41,No,Travel_Rarely,1283,Research & Development,5,Doctor,Medical,Medium,Male,90,Very High,1,Research Scientist,High,Married,2127,5561,2,Yes,12,Excellent,1,0,7,5,Good,4,2,0,3
+1449,40,No,Non-Travel,663,Research & Development,9,Master,Other,High,Male,81,High,2,Laboratory Technician,High,Divorced,3975,23099,3,No,11,Excellent,3,2,11,2,Best,8,7,0,7
+1458,39,Yes,Non-Travel,592,Research & Development,2,Bachelor,Life Sciences,Low,Female,54,Medium,1,Laboratory Technician,Low,Single,3646,17181,2,Yes,23,Outstanding,2,0,11,2,Best,1,0,0,0
+1460,45,No,Travel_Rarely,1038,Research & Development,20,Bachelor,Medical,Medium,Male,95,Low,3,Healthcare Representative,Low,Divorced,10851,19863,2,Yes,18,Excellent,2,1,24,2,Better,7,7,0,7
+1464,31,Yes,Travel_Frequently,523,Research & Development,2,Bachelor,Life Sciences,Medium,Male,94,High,1,Laboratory Technician,Very High,Married,3722,21081,6,Yes,13,Excellent,3,1,7,2,Bad,2,2,2,2
+1471,44,No,Non-Travel,981,Research & Development,5,Bachelor,Life Sciences,High,Male,90,Medium,1,Laboratory Technician,High,Single,3162,7973,3,No,14,Excellent,4,0,7,5,Better,5,2,0,3
+1473,49,No,Travel_Rarely,1495,Research & Development,5,Master,Technical Degree,Low,Male,96,High,2,Healthcare Representative,High,Married,6651,21534,2,No,14,Excellent,2,1,20,0,Good,3,2,1,2
+1474,40,No,Travel_Rarely,896,Research & Development,2,Bachelor,Medical,High,Male,68,High,1,Research Scientist,High,Divorced,2345,8045,2,No,14,Excellent,3,1,8,3,Best,3,1,1,2
+1475,44,No,Travel_Rarely,1467,Research & Development,20,Bachelor,Life Sciences,Very High,Male,49,High,1,Research Scientist,Medium,Single,3420,21158,1,No,13,Excellent,3,0,6,3,Good,5,2,1,3
+1480,42,No,Travel_Frequently,748,Research & Development,9,College,Medical,Low,Female,74,High,1,Laboratory Technician,Very High,Single,3673,16458,1,No,13,Excellent,3,0,12,3,Better,12,9,5,8
+1482,30,No,Non-Travel,990,Research & Development,7,Bachelor,Technical Degree,High,Male,64,High,1,Research Scientist,High,Divorced,1274,7152,1,No,13,Excellent,2,2,1,2,Good,1,0,0,0
+1483,57,No,Travel_Rarely,405,Research & Development,1,College,Life Sciences,Medium,Male,93,Very High,2,Research Scientist,High,Married,4900,2721,0,No,24,Outstanding,1,1,13,2,Good,12,9,2,8
+1484,49,No,Travel_Rarely,1490,Research & Development,7,Master,Life Sciences,High,Male,35,High,3,Healthcare Representative,Medium,Divorced,10466,20948,3,No,14,Excellent,2,2,29,3,Better,8,7,0,7
+1494,24,Yes,Travel_Frequently,381,Research & Development,9,Bachelor,Medical,Medium,Male,89,High,1,Laboratory Technician,Low,Single,3172,16998,2,Yes,11,Excellent,3,0,4,2,Good,0,0,0,0
+1501,55,No,Travel_Rarely,1229,Research & Development,4,Master,Life Sciences,Very High,Male,30,High,2,Healthcare Representative,High,Married,4035,16143,0,Yes,16,Excellent,2,0,4,2,Better,3,2,1,2
+1502,33,No,Travel_Rarely,1099,Research & Development,4,Master,Medical,Low,Female,82,Medium,1,Laboratory Technician,Medium,Married,3838,8192,8,No,11,Excellent,4,0,8,5,Better,5,4,0,2
+1504,28,Yes,Travel_Frequently,289,Research & Development,2,College,Medical,High,Male,38,Medium,1,Laboratory Technician,Low,Single,2561,5355,7,No,11,Excellent,3,0,8,2,Good,0,0,0,0
+1506,28,No,Travel_Rarely,1423,Research & Development,1,Bachelor,Life Sciences,Low,Male,72,Medium,1,Research Scientist,High,Divorced,1563,12530,1,No,14,Excellent,4,1,1,2,Bad,1,0,0,0
+1509,49,No,Travel_Rarely,271,Research & Development,3,College,Medical,High,Female,43,Medium,2,Laboratory Technician,Low,Married,4789,23070,4,No,25,Outstanding,1,1,10,3,Better,3,2,1,2
+1513,29,No,Travel_Frequently,410,Research & Development,2,Below College,Life Sciences,Very High,Female,97,High,1,Laboratory Technician,Medium,Married,3180,4668,0,No,13,Excellent,3,3,4,3,Better,3,2,0,2
+1515,33,No,Travel_Rarely,516,Research & Development,8,Doctor,Life Sciences,Very High,Male,69,High,2,Healthcare Representative,High,Single,6388,22049,2,Yes,17,Excellent,1,0,14,6,Better,0,0,0,0
+1522,29,Yes,Travel_Rarely,224,Research & Development,1,Master,Technical Degree,Low,Male,100,Medium,1,Research Scientist,Low,Single,2362,7568,6,No,13,Excellent,3,0,11,2,Bad,9,7,0,7
+1529,35,No,Travel_Rarely,1029,Research & Development,16,Bachelor,Life Sciences,Very High,Female,91,Medium,3,Healthcare Representative,Medium,Single,8606,21195,1,No,19,Excellent,4,0,11,3,Bad,11,8,3,3
+1533,23,No,Travel_Rarely,507,Research & Development,20,Below College,Life Sciences,Low,Male,97,High,2,Laboratory Technician,High,Single,2272,24812,0,No,14,Excellent,2,0,5,2,Better,4,3,1,2
+1534,40,Yes,Travel_Rarely,676,Research & Development,9,Master,Life Sciences,Very High,Male,86,High,1,Laboratory Technician,Low,Single,2018,21831,3,No,14,Excellent,2,0,15,3,Bad,5,4,1,0
+1537,31,Yes,Travel_Frequently,561,Research & Development,3,Bachelor,Life Sciences,Very High,Female,33,High,1,Research Scientist,High,Single,4084,4156,1,No,12,Excellent,1,0,7,2,Bad,7,2,7,7
+1542,42,No,Travel_Rarely,1210,Research & Development,2,Bachelor,Medical,High,Male,68,Medium,1,Laboratory Technician,Medium,Married,4841,24052,4,No,14,Excellent,2,1,4,3,Better,1,0,0,0
+1543,37,No,Travel_Rarely,674,Research & Development,13,Bachelor,Medical,Low,Male,47,High,2,Research Scientist,Very High,Married,4285,3031,1,No,17,Excellent,1,0,10,2,Better,10,8,3,7
+1544,29,No,Travel_Rarely,441,Research & Development,8,Below College,Other,High,Female,39,Low,2,Healthcare Representative,Low,Married,9715,7288,3,No,13,Excellent,3,1,9,3,Better,7,7,0,7
+1546,45,No,Travel_Rarely,950,Research & Development,28,Bachelor,Technical Degree,Very High,Male,97,High,1,Research Scientist,Very High,Married,2132,4585,4,No,20,Outstanding,4,1,8,3,Better,5,4,0,3
+1547,42,No,Travel_Frequently,288,Research & Development,2,Bachelor,Life Sciences,Very High,Male,40,High,3,Healthcare Representative,Very High,Married,10124,18611,2,Yes,14,Excellent,3,1,24,3,Bad,20,8,13,9
+1549,33,No,Travel_Rarely,589,Research & Development,28,Master,Life Sciences,Medium,Male,79,High,2,Laboratory Technician,High,Married,5207,22949,1,Yes,12,Excellent,2,1,15,3,Better,15,14,5,7
+1551,24,No,Travel_Rarely,350,Research & Development,21,College,Technical Degree,High,Male,57,Medium,1,Laboratory Technician,Low,Divorced,2296,10036,0,No,14,Excellent,2,3,2,3,Better,1,1,0,0
+1552,40,No,Non-Travel,1142,Research & Development,8,College,Life Sciences,Very High,Male,72,High,2,Healthcare Representative,Very High,Divorced,4069,8841,3,Yes,18,Excellent,3,0,8,2,Better,2,2,2,2
+1553,45,No,Travel_Rarely,538,Research & Development,1,Master,Technical Degree,Low,Male,66,High,3,Healthcare Representative,Medium,Divorced,7441,20933,1,No,12,Excellent,1,3,10,4,Better,10,8,7,7
+1555,32,No,Travel_Rarely,824,Research & Development,5,College,Life Sciences,Very High,Female,67,Medium,2,Research Scientist,Medium,Married,5878,15624,3,No,12,Excellent,1,1,12,2,Better,7,1,2,5
+1558,29,No,Travel_Rarely,598,Research & Development,9,Bachelor,Life Sciences,High,Male,91,Very High,1,Research Scientist,High,Married,2451,22376,6,No,18,Excellent,1,2,5,2,Good,1,0,0,0
+1564,35,No,Travel_Rarely,992,Research & Development,1,Bachelor,Medical,Very High,Male,68,Medium,1,Laboratory Technician,Low,Single,2450,21731,1,No,19,Excellent,2,0,3,3,Better,3,0,1,2
+1569,35,Yes,Travel_Rarely,104,Research & Development,2,Bachelor,Life Sciences,Low,Female,69,High,1,Laboratory Technician,Low,Divorced,2074,26619,1,Yes,12,Excellent,4,1,1,2,Better,1,0,0,0
+1574,32,No,Non-Travel,1200,Research & Development,1,Master,Technical Degree,Very High,Male,62,High,2,Research Scientist,Low,Married,4087,25174,4,No,14,Excellent,2,1,9,3,Good,6,5,1,2
+1576,48,No,Travel_Rarely,1108,Research & Development,15,Master,Other,High,Female,65,High,1,Research Scientist,Low,Married,2367,16530,8,No,12,Excellent,4,1,10,3,Good,8,2,7,6
+1577,34,No,Travel_Rarely,479,Research & Development,7,Master,Medical,Low,Male,35,High,1,Research Scientist,Very High,Single,2972,22061,1,No,13,Excellent,3,0,1,4,Bad,1,0,0,0
+1580,34,No,Travel_Rarely,1351,Research & Development,1,Master,Life Sciences,Medium,Male,45,High,2,Research Scientist,Very High,Married,5484,13008,9,No,17,Excellent,2,1,9,3,Good,2,2,2,1
+1581,26,No,Travel_Rarely,474,Research & Development,3,Bachelor,Life Sciences,Low,Female,89,High,1,Research Scientist,Very High,Married,2061,11133,1,No,21,Outstanding,1,0,1,5,Better,1,0,0,0
+1586,29,No,Travel_Rarely,1370,Research & Development,3,Below College,Medical,Medium,Male,87,High,1,Laboratory Technician,Low,Single,4723,16213,1,Yes,18,Excellent,4,0,10,3,Better,10,9,1,5
+1587,35,No,Travel_Rarely,670,Research & Development,10,Master,Medical,Low,Female,51,High,2,Healthcare Representative,High,Single,6142,4223,3,Yes,16,Excellent,3,0,10,4,Better,5,2,0,4
+1590,29,No,Travel_Frequently,995,Research & Development,2,Below College,Life Sciences,Low,Male,87,High,2,Healthcare Representative,Very High,Divorced,8853,24483,1,No,19,Excellent,4,1,6,0,Best,6,4,1,3
+1592,23,No,Travel_Rarely,977,Research & Development,10,Bachelor,Technical Degree,Very High,Male,45,Very High,1,Research Scientist,High,Married,2073,12826,2,No,16,Excellent,4,1,4,2,Better,2,2,2,2
+1594,36,No,Travel_Frequently,1302,Research & Development,6,Master,Life Sciences,Low,Male,80,Very High,2,Laboratory Technician,Low,Married,5562,19711,3,Yes,13,Excellent,4,1,9,3,Better,3,2,0,2
+1596,35,No,Travel_Rarely,750,Research & Development,28,Bachelor,Life Sciences,Medium,Male,46,Very High,2,Laboratory Technician,High,Married,3407,25348,1,No,17,Excellent,4,2,10,3,Good,10,9,6,8
+1597,34,No,Travel_Frequently,653,Research & Development,10,Master,Technical Degree,Very High,Male,92,Medium,2,Healthcare Representative,High,Married,5063,15332,1,No,14,Excellent,2,1,8,3,Good,8,2,7,7
+1599,43,No,Travel_Rarely,990,Research & Development,27,Bachelor,Technical Degree,Very High,Male,87,Very High,1,Laboratory Technician,Medium,Divorced,4876,5855,5,No,12,Excellent,3,1,8,0,Better,6,4,0,2
+1601,35,No,Travel_Rarely,1349,Research & Development,7,College,Life Sciences,High,Male,63,Medium,1,Laboratory Technician,Very High,Married,2690,7713,1,No,18,Excellent,4,1,1,5,Good,1,0,0,1
+1604,28,Yes,Travel_Rarely,329,Research & Development,24,Bachelor,Medical,High,Male,51,High,1,Laboratory Technician,Medium,Married,2408,7324,1,Yes,17,Excellent,3,3,1,3,Better,1,1,0,0
+1605,22,No,Non-Travel,457,Research & Development,26,College,Other,Medium,Female,85,Medium,1,Research Scientist,High,Married,2814,10293,1,Yes,14,Excellent,2,0,4,2,Good,4,2,1,3
+1606,50,No,Travel_Frequently,1234,Research & Development,20,Doctor,Medical,Medium,Male,41,High,4,Healthcare Representative,High,Married,11245,20689,2,Yes,15,Excellent,3,1,32,3,Better,30,8,12,13
+1607,32,No,Travel_Rarely,634,Research & Development,5,Master,Other,Medium,Female,35,Very High,1,Research Scientist,Very High,Married,3312,18783,3,No,17,Excellent,4,2,6,3,Better,3,2,0,2
+1609,30,No,Travel_Rarely,241,Research & Development,7,Bachelor,Medical,Medium,Male,48,Medium,1,Research Scientist,Medium,Married,2141,5348,1,No,12,Excellent,2,1,6,3,Good,6,4,1,1
+1611,45,No,Travel_Rarely,1015,Research & Development,5,Doctor,Medical,High,Female,50,Low,2,Laboratory Technician,Low,Single,5769,23447,1,Yes,14,Excellent,1,0,10,3,Better,10,7,1,4
+1617,49,No,Travel_Rarely,722,Research & Development,25,Master,Life Sciences,High,Female,84,High,1,Laboratory Technician,Low,Married,3211,22102,1,No,14,Excellent,4,1,10,3,Good,9,6,1,4
+1619,27,No,Travel_Rarely,1302,Research & Development,19,Bachelor,Other,Very High,Male,67,Medium,1,Laboratory Technician,Low,Divorced,4066,16290,1,No,11,Excellent,1,2,7,3,Better,7,7,0,7
+1621,35,No,Travel_Rarely,819,Research & Development,18,Doctor,Life Sciences,Medium,Male,48,Very High,2,Research Scientist,Low,Married,5208,26312,1,No,11,Excellent,4,0,16,2,Better,16,15,1,10
+1623,21,No,Travel_Rarely,546,Research & Development,5,Below College,Medical,High,Male,97,High,1,Research Scientist,Very High,Single,3117,26009,1,No,18,Excellent,3,0,3,2,Better,2,2,2,2
+1627,39,No,Travel_Rarely,170,Research & Development,3,College,Medical,High,Male,76,Medium,2,Laboratory Technician,High,Divorced,3069,10302,0,No,15,Excellent,4,1,11,3,Better,10,8,0,7
+1630,35,No,Non-Travel,208,Research & Development,8,Master,Life Sciences,High,Female,52,High,2,Healthcare Representative,High,Married,4148,12250,1,No,12,Excellent,4,1,15,5,Better,14,11,2,9
+1640,37,No,Travel_Rarely,1470,Research & Development,10,Bachelor,Medical,Medium,Female,71,High,1,Research Scientist,Medium,Married,3936,9953,1,No,11,Excellent,1,1,8,2,Bad,8,4,7,7
+1646,24,No,Travel_Frequently,567,Research & Development,2,Below College,Technical Degree,Low,Female,32,High,1,Research Scientist,Very High,Single,3760,17218,1,Yes,13,Excellent,3,0,6,2,Better,6,3,1,3
+1647,27,No,Travel_Rarely,486,Research & Development,8,Bachelor,Medical,Medium,Female,86,Very High,1,Research Scientist,High,Married,3517,22490,7,No,17,Excellent,1,0,5,0,Better,3,2,0,2
+1648,27,No,Travel_Frequently,591,Research & Development,2,Bachelor,Medical,Very High,Male,87,High,1,Research Scientist,Very High,Single,2580,6297,2,No,13,Excellent,3,0,6,0,Good,4,2,1,2
+1649,40,Yes,Travel_Rarely,1329,Research & Development,7,Bachelor,Life Sciences,Low,Male,73,High,1,Laboratory Technician,Low,Single,2166,3339,3,Yes,14,Excellent,2,0,10,3,Bad,4,2,0,3
+1651,36,No,Travel_Rarely,711,Research & Development,5,Master,Life Sciences,Medium,Female,42,High,3,Healthcare Representative,Low,Married,8008,22792,4,No,12,Excellent,3,2,9,6,Better,3,2,0,2
+1658,34,No,Travel_Rarely,1130,Research & Development,3,Bachelor,Life Sciences,Very High,Female,66,High,2,Research Scientist,Medium,Divorced,5433,19332,1,No,12,Excellent,3,1,11,2,Better,11,8,7,9
+1659,36,No,Travel_Rarely,311,Research & Development,7,Bachelor,Life Sciences,Low,Male,77,High,1,Laboratory Technician,Medium,Single,2013,10950,2,No,11,Excellent,3,0,15,4,Better,4,3,1,3
+1661,49,No,Travel_Rarely,465,Research & Development,6,Below College,Life Sciences,High,Female,41,Medium,4,Healthcare Representative,High,Married,13966,11652,2,Yes,19,Excellent,2,1,30,3,Better,15,11,2,12
+1664,36,No,Travel_Rarely,1040,Research & Development,3,College,Life Sciences,Very High,Male,79,Very High,2,Healthcare Representative,Low,Divorced,6842,26308,6,No,20,Outstanding,1,1,13,3,Better,5,4,0,4
+1668,38,No,Travel_Frequently,1189,Research & Development,1,Bachelor,Life Sciences,Very High,Male,90,High,2,Research Scientist,Very High,Married,4735,9867,7,No,15,Excellent,4,2,19,4,Best,13,11,2,9
+1671,32,No,Travel_Rarely,977,Research & Development,2,Bachelor,Medical,Very High,Male,45,High,2,Research Scientist,Medium,Divorced,5470,25518,0,No,13,Excellent,3,2,10,4,Good,9,5,1,6
+1674,49,No,Travel_Rarely,464,Research & Development,16,Bachelor,Medical,Very High,Female,74,High,1,Laboratory Technician,Low,Divorced,2587,24941,4,Yes,16,Excellent,2,1,17,2,Good,2,2,2,2
+1675,38,No,Travel_Frequently,148,Research & Development,2,Bachelor,Medical,Very High,Female,42,Medium,1,Laboratory Technician,Medium,Single,2440,23826,1,No,22,Outstanding,2,0,4,3,Better,4,3,3,3
+1682,36,No,Travel_Rarely,1351,Research & Development,26,Master,Life Sciences,Low,Male,80,High,2,Healthcare Representative,High,Married,5347,7419,6,No,14,Excellent,2,2,10,2,Good,3,2,0,2
+1684,23,Yes,Travel_Rarely,1320,Research & Development,8,Below College,Medical,Very High,Male,93,Medium,1,Laboratory Technician,High,Single,3989,20586,1,Yes,11,Excellent,1,0,5,2,Better,5,4,1,2
+1687,38,No,Travel_Rarely,1495,Research & Development,4,College,Medical,Very High,Female,87,High,1,Laboratory Technician,High,Married,3306,26176,7,No,19,Excellent,4,1,7,5,Good,0,0,0,0
+1689,53,No,Travel_Rarely,1395,Research & Development,24,Master,Medical,Medium,Male,48,Very High,3,Healthcare Representative,Very High,Married,7005,3458,3,No,15,Excellent,3,0,11,2,Better,4,3,1,2
+1692,32,Yes,Travel_Rarely,1259,Research & Development,2,Master,Life Sciences,Very High,Male,95,High,1,Laboratory Technician,Medium,Single,1393,24852,1,No,12,Excellent,1,0,1,2,Better,1,0,0,0
+1693,26,No,Non-Travel,786,Research & Development,7,Bachelor,Medical,Very High,Male,76,High,1,Laboratory Technician,Very High,Single,2570,11925,1,No,20,Outstanding,3,0,7,5,Better,7,7,5,7
+1694,55,No,Travel_Rarely,1441,Research & Development,22,Bachelor,Technical Degree,Low,Male,94,Medium,1,Research Scientist,Medium,Divorced,3537,23737,5,No,12,Excellent,4,1,8,1,Better,4,2,1,2
+1696,34,No,Travel_Rarely,1157,Research & Development,5,College,Medical,Medium,Male,57,Medium,2,Laboratory Technician,Very High,Married,3986,11912,1,No,14,Excellent,3,1,15,3,Best,15,10,4,13
+1697,60,No,Travel_Rarely,370,Research & Development,1,Master,Medical,High,Male,92,Low,3,Healthcare Representative,Very High,Divorced,10883,20467,3,No,20,Outstanding,3,1,19,2,Best,1,0,0,0
+1698,33,No,Travel_Rarely,267,Research & Development,21,Bachelor,Medical,Medium,Male,79,Very High,1,Laboratory Technician,Medium,Married,2028,13637,1,No,18,Excellent,4,3,14,6,Better,14,11,2,13
+1701,34,No,Travel_Rarely,678,Research & Development,19,Bachelor,Life Sciences,Medium,Female,35,Medium,1,Research Scientist,Very High,Married,2929,20338,1,No,12,Excellent,2,0,10,3,Better,10,9,8,7
+1703,44,No,Travel_Rarely,921,Research & Development,2,Bachelor,Life Sciences,High,Female,96,Very High,3,Healthcare Representative,Very High,Married,7879,14810,1,Yes,19,Excellent,2,1,9,2,Better,8,7,6,7
+1704,35,No,Travel_Frequently,146,Research & Development,2,Master,Medical,Low,Male,79,Medium,1,Research Scientist,Very High,Single,4930,13970,0,Yes,14,Excellent,3,0,6,2,Best,5,4,1,4
+1707,24,No,Travel_Rarely,581,Research & Development,9,Bachelor,Medical,High,Male,62,Very High,1,Research Scientist,High,Married,4401,17616,1,No,16,Excellent,4,1,5,1,Better,5,3,0,4
+1709,29,No,Travel_Rarely,1082,Research & Development,9,Master,Medical,Very High,Female,43,High,1,Laboratory Technician,High,Married,2974,25412,9,No,17,Excellent,3,1,9,2,Better,5,3,1,2
+1712,45,No,Non-Travel,1238,Research & Development,1,Below College,Life Sciences,High,Male,74,Medium,3,Healthcare Representative,High,Married,10748,3395,3,No,23,Outstanding,4,1,25,3,Good,23,15,14,4
+1718,26,No,Travel_Rarely,390,Research & Development,17,Master,Medical,Very High,Male,62,Low,1,Laboratory Technician,High,Married,2305,6217,1,No,15,Excellent,3,3,3,3,Best,3,2,0,2
+1720,32,No,Travel_Frequently,585,Research & Development,10,Bachelor,Life Sciences,Low,Male,56,High,1,Research Scientist,High,Married,3433,17360,6,No,13,Excellent,1,1,10,3,Good,5,2,1,3
+1721,31,No,Travel_Rarely,741,Research & Development,2,Master,Life Sciences,Medium,Male,69,High,1,Laboratory Technician,High,Married,3477,18103,1,No,14,Excellent,4,1,6,2,Best,5,2,0,3
+1725,24,No,Travel_Rarely,506,Research & Development,29,Below College,Medical,Medium,Male,91,High,1,Laboratory Technician,Low,Divorced,3907,3622,1,No,13,Excellent,2,3,6,2,Best,6,2,1,2
+1727,46,No,Travel_Rarely,717,Research & Development,13,Master,Life Sciences,High,Male,34,High,2,Healthcare Representative,Medium,Single,5562,9697,6,No,14,Excellent,4,0,19,3,Better,10,7,0,9
+1729,30,No,Travel_Rarely,793,Research & Development,16,Below College,Life Sciences,Medium,Male,33,High,1,Research Scientist,Very High,Married,2862,3811,1,No,12,Excellent,2,1,10,2,Good,10,0,0,8
+1735,23,No,Travel_Rarely,160,Research & Development,4,Below College,Medical,High,Female,51,High,1,Laboratory Technician,Medium,Single,3295,12862,1,No,13,Excellent,3,0,3,3,Bad,3,2,1,2
+1737,39,No,Non-Travel,792,Research & Development,1,Bachelor,Life Sciences,Very High,Male,77,High,2,Laboratory Technician,Very High,Married,6472,8989,1,Yes,15,Excellent,4,1,9,2,Better,9,8,5,8
+1745,30,No,Travel_Frequently,1312,Research & Development,2,Master,Technical Degree,Very High,Female,78,Medium,1,Research Scientist,Low,Single,4968,26427,0,No,16,Excellent,4,0,10,2,Better,9,7,0,7
+1751,27,No,Travel_Rarely,1054,Research & Development,8,Bachelor,Medical,High,Female,67,High,1,Research Scientist,Very High,Single,3445,6152,1,No,11,Excellent,3,0,6,5,Good,6,2,1,4
+1753,29,No,Travel_Frequently,461,Research & Development,1,Bachelor,Life Sciences,Very High,Male,70,Very High,2,Healthcare Representative,High,Single,6294,23060,8,Yes,12,Excellent,4,0,10,5,Best,3,2,0,2
+1755,34,No,Travel_Rarely,181,Research & Development,2,Master,Medical,Very High,Male,97,Very High,1,Research Scientist,Very High,Married,2932,5586,0,Yes,14,Excellent,1,3,6,3,Better,5,0,1,2
+1760,38,No,Travel_Frequently,594,Research & Development,2,College,Medical,High,Female,75,Medium,1,Laboratory Technician,Medium,Married,2468,15963,4,No,14,Excellent,2,1,9,4,Good,6,1,0,5
+1762,29,No,Travel_Rarely,590,Research & Development,4,Bachelor,Technical Degree,Very High,Female,91,Medium,1,Research Scientist,Low,Divorced,2109,10007,1,No,13,Excellent,3,1,1,2,Better,1,0,0,0
+1763,30,No,Travel_Rarely,305,Research & Development,16,Bachelor,Life Sciences,High,Male,58,Very High,2,Healthcare Representative,High,Married,5294,9128,3,No,16,Excellent,3,1,10,3,Better,7,0,1,7
+1764,32,No,Non-Travel,953,Research & Development,5,Master,Technical Degree,Medium,Male,65,High,1,Research Scientist,Medium,Single,2718,17674,2,No,14,Excellent,2,0,12,3,Better,7,7,0,7
+1766,38,No,Travel_Rarely,833,Research & Development,18,Bachelor,Medical,Medium,Male,60,Low,2,Healthcare Representative,Very High,Married,5811,24539,3,Yes,16,Excellent,3,1,15,2,Better,1,0,1,0
+1767,43,Yes,Travel_Frequently,807,Research & Development,17,Bachelor,Technical Degree,High,Male,38,Medium,1,Research Scientist,High,Married,2437,15587,9,Yes,16,Excellent,4,1,6,4,Better,1,0,0,0
+1768,42,No,Travel_Rarely,855,Research & Development,12,Bachelor,Medical,Medium,Male,57,High,1,Laboratory Technician,Medium,Divorced,2766,8952,8,No,22,Outstanding,2,3,7,6,Good,5,3,0,4
+1771,33,No,Non-Travel,775,Research & Development,4,Bachelor,Technical Degree,Very High,Male,90,High,2,Research Scientist,Medium,Divorced,3055,6194,5,No,15,Excellent,4,2,11,2,Good,9,8,1,7
+1772,41,No,Travel_Rarely,548,Research & Development,9,Master,Life Sciences,High,Male,94,High,1,Laboratory Technician,Low,Divorced,2289,20520,1,No,20,Outstanding,2,2,5,2,Better,5,3,0,4
+1782,38,No,Travel_Rarely,1153,Research & Development,6,College,Other,Very High,Female,40,Medium,1,Laboratory Technician,High,Married,3702,16376,1,No,11,Excellent,2,1,5,3,Better,5,4,0,4
+1783,22,Yes,Travel_Rarely,1294,Research & Development,8,Below College,Medical,High,Female,79,High,1,Laboratory Technician,Low,Married,2398,15999,1,Yes,17,Excellent,3,0,1,6,Better,1,0,0,0
+1790,36,No,Travel_Rarely,1383,Research & Development,10,Bachelor,Life Sciences,Very High,Male,90,High,3,Healthcare Representative,Low,Married,8321,25949,7,Yes,13,Excellent,4,1,15,1,Better,12,8,5,7
+1792,44,Yes,Travel_Frequently,429,Research & Development,1,College,Medical,High,Male,99,High,1,Research Scientist,Medium,Divorced,2342,11092,1,Yes,12,Excellent,3,3,6,2,Good,5,3,2,3
+1798,33,No,Travel_Rarely,867,Research & Development,8,Master,Life Sciences,Very High,Male,90,Very High,1,Research Scientist,Low,Married,3143,6076,6,No,19,Excellent,2,1,14,1,Better,10,8,7,6
+1799,28,No,Travel_Rarely,1181,Research & Development,1,Bachelor,Life Sciences,High,Male,82,High,1,Research Scientist,Very High,Married,2044,5531,1,No,11,Excellent,3,1,5,6,Best,5,3,0,3
+1802,40,No,Travel_Rarely,616,Research & Development,2,College,Life Sciences,High,Female,99,High,1,Laboratory Technician,Low,Married,3377,25605,4,No,17,Excellent,4,1,7,5,Good,4,3,0,2
+1803,42,No,Travel_Rarely,1128,Research & Development,13,Bachelor,Medical,Medium,Male,95,Very High,2,Healthcare Representative,Low,Married,5538,5696,5,No,18,Excellent,3,2,10,2,Good,0,0,0,0
+1807,34,Yes,Travel_Frequently,234,Research & Development,9,Master,Life Sciences,Very High,Male,93,High,2,Laboratory Technician,Low,Married,5346,6208,4,No,17,Excellent,3,1,11,3,Good,7,1,0,7
+1813,43,No,Non-Travel,343,Research & Development,9,Bachelor,Life Sciences,Low,Male,52,High,1,Research Scientist,High,Single,2438,24978,4,No,13,Excellent,3,0,7,2,Good,3,2,1,2
+1814,41,No,Travel_Rarely,447,Research & Development,5,Bachelor,Life Sciences,Medium,Male,85,Very High,2,Healthcare Representative,Medium,Single,6870,15530,3,No,12,Excellent,1,0,11,3,Bad,3,2,1,2
+1821,46,Yes,Travel_Rarely,261,Research & Development,21,College,Medical,Very High,Female,66,High,2,Healthcare Representative,Medium,Married,8926,10842,4,No,22,Outstanding,4,1,13,2,Best,9,7,3,7
+1822,40,No,Travel_Rarely,1194,Research & Development,1,Bachelor,Life Sciences,High,Female,52,High,2,Healthcare Representative,Very High,Divorced,6513,9060,4,No,17,Excellent,4,1,12,3,Better,5,3,0,3
+1826,35,No,Travel_Rarely,185,Research & Development,23,Master,Medical,Medium,Male,91,Low,1,Laboratory Technician,High,Married,2705,9696,0,No,16,Excellent,2,1,6,2,Best,5,4,0,3
+1829,40,No,Travel_Rarely,750,Research & Development,12,Bachelor,Life Sciences,Medium,Female,47,High,2,Healthcare Representative,Low,Divorced,4448,10748,2,No,12,Excellent,2,1,15,3,Better,7,4,7,7
+1830,54,No,Travel_Rarely,431,Research & Development,7,Master,Medical,Very High,Female,68,High,2,Research Scientist,Very High,Married,6854,15696,4,No,15,Excellent,2,1,14,2,Good,7,1,1,7
+1834,28,No,Travel_Rarely,1217,Research & Development,1,Bachelor,Medical,High,Female,67,High,1,Research Scientist,Low,Married,3591,12719,1,No,25,Outstanding,3,1,3,3,Better,3,2,1,2
+1839,18,No,Non-Travel,1431,Research & Development,14,Bachelor,Medical,Medium,Female,33,High,1,Research Scientist,High,Single,1514,8018,1,No,16,Excellent,3,0,0,4,Bad,0,0,0,0
+1847,36,No,Travel_Rarely,430,Research & Development,2,Master,Other,Very High,Female,73,High,2,Research Scientist,Medium,Married,6962,19573,4,Yes,22,Outstanding,4,1,15,2,Better,1,0,0,0
+1850,27,No,Travel_Frequently,1297,Research & Development,5,College,Life Sciences,Very High,Female,53,High,1,Laboratory Technician,Very High,Single,2379,19826,0,Yes,14,Excellent,3,0,6,3,Good,5,4,0,2
+1852,29,No,Travel_Frequently,574,Research & Development,20,Below College,Medical,Very High,Male,40,High,1,Laboratory Technician,Very High,Married,3812,7003,1,No,13,Excellent,2,0,11,3,Best,11,8,3,10
+1854,42,No,Non-Travel,355,Research & Development,10,Master,Technical Degree,High,Male,38,High,1,Research Scientist,High,Married,2936,6161,3,No,22,Outstanding,2,2,10,1,Good,6,3,3,3
+1856,47,No,Travel_Rarely,207,Research & Development,9,Master,Life Sciences,Medium,Female,64,High,1,Laboratory Technician,High,Single,2105,5411,4,No,12,Excellent,3,0,7,2,Better,2,2,2,0
+1859,29,No,Travel_Rarely,726,Research & Development,29,Below College,Life Sciences,Very High,Male,93,Low,2,Healthcare Representative,High,Divorced,6384,21143,8,No,17,Excellent,4,2,11,3,Better,7,0,1,6
+1860,42,No,Travel_Rarely,1142,Research & Development,8,Bachelor,Life Sciences,Very High,Male,81,High,1,Laboratory Technician,High,Single,3968,13624,4,No,13,Excellent,4,0,8,3,Better,0,0,0,0
+1868,29,Yes,Travel_Frequently,459,Research & Development,24,College,Life Sciences,Very High,Male,73,Medium,1,Research Scientist,Very High,Single,2439,14753,1,Yes,24,Outstanding,2,0,1,3,Good,1,0,1,0
+1870,27,No,Travel_Frequently,1131,Research & Development,15,Bachelor,Life Sciences,Very High,Female,77,Medium,1,Research Scientist,Low,Married,4774,23844,0,No,19,Excellent,4,1,8,2,Good,7,6,7,3
+1871,39,No,Travel_Rarely,835,Research & Development,19,Master,Other,Very High,Male,41,High,2,Research Scientist,Very High,Divorced,3902,5141,8,No,14,Excellent,2,3,7,2,Better,2,2,2,2
+1873,55,No,Travel_Rarely,836,Research & Development,2,Master,Technical Degree,Medium,Male,98,Medium,1,Research Scientist,Very High,Married,2662,7975,8,No,20,Outstanding,2,1,19,2,Best,5,2,0,4
+1878,22,Yes,Travel_Rarely,391,Research & Development,7,Below College,Life Sciences,Very High,Male,75,High,1,Research Scientist,Medium,Single,2472,26092,1,Yes,23,Outstanding,1,0,1,2,Better,1,0,0,0
+1881,31,No,Travel_Rarely,311,Research & Development,20,Bachelor,Life Sciences,Medium,Male,89,High,2,Laboratory Technician,High,Divorced,4197,18624,1,No,11,Excellent,1,1,10,2,Better,10,8,0,2
+1883,29,No,Travel_Rarely,592,Research & Development,7,Bachelor,Life Sciences,Very High,Male,59,High,1,Laboratory Technician,Low,Single,2062,19384,3,No,14,Excellent,2,0,11,2,Better,3,2,1,2
+1885,37,No,Travel_Rarely,783,Research & Development,7,Master,Medical,Very High,Male,78,High,2,Research Scientist,Low,Married,4284,13588,5,Yes,22,Outstanding,3,1,16,2,Better,5,3,0,4
+1893,26,No,Travel_Rarely,482,Research & Development,1,College,Life Sciences,Medium,Female,90,Medium,1,Research Scientist,High,Married,2933,14908,1,Yes,13,Excellent,3,1,1,3,Good,1,0,1,0
+1903,44,No,Travel_Rarely,170,Research & Development,1,Master,Life Sciences,Medium,Male,78,Very High,2,Healthcare Representative,Low,Married,5033,9364,2,No,15,Excellent,4,1,10,5,Better,2,0,2,2
+1905,34,Yes,Non-Travel,967,Research & Development,16,Master,Technical Degree,Very High,Male,85,Low,1,Research Scientist,Low,Married,2307,14460,1,Yes,23,Outstanding,2,1,5,2,Better,5,2,3,0
+1907,56,Yes,Travel_Rarely,1162,Research & Development,24,College,Life Sciences,Low,Male,97,High,1,Laboratory Technician,Very High,Single,2587,10261,1,No,16,Excellent,4,0,5,3,Better,4,2,1,0
+1916,31,No,Travel_Rarely,471,Research & Development,4,Bachelor,Medical,Low,Female,62,Very High,1,Laboratory Technician,High,Divorced,3978,16031,8,No,12,Excellent,2,1,4,0,Good,2,2,2,2
+1918,26,No,Travel_Frequently,1096,Research & Development,6,Bachelor,Other,High,Male,61,Very High,1,Laboratory Technician,Very High,Married,2544,7102,0,No,18,Excellent,1,1,8,3,Better,7,7,7,7
+1922,45,No,Travel_Frequently,1297,Research & Development,1,Master,Medical,Medium,Male,44,High,2,Healthcare Representative,High,Single,5399,14511,4,No,12,Excellent,3,0,12,3,Better,4,2,0,3
+1931,27,No,Travel_Rarely,1354,Research & Development,2,Master,Technical Degree,Medium,Male,41,High,1,Research Scientist,Medium,Married,2226,6073,1,No,11,Excellent,3,1,6,3,Good,5,3,1,2
+1932,34,No,Travel_Frequently,735,Research & Development,22,Master,Other,High,Male,86,Medium,2,Research Scientist,Very High,Married,5747,26496,1,Yes,15,Excellent,2,0,16,3,Better,15,10,6,11
+1934,47,No,Non-Travel,1169,Research & Development,14,Master,Technical Degree,High,Male,64,High,2,Research Scientist,Medium,Married,5467,2125,8,No,18,Excellent,3,1,16,4,Best,8,7,1,7
+1937,38,No,Travel_Frequently,1394,Research & Development,8,Bachelor,Medical,Very High,Female,58,Medium,2,Research Scientist,Medium,Divorced,2133,18115,1,Yes,16,Excellent,3,1,20,3,Better,20,11,0,7
+1939,32,Yes,Travel_Frequently,238,Research & Development,5,College,Life Sciences,Low,Female,47,Very High,1,Research Scientist,High,Single,2432,15318,3,Yes,14,Excellent,1,0,8,2,Better,4,1,0,3
+1940,38,No,Travel_Rarely,1206,Research & Development,9,College,Life Sciences,Medium,Male,71,High,1,Research Scientist,Very High,Divorced,4771,14293,2,No,19,Excellent,4,2,10,0,Best,5,2,0,3
+1947,28,No,Non-Travel,1103,Research & Development,16,Bachelor,Medical,High,Male,49,High,1,Research Scientist,High,Single,2144,2122,1,No,14,Excellent,3,0,5,3,Good,5,3,1,4
+1948,31,No,Non-Travel,976,Research & Development,3,College,Medical,High,Male,48,High,1,Research Scientist,Low,Divorced,3065,3995,1,Yes,13,Excellent,4,1,4,3,Best,4,2,2,3
+1949,36,No,Non-Travel,1351,Research & Development,9,Master,Life Sciences,Low,Male,66,Very High,1,Laboratory Technician,Medium,Married,2810,9238,1,No,22,Outstanding,2,0,5,3,Better,5,4,0,2
+1952,26,No,Travel_Rarely,157,Research & Development,1,Bachelor,Medical,High,Male,95,High,1,Laboratory Technician,Low,Single,2867,20006,0,No,13,Excellent,4,0,8,6,Good,7,7,7,6
+1954,29,No,Travel_Rarely,136,Research & Development,1,Bachelor,Life Sciences,Low,Male,89,High,2,Healthcare Representative,Low,Married,5373,6225,0,No,12,Excellent,1,1,6,5,Good,5,3,0,2
+1955,32,No,Non-Travel,1146,Research & Development,15,Master,Medical,High,Female,34,High,2,Healthcare Representative,Very High,Divorced,6667,16542,5,No,18,Excellent,2,1,9,6,Better,5,1,1,2
+1956,31,No,Travel_Frequently,1125,Research & Development,1,Bachelor,Life Sciences,Very High,Male,48,Low,2,Research Scientist,Low,Married,5003,5771,1,No,21,Outstanding,2,0,10,6,Better,10,8,8,7
+1960,28,Yes,Travel_Rarely,1404,Research & Development,17,Bachelor,Technical Degree,High,Male,32,Medium,1,Laboratory Technician,Very High,Divorced,2367,18779,5,No,12,Excellent,1,1,6,2,Good,4,1,0,3
+1969,54,No,Travel_Rarely,155,Research & Development,9,College,Life Sciences,Low,Female,67,High,2,Research Scientist,High,Married,2897,22474,3,No,11,Excellent,3,2,9,6,Good,4,3,2,3
+1970,33,No,Travel_Frequently,1303,Research & Development,7,College,Life Sciences,Very High,Male,36,High,2,Healthcare Representative,High,Divorced,5968,18079,1,No,20,Outstanding,3,3,9,2,Better,9,7,2,8
+1971,43,No,Travel_Rarely,574,Research & Development,11,Bachelor,Life Sciences,Low,Male,30,High,3,Healthcare Representative,High,Married,7510,16873,1,No,17,Excellent,2,1,10,1,Better,10,9,0,9
+1974,31,No,Travel_Rarely,1276,Research & Development,2,Below College,Medical,Very High,Female,59,Low,1,Laboratory Technician,Very High,Divorced,1129,17536,1,Yes,11,Excellent,3,3,1,4,Better,1,0,0,0
+1976,42,No,Non-Travel,335,Research & Development,23,College,Life Sciences,Very High,Male,37,Medium,2,Research Scientist,High,Single,4332,14811,1,No,12,Excellent,4,0,20,2,Better,20,9,3,7
+1981,24,No,Travel_Rarely,771,Research & Development,1,College,Life Sciences,Medium,Male,45,Medium,2,Healthcare Representative,High,Single,4617,14120,1,No,12,Excellent,2,0,4,2,Good,4,3,1,2
+1982,23,No,Travel_Rarely,571,Research & Development,12,College,Other,Very High,Male,78,High,1,Laboratory Technician,Very High,Single,2647,13672,1,No,13,Excellent,3,0,5,6,Best,5,2,1,4
+1985,40,No,Travel_Frequently,692,Research & Development,11,Bachelor,Technical Degree,Very High,Female,73,High,2,Laboratory Technician,High,Married,6323,26849,1,No,11,Excellent,1,1,10,2,Best,10,9,9,4
+1989,30,No,Travel_Rarely,911,Research & Development,1,College,Medical,Very High,Male,76,High,1,Laboratory Technician,Medium,Married,3748,4077,1,No,13,Excellent,3,0,12,6,Good,12,8,1,7
+1992,25,No,Travel_Rarely,977,Research & Development,2,Below College,Other,Very High,Male,57,High,1,Laboratory Technician,High,Divorced,3977,7298,6,Yes,19,Excellent,3,1,7,2,Good,2,2,0,2
+1993,47,No,Travel_Rarely,1180,Research & Development,25,Bachelor,Medical,Low,Male,84,High,3,Healthcare Representative,High,Single,8633,13084,2,No,23,Outstanding,2,0,25,3,Better,17,14,12,11
+1994,33,No,Non-Travel,1313,Research & Development,1,College,Medical,Medium,Male,59,Medium,1,Laboratory Technician,High,Divorced,2008,20439,1,No,12,Excellent,3,3,1,2,Good,1,1,0,0
+1998,42,No,Travel_Rarely,557,Research & Development,18,Master,Life Sciences,Very High,Male,35,High,2,Research Scientist,Low,Divorced,5410,11189,6,Yes,17,Excellent,3,1,9,3,Good,4,3,1,2
+1999,41,No,Travel_Rarely,642,Research & Development,1,Bachelor,Life Sciences,Very High,Male,76,High,1,Research Scientist,Very High,Married,2782,21412,3,No,22,Outstanding,1,1,12,3,Better,5,3,1,0
+2003,35,No,Travel_Rarely,1490,Research & Development,11,Master,Medical,Very High,Male,43,High,1,Laboratory Technician,High,Married,2660,20232,7,Yes,11,Excellent,3,1,5,3,Better,2,2,2,2
+2007,22,No,Travel_Rarely,581,Research & Development,1,College,Life Sciences,Very High,Male,63,High,1,Research Scientist,High,Single,3375,17624,0,No,12,Excellent,4,0,4,2,Best,3,2,1,2
+2008,35,No,Travel_Rarely,1395,Research & Development,9,Master,Medical,Medium,Male,48,High,2,Research Scientist,High,Single,5098,18698,1,No,19,Excellent,2,0,10,5,Better,10,7,0,8
+2009,33,No,Travel_Rarely,501,Research & Development,15,College,Medical,Medium,Female,95,High,2,Healthcare Representative,Very High,Married,4878,21653,0,Yes,13,Excellent,1,1,10,6,Better,9,7,8,1
+2010,32,No,Travel_Rarely,267,Research & Development,29,Master,Life Sciences,High,Female,49,Medium,1,Laboratory Technician,Medium,Single,2837,15919,1,No,13,Excellent,3,0,6,3,Better,6,2,4,1
+2012,40,No,Travel_Rarely,543,Research & Development,1,Master,Life Sciences,Low,Male,83,High,1,Laboratory Technician,Very High,Married,2406,4060,8,No,19,Excellent,3,2,8,3,Good,1,0,0,0
+2014,39,No,Travel_Rarely,116,Research & Development,24,Below College,Life Sciences,Low,Male,52,High,2,Research Scientist,Very High,Single,4108,5340,7,No,13,Excellent,1,0,18,2,Better,7,7,1,7
+2020,44,No,Travel_Rarely,1037,Research & Development,1,Bachelor,Medical,Medium,Male,42,High,1,Research Scientist,Very High,Single,2436,13422,6,Yes,12,Excellent,3,0,6,2,Better,4,3,1,2
+2026,56,No,Non-Travel,667,Research & Development,1,Master,Life Sciences,High,Male,57,High,2,Healthcare Representative,High,Divorced,6306,26236,1,No,21,Outstanding,1,1,13,2,Good,13,12,1,9
+2027,29,Yes,Travel_Rarely,1092,Research & Development,1,Master,Medical,Low,Male,36,High,1,Research Scientist,Very High,Married,4787,26124,9,Yes,14,Excellent,2,3,4,3,Best,2,2,2,2
+2032,56,Yes,Travel_Rarely,310,Research & Development,7,College,Technical Degree,Very High,Male,72,High,1,Laboratory Technician,High,Married,2339,3666,8,No,11,Excellent,4,1,14,4,Bad,10,9,9,8
+2038,32,No,Travel_Rarely,529,Research & Development,2,Bachelor,Technical Degree,Very High,Male,78,High,1,Research Scientist,Low,Single,2439,11288,1,No,14,Excellent,4,0,4,4,Better,4,2,1,2
+2048,40,No,Travel_Rarely,1322,Research & Development,2,Master,Life Sciences,High,Male,52,Medium,1,Research Scientist,High,Single,2809,2725,2,No,14,Excellent,4,0,8,2,Better,2,2,2,2
+2049,35,No,Travel_Frequently,1199,Research & Development,18,Master,Life Sciences,High,Male,80,High,2,Healthcare Representative,High,Married,5689,24594,1,Yes,14,Excellent,4,2,10,2,Best,10,2,0,2
+2051,40,No,Travel_Rarely,1194,Research & Development,2,Master,Medical,High,Female,98,High,1,Research Scientist,High,Married,2001,12549,2,No,14,Excellent,2,3,20,2,Better,5,3,0,2
+2052,35,No,Travel_Rarely,287,Research & Development,1,Master,Life Sciences,High,Female,62,Low,1,Research Scientist,Very High,Married,2977,8952,1,No,12,Excellent,4,1,4,5,Better,4,3,1,1
+2053,29,No,Travel_Rarely,1378,Research & Development,13,College,Other,Very High,Male,46,Medium,2,Laboratory Technician,Medium,Married,4025,23679,4,Yes,13,Excellent,1,1,10,2,Better,4,3,0,3
+2054,29,No,Travel_Rarely,468,Research & Development,28,Master,Medical,Very High,Female,73,Medium,1,Research Scientist,Low,Single,3785,8489,1,No,14,Excellent,2,0,5,3,Bad,5,4,0,4
+2061,36,No,Travel_Frequently,884,Research & Development,23,College,Medical,High,Male,41,Very High,2,Laboratory Technician,Very High,Married,2571,12290,4,No,17,Excellent,3,1,17,3,Better,5,2,0,3
+2062,39,No,Travel_Rarely,613,Research & Development,6,Below College,Medical,Very High,Male,42,Medium,3,Healthcare Representative,Low,Married,9991,21457,4,No,15,Excellent,1,1,9,5,Better,7,7,1,7
+2068,34,No,Travel_Rarely,628,Research & Development,8,Bachelor,Medical,Medium,Male,82,Very High,2,Laboratory Technician,High,Married,4404,10228,2,No,12,Excellent,1,0,6,3,Best,4,3,1,2
