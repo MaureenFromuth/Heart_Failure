@@ -9,7 +9,7 @@ DistanceFromHome int
 Education int FK >- ed.Score
 EducationField varchar
 EmployeeCount int
-EmployeeNumber PK int
+EmployeeNumber PK UNIQUE int
 EnvironmentSatisfaction int FK >- es.Score
 Gender varchar
 HourlyRate int
