@@ -221,7 +221,7 @@ In addition to evaluating model performance, we also looked at feature importanc
 These top five highlight the importance of salary in retention, but there are some interesting additions here highlighting the importance of years at the company, and perhaps indicate loyalty, within the tech and non-tech roles that we would not have seen in the overall combined group.  Additional analysis will be done to identify whether these features have a positive or negative impact on attrition.  The output of that analysis will better help to build out an understanding of what types of mechanisms or incentives the company can do to retain talent.  
 
 ***Data Visualization***
-To be completed.
+To be completed in Segment 2.
 
 
 
