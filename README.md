@@ -291,19 +291,19 @@ For our model testing, we conducted model fitting for all four datatypes, and ev
 Below highlights our evaluation of the accuracy and performance scores of each of the models, as well as the Confusion Matrix.  These results help to assess the best sampling techniques and also validate our model selection.  
 
 
->![Combination Results](https://github.com/MaureenFromuth/IBM_Attrition/blob/main/ML%20Model%20Testing/Comb_Results.png)
+![Combination Results](https://github.com/MaureenFromuth/IBM_Attrition/blob/main/ML%20Model%20Testing/Comb_Results.png)
 
->![Tech Results](https://github.com/MaureenFromuth/IBM_Attrition/blob/main/ML%20Model%20Testing/Tech_Results.png)
+![Tech Results](https://github.com/MaureenFromuth/IBM_Attrition/blob/main/ML%20Model%20Testing/Tech_Results.png)
 
->![NonTech Results - BRFC](https://github.com/MaureenFromuth/IBM_Attrition/blob/main/ML%20Model%20Testing/NonTech-BRFC_Results.png)
+![NonTech Results - BRFC](https://github.com/MaureenFromuth/IBM_Attrition/blob/main/ML%20Model%20Testing/NonTech-BRFC_Results.png)
 
->![NonTech Results - SMOTEENN + RFC](https://github.com/MaureenFromuth/IBM_Attrition/blob/main/ML%20Model%20Testing/NonTech-SMOTEENN%2BRFC_Results.png)
+![NonTech Results - SMOTEENN + RFC](https://github.com/MaureenFromuth/IBM_Attrition/blob/main/ML%20Model%20Testing/NonTech-SMOTEENN%2BRFC_Results.png)
 
->![Leadership Results - BRFC](https://github.com/MaureenFromuth/IBM_Attrition/blob/main/ML%20Model%20Testing/Ldrshp-BRFC_Results.png)
+![Leadership Results - BRFC](https://github.com/MaureenFromuth/IBM_Attrition/blob/main/ML%20Model%20Testing/Ldrshp-BRFC_Results.png)
 
->![Leadership Results - SMOTEENN + RFC](https://github.com/MaureenFromuth/IBM_Attrition/blob/main/ML%20Model%20Testing/Ldrshp-SMOTEEN%2BRFC_Results.png)
+![Leadership Results - SMOTEENN + RFC](https://github.com/MaureenFromuth/IBM_Attrition/blob/main/ML%20Model%20Testing/Ldrshp-SMOTEEN%2BRFC_Results.png)
 
->![Leadership Results - ROS + RFC](https://github.com/MaureenFromuth/IBM_Attrition/blob/main/ML%20Model%20Testing/Ldrshp-ROS%2BRFC_Results.png)
+![Leadership Results - ROS + RFC](https://github.com/MaureenFromuth/IBM_Attrition/blob/main/ML%20Model%20Testing/Ldrshp-ROS%2BRFC_Results.png)
 
 Looking at the performance metrics for our models, the accuracy hovers around .7 and the majority of the BRFC models have an F1 score around .5.  This means that in general the models are no better than a coin toss at predicting employees who attrit (‘yes’ values).  Additionally, the models do have fairly decent recall (.68-.75) but their precision is not ideal (.39-.40).  The leadership models performed substantially lower in accuracy and precision, but the recall was slightly higher than the other BRFC models.  
 
@@ -316,7 +316,7 @@ As a result, we have concluded that the best algorithm for the models is the BRF
 
 In addition to evaluating model performance, we also looked at feature importance and compared each of the feature importance ratings to one another.  In the graphic below, you can see the ratings for each of the features by job category.  There are a number of areas to note in which there’s significant differences between categories in the feature importance.  For example, MonthlyIncome for Leadership is significantly lower than it is for the other job categories.  Likewise, StockOptionLevel is considerably higher for Non-Tech job categories than it is for others when it comes to predicting attrition.  The graphic below highlights the notable differences in a red hashed box.  
 
->![Feature Importance Comparison](https://github.com/MaureenFromuth/IBM_Attrition/blob/main/ML%20Model%20Testing/FeatureImportance_Noted.png)
+![Feature Importance Comparison](https://github.com/MaureenFromuth/IBM_Attrition/blob/main/ML%20Model%20Testing/FeatureImportance_Noted.png)
 
 ## Conclusions
 
