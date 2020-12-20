@@ -241,6 +241,7 @@ Results of the model development and deployment, and overall conclusions are hig
 
 
 ***Data Visualization***
+
 As part of our visualization phase, we are building out a dynamic website using a combination of Tableau and Seaborn charts and graphs as well as HTML/CSS.  This will be hosted on an S3 website, and will give users the ability to:
 - See the data and sub-category tables
 - Understand the project objectives and questions
@@ -283,39 +284,41 @@ The one curious correlation, however, was between marital status and stock optio
 
 ### Model Development and Deployment
 
-For our model testing, we conducted model fitting for all four datatypes, and evaluated their performance at being able to predict attrition.  This project is aiming at a balance of performance in precision as well as recall, but would value precision if one needed to be prioritized.  For example, if the model has high accuracy but low recall, they could be under performing in their recruiting efforts and risk gapping positions.  If, however, they have high accuracy and low precision, they run the risk of ramping up recruiting and then having to turn away perfectly good applicants who may reapply later.  
+***Model Choice and Performance***
 
-Below highlights our evaluation of the accuracy and performance scores of each of the models and also helps to assess the best sampling techniques.  
+For our model testing, we conducted model fitting for all four datatypes, and evaluated their performance at being able to predict attrition.  This project is aiming at a balance of performance in precision as well as recall, but would value precision if one needed to be prioritized.  For example, if the model has high accuracy but low recall, they could be under performing in their recruiting efforts and risk gapping positions.  If, however, they have high accuracy and low precision, they run the risk of ramping up recruiting and then having to turn away perfectly good applicants who may reapply later.  As such, we used the F1 score as our primary attribute for analysis, but also looked at precision.
 
-
->![Accuracy Reporting: Combination](https://github.com/MaureenFromuth/IBM_Attrition/blob/main/ML%20Model%20Testing/Results_Combo.png)
-
->![Accuracy Reporting: Tech](https://github.com/MaureenFromuth/IBM_Attrition/blob/main/ML%20Model%20Testing/Results_Tech.png)
-
->![Accuracy Reporting: NonTech](https://github.com/MaureenFromuth/IBM_Attrition/blob/main/ML%20Model%20Testing/Results_NonTech.png)
-
->![Accuracy Reporting: Leadership](https://github.com/MaureenFromuth/IBM_Attrition/blob/main/ML%20Model%20Testing/Results_Leadership.png)
+Below highlights our evaluation of the accuracy and performance scores of each of the models, as well as the Confusion Matrix.  These results help to assess the best sampling techniques and also validate our model selection.  
 
 
-Looking at the performance metrics for our models, the accuracy hovers around .7 and the majority of the BRFC models have fairly decent recall (.68-.75) but their precision is not ideal (.39-.40).  The leadership model, however, performed substantially lower in accuracy and precision, but the recall was slightly higher than the other BRFC models.  
+>![Combination Results](https://github.com/MaureenFromuth/IBM_Attrition/blob/main/ML%20Model%20Testing/Comb_Results.png)
+
+>![Tech Results](https://github.com/MaureenFromuth/IBM_Attrition/blob/main/ML%20Model%20Testing/Tech_Results.png)
+
+>![NonTech Results - BRFC](https://github.com/MaureenFromuth/IBM_Attrition/blob/main/ML%20Model%20Testing/NonTech-BRFC_Results.png)
+
+>![NonTech Results - SMOTEENN + RFC](https://github.com/MaureenFromuth/IBM_Attrition/blob/main/ML%20Model%20Testing/NonTech-SMOTEENN%2BRFC_Results.png)
+
+>![Leadership Results - BRFC](https://github.com/MaureenFromuth/IBM_Attrition/blob/main/ML%20Model%20Testing/Ldrshp-BRFC_Results.png)
+
+>![Leadership Results - SMOTEENN + RFC](https://github.com/MaureenFromuth/IBM_Attrition/blob/main/ML%20Model%20Testing/Ldrshp-SMOTEEN%2BRFC_Results.png)
+
+>![Leadership Results - ROS + RFC](https://github.com/MaureenFromuth/IBM_Attrition/blob/main/ML%20Model%20Testing/Ldrshp-ROS%2BRFC_Results.png)
+
+Looking at the performance metrics for our models, the accuracy hovers around .7 and the majority of the BRFC models have an F1 score around .5.  This means that in general the models are no better than a coin toss at predicting employees who attrit (‘yes’ values).  Additionally, the models do have fairly decent recall (.68-.75) but their precision is not ideal (.39-.40).  The leadership models performed substantially lower in accuracy and precision, but the recall was slightly higher than the other BRFC models.  
 
 Since the dataset for leadership was already significantly small, we tested an oversampling and combination sampling technique and paired that with a random forest classification algorithm.  We also tested the non-tech dates well with the combination sampling technique to ensure there was no improvement of the previous models performance.  As you can see from the data above, while accuracy of the over- and combination-sampling techniques increased the accuracy of the models, they did not improve their overall performance.  This was true as well for the non-tech model using a combination sampling technique.  If you look at the confusion matrix results for the different sampling methods for the leadership job category, you can see that the combination sampling did not pick up any of the employees who attritted, but did have three false positives.  The oversampling technique, however, also failed to pick up the four attrited personnel in the test set, but it did accuracy identify all retained employees. 
 
->![Compiled Confusion Matrix Results](https://github.com/MaureenFromuth/IBM_Attrition/blob/main/ML%20Model%20Testing/ConfusionMatrix.png)
-
 As a result, we have concluded that the best algorithm for the models is the BRFC.
 
-In addition to evaluating model performance, we also looked at feature importance.  There is additional analysis to be done on this topic, but below highlights the high level results of our initial model testing.
 
-|   | Combined | Tech | NonTech | Leadership |
-|---|---|---|---|---|
-|1. | MonthlyIncome | MonthlyIncome | DailyRate | MontlyIncome |
-| 2. | Age | Age | MonthlyIncome | DailyRate |
-| 3. | Overtime | DailyRate | YearsAtCompany | PercentSalaryHike |
-| 4. | DailyRate | YearsAtCompany | MonthlyRate | DistanceFromHome |
-| 5. | YearsAtCompany | YearsInCurrentRole | Age | MontlyRate |
+***Feature Importance***
 
-These top five highlight the importance of salary in retention, but there are some interesting additions here highlighting the importance of years at the company, and perhaps indicate loyalty, within the tech and non-tech roles that we would not have seen in the overall combined group.  Additional analysis will be done to identify whether these features have a positive or negative impact on attrition.  The output of that analysis will better help to build out an understanding of what types of mechanisms or incentives the company can do to retain talent.  
+In addition to evaluating model performance, we also looked at feature importance and compared each of the feature importance ratings to one another.  In the graphic below, you can see the ratings for each of the features by job category.  There are a number of areas to note in which there’s significant differences between categories in the feature importance.  For example, MonthlyIncome for Leadership is significantly lower than it is for the other job categories.  Likewise, StockOptionLevel is considerably higher for Non-Tech job categories than it is for others when it comes to predicting attrition.  The graphic below highlights the notable differences in a red hashed box.  
+
+>![Feature Importance Comparison](https://github.com/MaureenFromuth/IBM_Attrition/blob/main/ML%20Model%20Testing/FeatureImportance_Noted.png)
+
+## Conclusions
 
 
 
