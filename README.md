@@ -318,8 +318,17 @@ In addition to evaluating model performance, we also looked at feature importanc
 
 ![Feature Importance Comparison](https://github.com/MaureenFromuth/IBM_Attrition/blob/main/ML%20Model%20Testing/FeatureImportance_Noted.png)
 
+
 ## Conclusions
 
+In conclusion, it is clear that the dataset is highly imbalanced, which will continue to cause challenges in accurate predictions especially for the leadership job category.  Our ability to accuracy predict who will leave a company with the existing models and training data is not consistent and is often no better than a coin toss.  Predicting who stays, however, is far more consistent and produces better results.  As such, it is ideal with the given data to predict who stays instead of who leaves using the existing model.  Being able to predict leadership retention or attrition, however, is still not performant enough to rely on and therefore will remain a challenge for this company.
 
+Similarly, feature importance in predicting attrition does in fact vary based on job role and therefore can be used to build out job-based retention mechanisms.  
 
+Tech roles appear to be more sensitive to age, total working years, and years in current role, but less so to years with their current manager or their job role.  As such, the company will want to look at mechanisms across the tech categories in these areas such as bonuses for longevity.  Similarly, they can use these to predict attrition if the retention programs are not successful.  For example, they should look to increase role migration after a given period of time and/or understand that as employees get higher in age they are more likely to leave the company.
 
+Non-tech roles are more sensitive to stock option levels, the number of companies they’ve worked for, and the distance from home, but less so to years with their current manager.  As such, the company will want to look at these areas for retention programs in for non-tech roles.  
+
+Finally, leadership is more sensitive to years since their last promotion, there education, job level, relationship satisfaction, and performance rating, but less to age and their monthly income.  This is not surprising considering many leaders tend to already have high incomes and are often older. 
+
+In addition to predictions, feature importance, and job category impact, we are able to see a number of key correlations between different features.  Namely, that time-based features such as age, total working years, and years at the company have a positive correlation to income and job level.  Likewise, there’s a positive correlation between job performance and salary hike.  There is also a negative correlation between job category and job level, monthly income, and total working years.  While this appears to be detrimental to an employee, when you look at the job category numerical ratings (0=leadership, 1=nontech,  2=tech) it is less surprising.  It is common for leadership to be more experienced and also to have greater income and a higher job level.  Likewise, we noticed a unique impact of marital status on stock option level, giving way to an awareness about mid-career professionals. 
