@@ -31,7 +31,7 @@ Of note, this analysis, predictions, and implementation of mechanisms is best do
 
 ### Project Breakdown
 
-An overview of the project and additional details can be found in the following [presentation](https://github.com/MaureenFromuth/IBM_Attrition/blob/main/Presentation_Final%20Project.pptx.pdf).
+An overview of the project and additional details can be found in the following [presentation](https://github.com/MaureenFromuth/IBM_Attrition/blob/main/Presentation_Final%20Project.pptx.pdf) and at the following [site](https://drive.google.com/file/d/16wHJ5HL2N1-JyjaBBXiRlMyHcatSp4tH/view?usp=sharing).
 
 This project has four distinct parts:
 - Data Cleansing and Preparation
