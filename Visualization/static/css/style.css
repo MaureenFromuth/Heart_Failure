@@ -56,12 +56,14 @@ h3{font-size:40px}
 
 /* Graphic explaination format */
 .block {
-  display: block;
+  display:table;
   height: auto;
   background-color: white;
-  margin-left:95px;
-  margin-right: 95px;
+  margin-left:90px;
+  margin-right: 90px;
   margin-bottom: 10px;
+  margin-top: 15px;
+  position: relative;
 }
 
 .container-image {
@@ -73,6 +75,13 @@ h3{font-size:40px}
  height: auto;
  border: .8px solid rgb(80, 78, 74);
  box-shadow: 0px 0px 15px #666;
+}
+
+/* Button click format */
+.btn-custom{
+  background-color: rgb(80, 78, 74);
+  border: .8px black;
+  color: white;
 }
 
 /* Footer stype */

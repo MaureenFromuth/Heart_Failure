@@ -95,25 +95,97 @@
 </div>
 
 <!-- Third Grid -->
-<div class="row-padding padding-10 block">
-  <div class="col-md-2 padding-20">
-    <div style="float:left; margin-left: 40px">
-    <h1 style="text-align: center; margin-bottom: 10px;">Title</h1>
-    <img src="../Visualization/static/images/Class Imbalance Check.png">
-    <p style="text-align: center; margin-top: 10px;">text</p>
+<div class="row-padding padding-10 block" style="vertical-align: top;">
+  <div class='row'>
+    <div class="col-md-1"></div>
+    <div class="col-md-4 padding-20">
+      <div style="float:left; margin-left: 40px">
+      <h1 style="text-align: center; margin-left: -25px; margin-bottom: 10px; font-size: 20px;">Target Variable Distribution</h1>
+      <img src="../Visualization/static/images/Class Imbalance Check.png">
+      <p style="text-align: center; margin-top: 10px;">Done in Python</p>
+      </div>
     </div>
-  </div>
-
-  <div class="row padding-10 col-md-6">
-    <div style="margin-left: 35px;">
-      <h1>Imbalance In the Target Dataset</h1>
-      <h2>Explore the imbalance of the target in the dataset</h2>
-      <p style="font-size:small">Before building models, we needed to look at how the target feature, 'Attrition', was baanced throughout the main dataframe as well as the three sub-dataframes for each of the job categories.</p>
+    <div class="padding-10 col-md-6">
+      <div style="margin-left: 15px;">
+        <h1>Imbalance In the Target Dataset</h1>
+        <h2>Target feature for all four dataframes (combined, leadership, non-tech, tech) are imbalanced</h2>
+        <p style="font-size:small">Leadership is the most imbalanced and non-tech is the least. This means that to build out our machine learning model we will need to either rebalance the data using a sampling technique or 
+        choose a model that is not susceptible to imbalanced targets.</p>
+      </div>
     </div>
   </div>
 </div>
 
+<!-- Fourth Grid -->
+<div class="row-padding padding-10 block" style="vertical-align: top;">
+  <div class='row'>
+    <div class="col-md-8 padding-20">
+      <div style="float:left; margin-left: 40px">
+      <h1 style="text-align: center; margin-left: -25px; margin-bottom: 10px; font-size: 20px;">Feature Correlation</h1>
+      <img src="../Visualization/static/images/Correlation-annotated.png">
+      <p style="text-align: center; margin-top: 10px;">Done in Python</p>
+      </div>
+    </div>
+    <div class="row padding-10 col-md-4">
+      <div style="margin-right: 5px; margin-left: -15px">
+        <h1>Feature Correlation of the Combined Dataset</h1>
+        <h2>Multiple positive correlations:</h2>
+          <ul style="font-size:12px">
+            <li>Age: MonthlyIncome / JobLevel / TotalWorkingYears</li>
+            <li>JobLevel: YearsAtCompany / TotalWorkingYears / MonthlyIncome</li>
+            <li>MonthlyIncome: YearsAtCompany / TotalWorkingYears</li>
+            <li>PercentSalaryHike: PerformanceRating</li>
+            <li>TotalWorkingYears: YearsAtCompany</li> 
+          </ul> 
+        <h2>Multiple negative correlations:</h2>
+          <ul style="font-size:12px">
+            <li>JobLevel: JobCategory</li>
+            <li>MaritialStatus: StockOptionLevel</li>
+            <li>MonthlyIncome: JobCategory</li>
+            <li>TotalWorkingYears: JobCategory</li>
+          </ul> 
+        <h2>Features representing similar and potentially duplicative information:</h2>
+          <ul style="font-size:12px">
+            <li>HourlyRate / DailyRate / MonthlyRate / MonthlyIncome
+              <p style="font-style: italic">Analysis in distription and comparison resulted in dropping HourlyRate and DailyRate; maintained MonthlyRate and MonthlyIncome for model development</p>
+            </li>
+            <li>Age / TotalWorkingYears
+              <p style="font-style: italic">Comparitive analysis and look at featuer distribution resulted in keeping both features for model development</p>
+            </li>
+          </ul> 
+      </div>
+    </div>
+  </div>
+</div>
 
+<!-- Fifth Grid -->
+<div class="row-padding padding-10 block" style="vertical-align: top;"> 
+  <div class="row"> 
+     <div class="col-md-1"></div> 
+     <div class="col-md-6">
+        <h1 id="title" style="text-align: center; margin-left: -25px; margin-bottom: 10px; font-size: 20px;">Age Distribution per JobCategory</h1> 
+        <img  id="myImage" 
+              src="static/images/Age-Cat_Distribution.png">
+        <div class="button" style="margin-top: 15px;"> 
+          <button class="btn btn-custom" 
+                  onclick=age();> 
+              Age 
+          </button> 
+          <button  class="btn btn-custom" 
+                  onclick=yearsrole();> 
+              YearsInCurrentRole 
+          </button> 
+      </div>  
+     </div> 
+     <div class="col-md-5">
+       <h1>Feature Distribution Across the Datasets</h1>
+        <p id="description" style="font-size: small;">blah blah blah</p>
+     </div> 
+  </div>
+  
+</div> 
+
+<script src="static/js/change-distribution.js"></script>
 
 <footer>
   <p>Author: Maureen Fromuth</p>

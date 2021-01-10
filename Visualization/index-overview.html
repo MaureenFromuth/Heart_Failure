@@ -92,12 +92,12 @@
 <div class="row-padding padding-10 block">
   <div class="col-md-6 padding-20">
     <div style="float:left; margin-left: 40px">
-    <h1 style="text-align: center; margin-bottom: 10px;">Dataset ERD</h1>
+    <h1 style="text-align: center; margin-left: -25px; margin-bottom: 10px;">Dataset ERD</h1>
     <img src="../Visualization/static/images/ERD_IBM-HR_Picture.png">
-    <p style="text-align: center; margin-top: 10px">ERD Developed in Quickdatabase</p>
+    <p style="text-align: center; margin-left: -25px; margin-top: 10px">ERD Developed in Quickdatabase</p>
     </div>
   </div>
-  <div class="row padding-10 col-md-6">
+  <div class="row padding-10 block">
     <div style="margin-left: 35px;">
       <h1>What Data Did We Use?</h1>
         <h2>A Synthetic, Anonomous HR Dataset Representing a Tech Firm</h2>
@@ -119,18 +119,24 @@
                 <li style="font-size:12px">Used a Left Join between the primary and reference tables to explain satisfaction ratings</li>
               </ul>  
           </ul>  
-      <h1>What Did We Do With the Dataset?</h1>
-        <h2>Initial ETL Actions</h2>
-          <p style="font-size:small">We created two main sub-datasets for our analysis: one dataframe in Python for machine learning model development, inference, and feature analysis; and one table in Postgres for visualization on this site.  Within our Python dataframe, we created three 
-          sub-dataframes for each of the job categories.  We used these four datframes in Python as the basis for our model development and inference as well as our analysis on feature importance.</p>
-        <h2>Hosting the Datasets</h2>
-          <ul>
-            <li style="font-size:12px">pgAdmin 4.24 w/ Postgres 14.2: Original 9 reference tables; visualization tables w/ 'JobCategory' field added</li>
-            <li style="font-size:12px">Python w/ Jupiter Notebook: SQLAlchemy to upload and export original tables; dataframes used for machine learning model development and feature analysis</li>
-          </ul>
     </div>
   </div>
 </div> 
+
+<!-- Fifth Grid -->
+<div class="row-padding padding-20">
+  <div class="twothird-right container padding-10" style="background-color:white">
+    <h1>What Did We Do With the Dataset?</h1>
+    <h2>Initial ETL Actions</h2>
+      <p style="font-size:small">We created two main sub-datasets for our analysis: one dataframe in Python for machine learning model development, inference, and feature analysis; and one table in Postgres for visualization on this site.  Within our Python dataframe, we created three 
+      sub-dataframes for each of the job categories.  We used these four datframes in Python as the basis for our model development and inference as well as our analysis on feature importance.</p>
+    <h2>Hosting the Datasets</h2>
+      <ul>
+        <li style="font-size:12px">pgAdmin 4.24 w/ Postgres 14.2: Original 9 reference tables; visualization tables w/ 'JobCategory' field added</li>
+        <li style="font-size:12px">Python w/ Jupiter Notebook: SQLAlchemy to upload and export original tables; dataframes used for machine learning model development and feature analysis</li>
+      </ul>  
+  </div>
+</div>
 
 <!-- Sixth Grid -->
 <div class="container-fluid" style="overflow-x: auto; background-color: white">
