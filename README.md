@@ -43,7 +43,7 @@ The tools and technology used for each of these phases include:
 - Data Cleaning & Analysis - We will be using a combination of Python, Pandas, Numpy, SQLAlchemy, and SciKitLearn for ETL, and Matplotlib and Seaborn for graph analysis.  
 - Database Storage - We will host our database in Postgres in PgAdmin.
 - Machine Learning - For our predictive modeling, we are going to build a binary classification model using SciKitLearn in Python.  As a result of uneven data, we will also be using a combination of over and undersampling techniques to ensure there is more even target data.
-- Dashboard - In addition to using a Flask template, we are going to integrate Javascript and D3 for a fully functional dashboard along with Tableau visuals.  It will be hosted on an S3 static website.  
+- Dashboard - We integrated Javascript and D3 for a fully functional dashboard along with Tableau visuals.   
 
 
 
