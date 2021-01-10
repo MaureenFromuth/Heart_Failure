@@ -89,12 +89,16 @@
 </div>
 
 <!-- Fourth Grid -->
-<div id = "container" class="row-padding padding-20">
-  <div class="container-image col-md-5" style="float:right; background-color: white; margin-right: 60px">
-    <img src='../Visualization/static/images/ERD_IBM-HR_Picture.png' style="width: 100%; background-color: white">
-  </div> 
-  <div id = "texts" class="col-md-7">
-    <div class="twothird-right container padding-10" style="background-color:white">
+<div class="row-padding padding-10 block">
+  <div class="col-md-6 padding-20">
+    <div style="float:left; margin-left: 40px">
+    <h1 style="text-align: center; margin-bottom: 10px;">Dataset ERD</h1>
+    <img src="../Visualization/static/images/ERD_IBM-HR_Picture.png">
+    <p style="text-align: center; margin-top: 10px">ERD Developed in Quickdatabase</p>
+    </div>
+  </div>
+  <div class="row padding-10 col-md-6">
+    <div style="margin-left: 35px;">
       <h1>What Data Did We Use?</h1>
         <h2>A Synthetic, Anonomous HR Dataset Representing a Tech Firm</h2>
           <p style="font-size:small">We used a synthetic dataset from Kaggle that was representative of HR data from a Tech Firm.  It is important to find a dataset that has features in a wide range of areas.  This dataset met this need and had features in 
@@ -115,8 +119,6 @@
                 <li style="font-size:12px">Used a Left Join between the primary and reference tables to explain satisfaction ratings</li>
               </ul>  
           </ul>  
-    </div>
-    <div class="twothird-right container padding-10" style="background-color:white">
       <h1>What Did We Do With the Dataset?</h1>
         <h2>Initial ETL Actions</h2>
           <p style="font-size:small">We created two main sub-datasets for our analysis: one dataframe in Python for machine learning model development, inference, and feature analysis; and one table in Postgres for visualization on this site.  Within our Python dataframe, we created three 
@@ -127,8 +129,8 @@
             <li style="font-size:12px">Python w/ Jupiter Notebook: SQLAlchemy to upload and export original tables; dataframes used for machine learning model development and feature analysis</li>
           </ul>
     </div>
-  </div> 
-</div>
+  </div>
+</div> 
 
 <!-- Sixth Grid -->
 <div class="container-fluid" style="overflow-x: auto; background-color: white">
@@ -163,7 +165,7 @@
           </li>
       </ul>
     </div>
-    <div class="col-md-9" style="position:relative; height: 50px; overflow-x: scroll; overflow-y: scroll; margin-top: 40px;">
+    <div class="col-md-9" style="position:relative; height: 550px; overflow-x: scroll; overflow-y: scroll; margin-top: 40px;">
       <table class="table table-striped" style="font-size: x-small">
           <thead>
             <tr>
