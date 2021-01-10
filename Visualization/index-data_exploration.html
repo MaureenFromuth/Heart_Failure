@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <title class="h1">ByeByeBye Attrition</title>
+  <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  <link rel="stylesheet" href="static\css\style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap">
+
+</head>
+
+<style>body{font-family: "Montserrat", sans-serif}</style>
+
+<body>
+
+<!-- Navbar -->
+<div class="topnav">
+  <a href="index-overview.html">Overivew</a>
+  <a href="#" class="active">Data Exploration</a>
+  <a href="index-machine_learning_assessment.html">Machine Learning Assessment</a>
+  <a href="index-feature_analysis.html">Feature Analysis</a>
+  <a href="index-conclusion.html">Conclusion</a>
+</div>
+
+<!-- Header -->
+<header class="container-bckgrnd container-fluid" style="padding:180px 16px">
+  <h3 style="margin-left:32px">BYE BYE BYE</h3>
+  <p style="font-size: medium; margin-left:32px">Why do employees leave ... and when!?</p>
+  <p style="font-size:small; line-height:2px; font-style:italic; margin-left:32px">Looking at attrition, what at the key features</p> 
+  <p style="font-size:small; line-height:2px; font-style:italic; margin-left:32px">that influence why employees leave and how</p>
+  <p style="font-size:small; line-height:2px; font-style:italic; margin-left:32px">many at a given time will likely leave.</p>
+</header>
+
+<!-- First Grid -->
+<div class="row-padding padding-20">
+  <div class="twothird-right container container-fluid padding-10" style="background-color:white">
+    <h1>Overall Findings of Data Exploration</h1>
+    <h2>The dataset is highly imbalanced, for both target and features</h2>
+    <p style="font-size:small">Particularly within the Leadership sub-dataframe, the dataset was highly imbalanaced. For the target feature, 'Attrition', the Leadership sub-dataframe was the most imbalanced.  This imbalanced 
+      has implications on the specific model approach we used for our machine learning assessment.  In addition to the target feature, the feature distribution was also highly variable.  For example, those in the Leadership 
+      JobCategory were often older and paid more.  This further complicates building a successful machine learning model for the Leadership JobCategory.</p>
+
+    <h2>Data correlation is relatively even and, for the most part, was not surprising</h2>
+    <p style="font-size:small">We saw many positive correlations that were expected:</p>
+      <ul>
+        <li style="font-size:12px">Age had a positive correlation to TotalWorkingYears, MonthlyIncome, JobLevel 
+          <p style="font-style: italic">Possible Explination: The older you are, the longer you have been in the workforce, so the higher the income and job level</p></li>
+        <li style="font-size:12px">MontlyIncome had a positive correlation to YearsAtCompany, TotalWorkingYears
+          <p style="font-style: italic">Possible Explination: The longer you've stayed at the company and the longer you've been in the workforce, the more skills and 'investment' the company has in you and thus the higher your income</p></li>
+        <li style="font-size:12px">PerformanceRating had a positive correlation to PercentSalaryHike
+          <p style="font-style: italic">Possible Explination: The better you perform, the more valueable you become to the company and the more they are willing to pay you to stay</p></li>
+        <li style="font-size:12px">JobLevel had a positive correlation to YearsAtCompany, TotalWorkingYears, MonthlyIncome
+          <p style="font-style: italic">Possible Explination: The longer you've worked at the company and/or the more years you've had in the workforce, the more experience you have and the more they pay you for that experience</p></li>
+      </ul>
+    <p style="font-size:small">We saw one main negative correlation that was also expected:</p>
+      <ul>
+        <li style="font-size:12px">JobCatebory had a negative correlation to JobLevel, MonthlyIncome, TotalWorkingYears
+          <p style="font-style: italic">Possible Explination: Leadership (encoded value of 0) tends to be a higher level in a company and tends to be employees with a higher level of work experience, and is therefore paid more</p></li>
+      </ul>
+    <p style="font-size:small">We saw one correlation that was unexpected:</p>
+      <ul>
+        <li style="font-size:12px">MaritialStatus had a negative correlation with StockOptionLevel
+          <p style="font-style: italic">Possible Explination: Although additional data is needed, single employees (encoded value of 2) tend to be younger and, using the correlations noted above, tend to be lower in level.  Older employees, 
+          however, are married (encoded value of 1) and even older still either remain married or divorced (encoded value of 0).</p></li>
+      </ul>        
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="row-padding padding-20">
+  <div class="twothird-right container container-fluid padding-10" style="background-color:white">
+    <h1>How Did We Conduct Data Exploration?</h1>
+    <h2>Explore the imbalance of the target in the dataset</h2>
+    <p style="font-size:small">Before building models, we needed to look at how the target feature, 'Attrition', was baanced throughout the main dataframe as well as the three sub-dataframes for each of the job categories.</p>
+
+    <h2>Explore the correlation between different features</h2>
+    <p style="font-size:small">To support feature analysis, we looked at correlation among each of the features for the main dataframe.  Using the output of this information we were able to combine some of the features.  An 
+      additional benefit of this analysis is that we were able to identify interesting relationships between features that drove additional analysis and exploration.</p>
+  
+    <h2>Explore the distribution of different features</h2>
+    <p style="font-size:small">A key part of successful model development and feature analysis is the distribution of those features.  Feature distribution gives us insight into how and/or why or model may not be as accurate.</p>
+
+    <h2>Explore the distribution of features to one another</h2>
+    <p style="font-size:small">As with the feature distribution, comparing the feature distribution to one another will provide similar benefits. Additionally, it will provide insights into the the overall workforce and our 
+    secondary topics and questions.</p>
+  </div>
+</div>
+
+<!-- Third Grid -->
+<div class="row-padding padding-20">
+  <div class="twothird-right container container-fluid padding-10" style="background-color:white; transition: all 1s ease 0s">
+    <h1>Imbalance In the Target Dataset</h1>
+    <h2>Explore the imbalance of the target in the dataset</h2>
+    <p style="font-size:small">Before building models, we needed to look at how the target feature, 'Attrition', was baanced throughout the main dataframe as well as the three sub-dataframes for each of the job categories.</p>
+  </div>
+</div>
+
+<div class="row-padding padding-20 container-image">
+  <div class="block twothird-right padding-10" style="background-color:white">
+  <h1>Title</h1>
+  <img src="../Visualization/static/images/Class Imbalance Check.png">
+  <p>text</p>
+  </div>
+</div>
+
+<footer>
+  <p>Author: Maureen Fromuth</p>
+  <p><a href="mailto:maureen.fromuth@gmail.com" style="color:white">maureen.fromuth@gmail.com</a></p>
+  <p><a href="https://github.com/MaureenFromuth/IBM_Attrition" style="color:white">Project Github Site</a></p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <title class="h1">ByeByeBye Attrition</title>
+  <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  <link rel="stylesheet" href="static\css\style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap">
+
+</head>
+
+<style>body{font-family: "Montserrat", sans-serif}</style>
+
+<body>
+<!-- Navbar -->
+<div class="topnav">
+  <a href="#" class="active">Overivew</a>
+  <a href="index-data_exploration.html">Data Exploration</a>
+  <a href="index-machine_learning_assessment.html">Machine Learning Assessment</a>
+  <a href="index-feature_analysis.html">Feature Analysis</a>
+  <a href="index-conclusion.html">Conclusion</a>
+</div>
+
+<!-- Header -->
+<header class="container-bckgrnd container-fluid" style="padding:180px 16px">
+  <h3 style="margin-left:32px">BYE BYE BYE</h3>
+  <p style="font-size: medium; margin-left:32px">Why do employees leave ... and when!?</p>
+  <p style="font-size:small; line-height:2px; font-style:italic; margin-left:32px">Looking at attrition, what at the key features</p> 
+  <p style="font-size:small; line-height:2px; font-style:italic; margin-left:32px">that influence why employees leave and how</p>
+  <p style="font-size:small; line-height:2px; font-style:italic; margin-left:32px">many at a given time will likely leave.</p>
+</header>
+
+<!-- First Grid -->
+<div class="row-padding padding-20">
+    <div class="twothird-right container container-fluid padding-10" style="background-color:white">
+      <h1>What Are Our Topics?</h1>
+      <h2>Primary Topic:   Attrition ... why people leave a company?</h2>
+      <p style="font-size:small">Companies want to know why and when employeees decide to leave a company.  There is data that employers maintain that can support answering these questions! Whether it's specific information on employees, their current positions, or surveys on job 
+        satisfaction, companies have data at the ready to help them answer these questions!  This data provides a wide array of features or attributes that employers can look at and review to help them identify why employees leave. 
+        But this data can also help them to understand the cycles in which attrition happens: is it in waves or at certain times during the year, is it a constant trickle, or is it random and unpredictable?</p>
+
+      <h2>Secondary Topic:   Job categories ... does this impact attrition?</h2>
+      <p style="font-size:small">Within most companies, there are smaller job communities or categories, based off of their job role.  Within the tech industry in particular, you will see clear categories: tech, non-tech, and leadership or management.  These communities or categories
+      have unique skills that are required for their positions.  Individuals who fill those positions, as well, have different motivators and priorities.  Since different recruiting strategies are different for those categories, it is helpful to know if or how attrition manifests
+      manifests differently for different categories.</p>
+    </div>
+</div>
+
+<!-- Second Grid -->
+<div class="row-padding padding-20">
+  <div class="twothird-right container padding-10" style="background-color:white">
+    <h1>What Are We Trying To Learn?</h1>
+      <h2>Primary Questions:</h2>
+      <p style="font-size:small; line-height:2px">What are the key features that predict attriton?</p>
+      <p style="font-size:small; line-height:2px">When and how many employees do we predict will leave?</p>
+      <p style="font-size:small; line-height:2px">Do those answers change based on the job category?</p>
+  
+
+      <h2>Secondary Questions:</h2>
+      <p style="font-size:small; line-height:2px">What, if any, correlation is there between different features?</p>
+      <p style="font-size:small; line-height:2px">Are there any major differences in features between the job categories?</p>
+    </div>
+</div>
+
+<!-- Third Grid -->
+<div class="row-padding padding-20">
+  <div class="twothird-right container padding-10" style="background-color:white">
+    <h1>Why Is This Topic Important?</h1>
+      <h2>Companies invest a lot in their employees ...</h2>
+      <h2>So, they want to build effective retention programs.</h2>
+      <p style="font-size:small">Companies want to build programs to keep their employees after investing so much into them through training or even in getting them into the company in the first place!  These programs are most impactful
+      and effective when they target the key reason for why people stay or why they go.  For example, if annual income is a driving factor for leaving a company, should the company look at increasing their overall compensation program.  Likewise, what
+      what influences job categories to stay changes, and targeting those groups with retention programs can help a company maintain their investments.  For example, if a company has a large competition coming up and needs to maintain tech resources,
+      what programs can they execute in order to increase retention.</p>
+
+      <h2>So, they want to plan for attrition with targeted recruiting efforts.</h2>
+      <p style="font-size:small">Companies also want to be able to understand that attrition will happen, but knowing how much at a time is helpful in planning and mitigating the risk of a shortage.  Important information includes when employees might leave, 
+      which drives the timing of recruiting efforts.  Likewise, how much of how many employees may leave at a given times drives the size or amount of recruiting efforts.  And finally, what type of role employees are leaving from ensures that recruiters are 
+      looking for candidates with the right type of skills, experience, and background.</p>
+    </div>
+</div>
+
+<!-- Fourth Grid -->
+<div id = "container" class="row-padding padding-20">
+  <div class="container-image col-md-5" style="float:right; background-color: white; margin-right: 60px">
+    <img src='../Visualization/static/images/ERD_IBM-HR_Picture.png' style="width: 100%; background-color: white">
+  </div> 
+  <div id = "texts" class="col-md-7">
+    <div class="twothird-right container padding-10" style="background-color:white">
+      <h1>What Data Did We Use?</h1>
+        <h2>A Synthetic, Anonomous HR Dataset Representing a Tech Firm</h2>
+          <p style="font-size:small">We used a synthetic dataset from Kaggle that was representative of HR data from a Tech Firm.  It is important to find a dataset that has features in a wide range of areas.  This dataset met this need and had features in 
+          the following areas: anonomyzed employee information (no personal identifiable information), job history, education, job role and department, salary, and satisfaction scores from internal surveys.  This range of features provides insight into not 
+          just the employee but also their background, their position, and how they feel about their current environment.</p>
+        <h2>Details of the Dataset</h2>
+          <ul>
+            <li>1 primary table</li>
+              <ul>
+                <li style="font-size:12px">1470 rows / unique employees</li>
+                <li style="font-size:12px">Key Feature = 'EmployeeNumber'</li>
+                <li style="font-size:12px">Features Dropped = ‘EmployeeCount’, ‘StandardHours’, ‘Over18’, ‘MonthlyIncome’, ‘HourlyRate, ‘DailyRate’, ‘Department’, ‘TotalWorkingYears'</li>
+                <li style="font-size:12px">Created Feature based on 'JobRole' and 'Department' = 'JobCategory' (Leadership, Non-Tech, Tech)</li>
+              </ul>
+            <li>8 reference tables</li>
+              <ul>
+                <li style="font-size:12px">Provides description of the survey ratings</li>
+                <li style="font-size:12px">Used a Left Join between the primary and reference tables to explain satisfaction ratings</li>
+              </ul>  
+          </ul>  
+    </div>
+    <div class="twothird-right container padding-10" style="background-color:white">
+      <h1>What Did We Do With the Dataset?</h1>
+        <h2>Initial ETL Actions</h2>
+          <p style="font-size:small">We created two main sub-datasets for our analysis: one dataframe in Python for machine learning model development, inference, and feature analysis; and one table in Postgres for visualization on this site.  Within our Python dataframe, we created three 
+          sub-dataframes for each of the job categories.  We used these four datframes in Python as the basis for our model development and inference as well as our analysis on feature importance.</p>
+        <h2>Hosting the Datasets</h2>
+          <ul>
+            <li style="font-size:12px">pgAdmin 4.24 w/ Postgres 14.2: Original 9 reference tables; visualization tables w/ 'JobCategory' field added</li>
+            <li style="font-size:12px">Python w/ Jupiter Notebook: SQLAlchemy to upload and export original tables; dataframes used for machine learning model development and feature analysis</li>
+          </ul>
+    </div>
+  </div> 
+</div>
+
+<!-- Sixth Grid -->
+<div class="container-fluid" style="overflow-x: auto; background-color: white">
+  <div class="row">
+    <div class="col-md-3">
+      <form style="background-color: white">
+        <p style="font-size: 28px; margin-left: 15px; margin-top: 15px">The Dataset</p>
+      </form>
+      <ul class="list-group" style="background-color:rgb(228, 239, 240)">
+          <li class="list-group-item" style="background-color: rgb(80, 78, 74); color: white">
+            <label style="font-size: 20px">Filter Search</label>
+          </li>
+          <li class="list-group-item" style="background-color:rgb(228, 239, 240)"> 
+              <label for="JobCategory">Enter a Job Category:</label>
+              <label for="JobCategory" style="font-size: small; font-style: italic">Tech, Non-Tech, Leadership</label>
+              <input type="text" placeholder="" id="JobCategory"/>
+          </li>
+          <li class="list-group-item" style="background-color:rgb(228, 239, 240)">
+              <label for="MaritialStatus">Enter Maritial Status</label>
+              <label for="MaritialStatus" style="font-size: small; font-style: italic">Married, Single, Divorces</label>
+              <input type="text" placeholder="" id="MaritialStatus"/>
+          </li>
+          <li class="list-group-item" style="background-color:rgb(228, 239, 240)">
+            <label for="EmployeeNumber">Enter Gender</label>
+            <label for="EmployeeNumber" style="font-size: small; font-style: italic">Male, Female</label>
+            <input type="text" placeholder="" id="Gender"/>
+          </li>
+          <li class="list-group-item" style="background-color:rgb(228, 239, 240)">
+            <label for="EmployeeNumber">Enter Education</label>
+            <label for="EmployeeNumber" style="font-size: small; font-style: italic">Below College, College, Bachelor, Master, Doctor</label>
+            <input type="text" placeholder="" id="Education_Text"/>
+          </li>
+      </ul>
+    </div>
+    <div class="col-md-9" style="position:relative; height: 50px; overflow-x: scroll; overflow-y: scroll; margin-top: 40px;">
+      <table class="table table-striped" style="font-size: x-small">
+          <thead>
+            <tr>
+              <th>EmployeeNumber</th>
+              <th>Age</th>
+              <th>Attrition</th>
+              <th>BusinessTravel</th>
+              <th>DailyRate</th>
+              <th>Department</th>
+              <th>DistanceFromHome</th>
+              <th>EducationField</th>
+              <th>EmployeeCount</th>
+              <th>Gender</th>
+              <th>HourlyRate</th>
+              <th>JobLevel</th>
+              <th>JobRole</th>
+              <th>MaritialStatus</th>
+              <th>MonthlyIncome</th>
+              <th>MonthlyRate</th>
+              <th>NumCompaniesWorked</th>
+              <th>Over18</th>
+              <th>OverTime</th>
+              <th>PercentSalaryHike</th>
+              <th>StandardHours</th>
+              <th>StockOptionLevel</th>
+              <th>TotalWorkingYears</th>
+              <th>TrainingTimesLastYear</th>
+              <th>YearsAtCompany</th>
+              <th>YearsInCurrentRole</th>
+              <th>YearsSinceLastPromotion</th>
+              <th>YearsWithCurrManager</th>
+              <th>JobCategory</th>
+              <th>Education_Text</th>
+              <th>EnvironmentSat_Text</th>
+              <th>JobInvolvement_Text</th>
+              <th>JobSatisfaction_Text</th>
+              <th>PerformanceRating_Text</th>
+              <th>RelationshipSat_Text</th>
+              <th>WorkLifeBalance_Text</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+<script src="static/js/data.js"></script>
+<script src="static/js/app.js"></script>
+
+<footer>
+  <p>Author: Maureen Fromuth</p>
+  <p><a href="mailto:maureen.fromuth@gmail.com" style="color:white">maureen.fromuth@gmail.com</a></p>
+  <p><a href="https://github.com/MaureenFromuth/IBM_Attrition" style="color:white">Project Github Site</a></p>
+</footer>
+
+</body>
+</html>
