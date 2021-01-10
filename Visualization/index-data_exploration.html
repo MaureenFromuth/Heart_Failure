@@ -144,6 +144,7 @@
             <li>MonthlyIncome: JobCategory</li>
             <li>TotalWorkingYears: JobCategory</li>
           </ul> 
+        <h2>Surprising negative relationship between MaritialStatus and StockOptionLevel</h2>
         <h2>Features representing similar and potentially duplicative information:</h2>
           <ul style="font-size:12px">
             <li>HourlyRate / DailyRate / MonthlyRate / MonthlyIncome
@@ -159,11 +160,11 @@
 </div>
 
 <!-- Fifth Grid -->
-<div class="row-padding padding-10 block" style="vertical-align: top;"> 
+<div class="row-padding padding-10 block" style="vertical-align"> 
   <div class="row"> 
      <div class="col-md-1"></div> 
      <div class="col-md-6">
-        <h1 id="title" style="text-align: center; margin-left: -25px; margin-bottom: 10px; font-size: 20px;">Age Distribution per JobCategory</h1> 
+        <h1 id="title" style="text-align: center; margin-left: -25px; margin-bottom:10px; font-size:20px">Age Distribution per JobCategory</h1> 
         <img  id="myImage" 
               src="static/images/Age-Cat_Distribution.png">
         <div class="button" style="margin-top: 15px;"> 
@@ -175,14 +176,57 @@
                   onclick=yearsrole();> 
               YearsInCurrentRole 
           </button> 
+          <button  class="btn btn-custom" 
+                  onclick=monthlyrate();> 
+              MonthlyRate 
+          </button> 
       </div>  
      </div> 
-     <div class="col-md-5">
-       <h1>Feature Distribution Across the Datasets</h1>
-        <p id="description" style="font-size: small;">blah blah blah</p>
+     <div class="col-md-5" style="margin-left: -25px; margin-right: 5px">
+       <h1>Feature Distribution Analysis</h1>
+        <p>Similarly to the MonthlyIncome, Age, and TotalWorkingYears distribution charts above that are skewed left, we also dug further into Age, 
+          YearsInCurrentRole, and MonthlyRate. As you can see from the distribution graphs below, the leadership role tends to skew more to the right 
+          than the other job categories. This is not completely surprising, as leaders tend to be more senior.</p>
+        <p id="description" style="font-size: small; font-style: italic;">Age distribution looks relatively normal for each of the JobCategories.  Of note, however, the 
+          Leadership category tends to skew more to the right and is not as evently distributed as the other categories.  This is not surprisng given
+          leaders tend to be older, and it also compliments the correlation data we found.</p>
      </div> 
   </div>
-  
+</div> 
+
+<!-- Sixth Grid -->
+<div class="row-padding padding-10 block" style="vertical-align: top;"> 
+  <div class="row"> 
+     <div class="col-md-1"></div> 
+     <div class="col-md-6">
+        <h1 id="title2" style="text-align: center; margin-left: -25px; margin-bottom: 10px; font-size: 20px;">StockLevel vs. Maritial Status Distribution</h1> 
+        <img  id="myImage2" 
+              src="static/images/Maritial-Stock_Distribution.png">
+        <div class="button" style="margin-top: 15px;"> 
+          <button class="btn btn-custom" style="font-size: xx-small;"
+                  onclick=stockvsmaritial();> 
+              StockLevel vs. MaritialStatus 
+          </button> 
+          <button  class="btn btn-custom" style="font-size: xx-small;"
+                  onclick=jobvsmaritial();> 
+              JobLevel vs. MaritialStatus 
+          </button> 
+          <button  class="btn btn-custom" style="font-size: xx-small;"
+                  onclick=catvswlb();> 
+              JobCategory vs. WorkLifeBalance 
+  </button> 
+      </div>  
+     </div> 
+     <div class="col-md-5" style="margin-left: -25px; margin-right: 5px">
+      <h1>Comparitive Feature Distribution Analysis</h1>
+        <p>We conducted analysis on feature distribution relative to other features, and found distribution relative to one another for the most part expected.  There were, however, a few interesting findings in the data for a few comparisons: 
+          StockOptionLevel to Maritial Status, JobLvel vs. Maritial Status, and JobCategory vs. Work Life Balance.  The findings here provide insight into some potential areas for programs that could benefit retetion, depending upon the outcome
+          the feature analysis.</p>
+        <p id="description2" style="font-size: small; font-style: italic;">As identified in our correlation matrix, there is a negative relationship between maritial status and stock option level, namely that married individuals tend to have higher
+        stock option levels.  A potential explaination for this is that generally married individuals tend to be older and thus more senior.  Of note in this graph, however, those with a stock option level of 3 are all divorced.  Additional research
+        should be completed in this area to look at those indivdiuals job levels, job categories, and work life balance to look for trends.</p>
+     </div> 
+  </div>
 </div> 
 
 <script src="static/js/change-distribution.js"></script>
