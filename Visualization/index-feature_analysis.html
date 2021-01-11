@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>ByeByeBye Attrition</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="static\css\style.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap">
-<style>
-body{font-family: "Montserrat", sans-serif}
-</style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <title class="h1">ByeByeBye Attrition</title>
+  <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  <link rel="stylesheet" href="static\css\style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap">
+
+</head>
+
+<style>body{font-family: "Montserrat", sans-serif}</style>
+
 <body>
 
 <!-- Navbar -->
@@ -21,10 +31,69 @@ body{font-family: "Montserrat", sans-serif}
 </div>
 
 <!-- Header -->
-<header class="container-bckgrnd" style="padding:180px 16px">
-  <h1>BYE BYE BYE</h1>
-  <p style="font-size: medium">Why do employees leave ... and when!?</p>
-  <p style="font-size:small; line-height:2px; font-style:italic">Looking at attrition, what at the key features</p> 
-  <p style="font-size:small; line-height:2px; font-style:italic">that influence why employees leave and how</p>
-  <p style="font-size:small; line-height:2px; font-style:italic">many at a given time will likely leave.</p>
+<header class="container-bckgrnd container-fluid" style="padding:180px 16px">
+  <h3 style="margin-left:32px">BYE BYE BYE</h3>
+  <p style="font-size: medium; margin-left:32px">Why do employees leave ... and when!?</p>
+  <p style="font-size:small; line-height:2px; font-style:italic; margin-left:32px">Looking at attrition, what at the key features</p> 
+  <p style="font-size:small; line-height:2px; font-style:italic; margin-left:32px">that influence why employees leave and how</p>
+  <p style="font-size:small; line-height:2px; font-style:italic; margin-left:32px">many at a given time will likely leave.</p>
 </header>
+
+<!-- First Grid -->
+<div class="row-padding padding-20">
+  <div class="twothird-right container container-fluid padding-10" style="background-color:white">
+    <h1>Overall Findings of the Feature Analysis</h1>
+    <h2>Most features have an impact attrition, but a few are more consistent</h2>
+    <p style="font-size:small">Looking at the overall employee dataset, almost all features have some impact on attrition.  Commonly, however, MonthlyIncome, Age, TotalWorkingYears, 
+    and YearsAtCompany are the ones that are typically in the 'top 5' in our assessments.</p>
+
+    <h2>Feature importance to attrition does vary based on job category</h2>
+    <p style="font-size:small">The Tech job category is more sensitive to Age, TotalWorkingYears, YearsInCurrentRole; and less to YearsWithCurrentMaanger, and JobRole.</p>
+    <p style="font-size:small">The NonTech job category is more sensitive to StockOptionLevel, NumberOfCompaniesWorkedFor, DistanceFromHome; and less to YearsWithCurrManager.</p>
+    <p style="font-size:small">The Leadership job category is more sensitive to YearsSinceLastPromotion, Education, JobLevel, RelationshipSatisfaction, PerformanceRating; and less to Age, MonthlyIncome. Of note, the fact that leadership is
+    less sensitive to MonthlyIncome may be a reflection of the fact that they already tend to make more, as seen from distribution analysis, and therefore it is not as much of a consideration for them as they're already paid higher than most.</p>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="row-padding padding-10 block" style="vertical-align: top;">
+  <div class='row'>
+    <div class="col-md-12 padding-20" style="margin-left: 20px;">
+      <div style="margin-left: 50px">
+      <h1 id="title" style="text-align: center; margin-left: -35px; margin-bottom: 10px; font-size: 20px;">Graph: Feature Importance Comparisons</h1>
+      <img  id="myImage" 
+              src="../Visualization/static/images/FeatureImportance_Noted.png">
+        <div class="button" style="margin-top: 15px;"> 
+          <button class="btn btn-custom" style="font-size: xx-small; margin-top:5px"
+                  onclick=graph();> 
+              Graph 
+          </button> 
+          <button  class="btn btn-custom" style="font-size: xx-small;margin-top:5px"
+                  onclick=chart();> 
+              Chart 
+          </button> 
+      <p style="text-align: center; margin-left: -35px; margin-top: 10px;">Done in Python</p>
+      </div>
+    </div>
+  </div>
+  <div class="padding-10">
+    <div style="margin-left: 45px; margin-right: 35px;">
+      <h1>Comparison of Feature Importance by JobCategory</h1>
+      <p style="font-size:small">In addition to evaluating model performance, we also looked at feature importance and compared each of the feature importance ratings to one another. In 
+        the graphic below, you can see the ratings for each of the features by job category. There are a number of areas to note in which there’s significant differences between categories 
+        in the feature importance. For example, MonthlyIncome for Leadership is significantly lower than it is for the other job categories. Likewise, StockOptionLevel is considerably higher 
+        for Non-Tech job categories than it is for others when it comes to predicting attrition. The graphic below highlights the notable differences in a red hashed box.</p>
+    </div>
+  </div>
+</div>
+
+<script src="static/js/change-features.js"></script>
+
+<footer>
+  <p>Author: Maureen Fromuth</p>
+  <p><a href="mailto:maureen.fromuth@gmail.com" style="color:white">maureen.fromuth@gmail.com</a></p>
+  <p><a href="https://github.com/MaureenFromuth/IBM_Attrition" style="color:white">Project Github Site</a></p>
+</footer>
+
+</body>
+</html>

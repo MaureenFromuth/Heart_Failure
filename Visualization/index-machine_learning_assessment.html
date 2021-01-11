@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>ByeByeBye Attrition</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="static\css\style.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap">
-<style>
-body{font-family: "Montserrat", sans-serif}
-</style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <title class="h1">ByeByeBye Attrition</title>
+  <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  <link rel="stylesheet" href="static\css\style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap">
+
+</head>
+
+<style>body{font-family: "Montserrat", sans-serif}</style>
+
 <body>
 
 <!-- Navbar -->
@@ -21,10 +31,125 @@ body{font-family: "Montserrat", sans-serif}
 </div>
 
 <!-- Header -->
-<header class="container-bckgrnd" style="padding:180px 16px">
-  <h1>BYE BYE BYE</h1>
-  <p style="font-size: medium">Why do employees leave ... and when!?</p>
-  <p style="font-size:small; line-height:2px; font-style:italic">Looking at attrition, what at the key features</p> 
-  <p style="font-size:small; line-height:2px; font-style:italic">that influence why employees leave and how</p>
-  <p style="font-size:small; line-height:2px; font-style:italic">many at a given time will likely leave.</p>
+<header class="container-bckgrnd container-fluid" style="padding:180px 16px">
+  <h3 style="margin-left:32px">BYE BYE BYE</h3>
+  <p style="font-size: medium; margin-left:32px">Why do employees leave ... and when!?</p>
+  <p style="font-size:small; line-height:2px; font-style:italic; margin-left:32px">Looking at attrition, what at the key features</p> 
+  <p style="font-size:small; line-height:2px; font-style:italic; margin-left:32px">that influence why employees leave and how</p>
+  <p style="font-size:small; line-height:2px; font-style:italic; margin-left:32px">many at a given time will likely leave.</p>
 </header>
+
+
+<!-- First Grid -->
+<div class="row-padding padding-20">
+  <div class="twothird-right container container-fluid padding-10" style="background-color:white">
+    <h1>Overall Findings of the Machine Learning Assessment</h1>
+    <h2>It is ideal to use machine learning to predict employees who do NOT attrit (i.e. predict retention)</h2>
+    <p style="font-size:small">Overall the accuracy of our models hover over .7, but, due to the imbalance of the target features in all of the datasets, particularly the Leadership sub-dataframe, there is not enough data to build out accurate models for those who do in fact attrit.
+    More specifically, F1 scores for all categories and for the combined dataset are no higher than .51, which is ultimately no better than a coin toss.  Likewise, there is a large issue in precision scores for predicting attrition
+    as well, with none of the models scoring any higher than a .39. </p>
+
+    <h2>Imbalance in Leadership is too large to use any of the models for prediction</h2>
+    <p style="font-size:small">None of the models using various techniques were sufficient in providing usable accuracy scores for the leadership job category.  More specifically, none of the F1 scores for any of the models we used were above .06 for predicting attrition.  Conversley,
+    looking at predicting retention or 'no' responses to the 'Attrition' feature, appear to be overfitting and thus not truly accurate in predicting outcomes.</p>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="row-padding padding-20">
+  <div class="twothird-right container container-fluid padding-10" style="background-color:white">
+    <h1>How Did We Conduct Our Machine Learning Assessment?</h1>
+    <h2>Looked at the unique nature of the data based off our data exploration and identifed key model requirements</h2>
+      <ul>
+        <li style="font-size:12px">Want to predict if someone will attrit or not 
+          <p style="font-style: italic">Requirement: Our model needs to be a classifier</p></li>
+        <li style="font-size:12px">We have a highly imbalanced target dataset
+          <p style="font-style: italic">Requirement: We will need to employ a sampling technique and/or a model that does not have issues with imbalance</p></li>
+        <li style="font-size:12px">Highly variable feature results
+          <p style="font-style: italic">Requirement: We will need to normalize our data or chose a model that does not have issues with feature variability</p></li>
+        <li style="font-size:12px">Feaure data is not evenly distributed
+          <p style="font-style: italic">Requirement: We will need a model that can handle weak learners</p></li>
+        <li style="font-size:12px">Large number of variables and features
+          <p style="font-style: italic">Requirement: We will need a model that can handle a large volume of varied features</p></li>
+        <li style="font-size:12px">Our goal is to rank features importance
+          <p style="font-style: italic">Requirement: We will need a model that can provide feature importance</p></li>
+      <h2 style="font-style: italic;">MODEL CHOICE: Balanced Random Forest Classifier</h2>
+      </ul>
+    <h2>We evaluated the strengths and weaknesses of our model choice to ensure we incorporated mitigations to weaknesses, if needed</h2>
+    <p style="font-size:small">Stengths</p>
+      <ul>
+        <li style="font-size:12px">Based on bagging ensemble technique for machine learning; helps improve accuracy and robustness of ‘weak learners’</li>
+        <li style="font-size:12px">Good for categorical as well as well as continuous variables</li>
+        <li style="font-size:12px">Does not require feature scaling; robust to outliers</li>
+        <li style="font-size:12px">Incorporates techniques to balance an unbalanced target feature</li>
+        <li style="font-size:12px">Robust against overfitting; weak learners trained on different data</li>
+        <li style="font-size:12px">Good to rank importance of features in prediction of outcome</li>
+      </ul>
+    <p style="font-size:small">Weaknesses</p>
+      <ul>
+        <li style="font-size:12px">Complexity makes it challenging for explainability</li>
+        <li style="font-size:12px">Generally requires longer training time</li>
+      </ul> 
+  </div>
+</div>
+
+<!-- Third Grid -->
+<div class="row-padding padding-10 block" style="vertical-align"> 
+  <div class="row"> 
+     <div class="col-md-7" style="margin-left: 25px;">
+        <h1 id="title" style="text-align: center; width:75%; margin-left: 25px; margin-bottom:10px; font-size:20px">Results-Combination: Balanced Random Forest Classifier</h1> 
+        <img  id="myImage" 
+              src="static/images/Comb_Results.png">
+        <div class="button" style="margin-top: 15px;"> 
+          <button class="btn btn-custom" style="font-size: xx-small; margin-top:5px"
+                  onclick=combbrfc();> 
+              Combo-BRFC 
+          </button> 
+          <button  class="btn btn-custom" style="font-size: xx-small;margin-top:5px"
+                  onclick=techbrfc();> 
+              Tech-BRFC 
+          </button> 
+          <button  class="btn btn-custom" style="font-size: xx-small;margin-top:5px"
+                  onclick=nontechbrfc();> 
+              NonTech-BRFC 
+          </button> 
+          <button  class="btn btn-custom" style="font-size: xx-small;margin-top:5px"
+                  onclick=nontechsmot();> 
+              NonTech-SMOTEENN+RFC 
+          </button> 
+          <button  class="btn btn-custom" style="font-size: xx-small;margin-top:5px"
+                  onclick=ldrshpbrfc();> 
+              Ldrshp-BRFC 
+          </button> 
+          <button  class="btn btn-custom" style="font-size: xx-small;margin-top:5px"
+                  onclick=ldrshpsmot();> 
+              Ldrshp-SMOTEENN+RFC 
+          </button> 
+          <button  class="btn btn-custom" style="font-size: xx-small;margin-top:5px"
+                  onclick=ldrshpros();> 
+              Ldrshp-ROS+RFC
+          </button> 
+      </div>  
+     </div> 
+     <div class="col-md-5" style="margin-left: -55px; margin-right: 5px">
+       <h1>Machine Learning Model Analysis</h1>
+        <p>In ordedr to ensure we chose the most appropriate and successful model, we conducted training and assessment of multiple machine learning models across all four dataframes: Combo, NonTech, Tech, and Ldrshp.
+          We used a Random Forest Classifier as our primar model, and tested multiple approaches for balancing.  More specifically, we utilized a Balanced Random Forest Classifier as our primary model, and also tested 
+          Random Oversampling and the SMOTEENN Combination technique.  We utilized Balanced Random Forest Classifier (BRFC) on all four of the dataframes, SMOTEENN on Non-Tech and Ldrshp, and ROS on Ldrshp only. 
+          Althought BRFC was overall the most accurate model, in general the model was not very good at predicting attrition but was far better at precting retention ('No' answers).
+        </p>
+        <p id="description" style="font-size: small; font-style: italic;">Combo-BRFC: Overall, no better than a coin toss at predicting employees who left but far better at predicting those who stayed.</p>
+     </div> 
+  </div>
+</div> 
+
+<script src="static/js/change-accuracy.js"></script>
+
+<footer>
+  <p>Author: Maureen Fromuth</p>
+  <p><a href="mailto:maureen.fromuth@gmail.com" style="color:white">maureen.fromuth@gmail.com</a></p>
+  <p><a href="https://github.com/MaureenFromuth/IBM_Attrition" style="color:white">Project Github Site</a></p>
+</footer>
+
+</body>
+</html>
